@@ -11,7 +11,9 @@ Pod::Spec.new do |s|
     s.platform          = :ios
     s.source            = { :git => 'https://github.com/beammaf/MAFPaySdk.git',:branch => 'master'}
 
-    s.ios.deployment_target = '11.0'
+    s.ios.deployment_target = '12.0'
     s.ios.vendored_frameworks = 'MAFMpay.framework'
     s.requires_arc = true
+    s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
+
 end
