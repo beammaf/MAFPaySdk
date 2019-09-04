@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name              = 'MAFMpay'
-    s.version           = '0.0.2'
+    s.version           = '0.0.4'
     s.summary           = 'MAF pay Provided by Beam UAE'
     s.homepage          = 'http://beamuae.app/'
     s.dependency 'Moya', '~> 13.0.1'
