@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-    s.name              = 'MAFMpay'
-    s.version           = '0.0.5'
+    s.name              = 'MAFPay'
+    s.version           = '0.0.6'
     s.summary           = 'MAF pay Provided by Beam UAE'
     s.homepage          = 'http://beamuae.app/'
     s.dependency 'Moya', '~> 13.0.1'
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     s.source            = { :git => 'https://github.com/beammaf/MAFPaySdk.git',:tag => s.version}
 
     s.ios.deployment_target = '11.0'
-    s.ios.vendored_frameworks = 'MAFMpay.framework'
+    s.ios.vendored_frameworks = 'MAFPay.framework'
     s.requires_arc = true
     s.swift_version = '5.0'
 
