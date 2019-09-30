@@ -214,6 +214,8 @@ SWIFT_CLASS("_TtC6MAFPay8CardView")
 
 
 
+
+
 typedef SWIFT_ENUM(NSInteger, Enviroment, closed) {
   EnviromentProduction = 0,
   EnviromentStaging = 1,
@@ -224,6 +226,8 @@ SWIFT_CLASS("_TtC6MAFPay6MAFPay")
 @interface MAFPay : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 
