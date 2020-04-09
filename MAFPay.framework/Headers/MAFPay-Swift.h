@@ -187,6 +187,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import UIKit;
 #endif
 
+#import <MAFPay/MAFPay.h>
+
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 #if __has_warning("-Wpragma-clang-attribute")
@@ -212,7 +214,7 @@ SWIFT_CLASS("_TtC6MAFPay8CardView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-typedef SWIFT_ENUM(NSInteger, Enviroment, closed) {
+typedef SWIFT_ENUM(NSInteger, Enviroment, open) {
   EnviromentProduction = 0,
   EnviromentStaging = 1,
   EnviromentSandbox = 2,
@@ -225,6 +227,24 @@ SWIFT_CLASS("_TtC6MAFPay6MAFPay")
 @end
 
 
+
+
+SWIFT_CLASS("_TtC6MAFPay22ScanCardViewController")
+@interface ScanCardViewController : UIViewController
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+@class CardIOPaymentViewController;
+@class CardIOCreditCardInfo;
+
+@interface ScanCardViewController (SWIFT_EXTENSION(MAFPay)) <CardIOPaymentViewControllerDelegate>
+- (void)userDidCancelPaymentViewController:(CardIOPaymentViewController * _Null_unspecified)paymentViewController;
+- (void)userDidProvideCreditCardInfo:(CardIOCreditCardInfo * _Null_unspecified)cardInfo inPaymentViewController:(CardIOPaymentViewController * _Null_unspecified)paymentViewController;
+@end
 
 
 SWIFT_CLASS("_TtC6MAFPay14TokanizeButton")

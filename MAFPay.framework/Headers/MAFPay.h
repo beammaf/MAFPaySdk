@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CardIO.h"
 
 //! Project version number for MAFPay.
 FOUNDATION_EXPORT double MAFPayVersionNumber;
