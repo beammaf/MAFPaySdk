@@ -29,6 +29,27 @@ public struct AccountHolder : Swift.Decodable {
   public let accountHolderId: Swift.String
   public init(from decoder: Swift.Decoder) throws
 }
+@objc open class MirrorView : UIKit.UIView {
+  public var text: Swift.String? {
+    get
+    set
+  }
+  public var textColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var fontStyle: UIKit.UIFont? {
+    get
+    set
+  }
+  public var textAlignment: UIKit.NSTextAlignment? {
+    get
+    set
+  }
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  open func setupView(as itemType: MAFPay.ItemType)
+  @objc deinit
+}
 @objc open class CardView : UIKit.UIView {
   weak public var delegate: MAFPay.PMCardDelegate?
   public var itemType: MAFPay.ItemType? {
@@ -74,6 +95,10 @@ public struct AccountHolder : Swift.Decodable {
     get
     set
   }
+  public var textFieldKeyboardType: UIKit.UIKeyboardType? {
+    get
+    set
+  }
   public var separatorCharacter: Swift.String? {
     get
     set
@@ -95,6 +120,10 @@ public struct AccountHolder : Swift.Decodable {
     set
   }
   public var textFieldErrorTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var textFieldMarginLeft: CoreGraphics.CGFloat? {
     get
     set
   }
@@ -228,6 +257,8 @@ public protocol PMCardDelegate : AnyObject {
   func cardHolderNameValidation(_ cardError: MAFPay.CardError?)
   func cardNumberBrand(_ cardBrand: MAFPay.CardBrand?)
   func textFieldDidReturnButtonTapped(_ itemType: MAFPay.ItemType)
+  func textFieldDidBeginEditing(_ itemType: MAFPay.ItemType)
+  func textFieldDidEndEditing(_ itemType: MAFPay.ItemType)
 }
 extension PMCardDelegate {
   public func cardNumberValidation(_ cardError: MAFPay.CardError?)
@@ -236,6 +267,8 @@ extension PMCardDelegate {
   public func cardHolderNameValidation(_ cardError: MAFPay.CardError?)
   public func cardNumberBrand(_ cardBrand: MAFPay.CardBrand?)
   public func textFieldDidReturnButtonTapped(_ itemType: MAFPay.ItemType)
+  public func textFieldDidBeginEditing(_ itemType: MAFPay.ItemType)
+  public func textFieldDidEndEditing(_ itemType: MAFPay.ItemType)
 }
 @objc public class MAFPay : ObjectiveC.NSObject {
   public static var authorizedKey: Swift.String?
@@ -283,7 +316,6 @@ extension MAFPay.Enviroment : Swift.Equatable {}
 extension MAFPay.Enviroment : Swift.Hashable {}
 extension MAFPay.Enviroment : Swift.RawRepresentable {}
 extension MAFPay.CardError : Swift.Hashable {}
-extension MAFPay.ItemType : Swift.Equatable {}
 extension MAFPay.ItemType : Swift.Hashable {}
 extension MAFPay.ItemType : Swift.RawRepresentable {}
 extension MAFPay.IconTextFieldPosition : Swift.Hashable {}

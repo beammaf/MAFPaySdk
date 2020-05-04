@@ -227,6 +227,13 @@ SWIFT_CLASS("_TtC6MAFPay6MAFPay")
 @end
 
 
+SWIFT_CLASS("_TtC6MAFPay10MirrorView")
+@interface MirrorView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 
 SWIFT_CLASS("_TtC6MAFPay22ScanCardViewController")
