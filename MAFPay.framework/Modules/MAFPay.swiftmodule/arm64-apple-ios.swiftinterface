@@ -34,6 +34,10 @@ public struct AccountHolder : Swift.Decodable {
     get
     set
   }
+  public var placeholder: Swift.String? {
+    get
+    set
+  }
   public var textColor: UIKit.UIColor? {
     get
     set
