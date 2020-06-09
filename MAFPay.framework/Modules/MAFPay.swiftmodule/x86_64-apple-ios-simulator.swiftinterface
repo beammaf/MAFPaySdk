@@ -255,7 +255,7 @@ public protocol PMTokanizeButtonDelegate : AnyObject {
 public typealias JSONDictionary = [Swift.String : Any]
 public protocol PMCardDelegate : AnyObject {
   func allItemsValidation(_ cardError: MAFPay.CardError?)
-  func cardNumberValidation(_ cardError: MAFPay.CardError?)
+  func cardNumberValidation(_ cardError: MAFPay.CardError?, isValid: Swift.Bool)
   func cardExpiryDateValidation(_ cardError: MAFPay.CardError?)
   func cardCVCNumberValidation(_ cardError: MAFPay.CardError?)
   func cardHolderNameValidation(_ cardError: MAFPay.CardError?)
@@ -265,7 +265,7 @@ public protocol PMCardDelegate : AnyObject {
   func textFieldDidEndEditing(_ itemType: MAFPay.ItemType)
 }
 extension PMCardDelegate {
-  public func cardNumberValidation(_ cardError: MAFPay.CardError?)
+  public func cardNumberValidation(_ cardError: MAFPay.CardError?, isValid: Swift.Bool)
   public func cardExpiryDateValidation(_ cardError: MAFPay.CardError?)
   public func cardCVCNumberValidation(_ cardError: MAFPay.CardError?)
   public func cardHolderNameValidation(_ cardError: MAFPay.CardError?)
