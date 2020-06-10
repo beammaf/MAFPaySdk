@@ -167,6 +167,7 @@ public typealias MAFPayResponse<T> = (Swift.Result<T, MAFPay.MAFPayError>) -> Sw
   case production
   case staging
   case sandbox
+  case uat
   public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
   public var rawValue: Swift.Int {
@@ -255,7 +256,7 @@ public protocol PMTokanizeButtonDelegate : AnyObject {
 public typealias JSONDictionary = [Swift.String : Any]
 public protocol PMCardDelegate : AnyObject {
   func allItemsValidation(_ cardError: MAFPay.CardError?)
-  func cardNumberValidation(_ cardError: MAFPay.CardError?, isValid: Swift.Bool)
+  func cardNumberValidation(_ cardError: MAFPay.CardError?)
   func cardExpiryDateValidation(_ cardError: MAFPay.CardError?)
   func cardCVCNumberValidation(_ cardError: MAFPay.CardError?)
   func cardHolderNameValidation(_ cardError: MAFPay.CardError?)
@@ -263,9 +264,10 @@ public protocol PMCardDelegate : AnyObject {
   func textFieldDidReturnButtonTapped(_ itemType: MAFPay.ItemType)
   func textFieldDidBeginEditing(_ itemType: MAFPay.ItemType)
   func textFieldDidEndEditing(_ itemType: MAFPay.ItemType)
+  func canMoveToNextItem(currentItem type: MAFPay.ItemType?)
 }
 extension PMCardDelegate {
-  public func cardNumberValidation(_ cardError: MAFPay.CardError?, isValid: Swift.Bool)
+  public func cardNumberValidation(_ cardError: MAFPay.CardError?)
   public func cardExpiryDateValidation(_ cardError: MAFPay.CardError?)
   public func cardCVCNumberValidation(_ cardError: MAFPay.CardError?)
   public func cardHolderNameValidation(_ cardError: MAFPay.CardError?)
@@ -273,6 +275,7 @@ extension PMCardDelegate {
   public func textFieldDidReturnButtonTapped(_ itemType: MAFPay.ItemType)
   public func textFieldDidBeginEditing(_ itemType: MAFPay.ItemType)
   public func textFieldDidEndEditing(_ itemType: MAFPay.ItemType)
+  public func canMoveToNextItem(currentItem type: MAFPay.ItemType?)
 }
 @objc public class MAFPay : ObjectiveC.NSObject {
   public static var authorizedKey: Swift.String?

@@ -218,6 +218,7 @@ typedef SWIFT_ENUM(NSInteger, Enviroment, open) {
   EnviromentProduction = 0,
   EnviromentStaging = 1,
   EnviromentSandbox = 2,
+  EnviromentUat = 3,
 };
 
 
