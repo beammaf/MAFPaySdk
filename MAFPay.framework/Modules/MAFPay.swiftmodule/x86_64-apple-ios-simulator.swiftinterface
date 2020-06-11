@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-compiler-version: Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MAFPay
 import AVFoundation
 import Alamofire
@@ -29,7 +29,7 @@ public struct AccountHolder : Swift.Decodable {
   public let accountHolderId: Swift.String
   public init(from decoder: Swift.Decoder) throws
 }
-@objc open class MirrorView : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class MirrorView : UIKit.UIView {
   public var text: Swift.String? {
     get
     set
@@ -54,7 +54,7 @@ public struct AccountHolder : Swift.Decodable {
   open func setupView(as itemType: MAFPay.ItemType)
   @objc deinit
 }
-@objc open class CardView : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers open class CardView : UIKit.UIView {
   weak public var delegate: MAFPay.PMCardDelegate?
   public var itemType: MAFPay.ItemType? {
     get
@@ -142,9 +142,9 @@ public struct AccountHolder : Swift.Decodable {
   open func setFooterError(_ text: Swift.String? = nil, fontStyle: UIKit.UIFont? = nil, fontColor: UIKit.UIColor? = nil, textAlignment: UIKit.NSTextAlignment? = nil)
   open func setExpiryDatePicker(_ titleText: Swift.String? = nil, doneText: Swift.String? = nil, cancelText: Swift.String? = nil)
   open func textFieldBecomeFirstResponder()
+  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 public struct Card : Swift.Decodable {
   public init(cardNumber: Swift.String, cvc: Swift.String, expiryMonth: Swift.Int, expiryYear: Swift.Int, holderName: Swift.String? = nil)
@@ -247,7 +247,7 @@ public protocol PMTokanizeButtonDelegate : AnyObject {
   func tokenizeButtonClicked()
   func tokenizeResponseReceived(_ result: Swift.Result<MAFPay.Token, MAFPay.MAFPayError>)
 }
-@objc public class TokanizeButton : UIKit.UIButton {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TokanizeButton : UIKit.UIButton {
   weak public var delegate: MAFPay.PMTokanizeButtonDelegate?
   public var accountHolderID: Swift.String?
   public var tokanizeWithVerify: Swift.Bool
@@ -277,27 +277,27 @@ extension PMCardDelegate {
   public func textFieldDidEndEditing(_ itemType: MAFPay.ItemType)
   public func canMoveToNextItem(currentItem type: MAFPay.ItemType?)
 }
-@objc public class MAFPay : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers public class MAFPay : ObjectiveC.NSObject {
   public static var authorizedKey: Swift.String?
   public static func setup(with enviroment: MAFPay.Enviroment, apiKey: Swift.String = "", merchantId: Swift.String? = nil, partnerId: Swift.String? = nil, isLoggerActive: Swift.Bool = false)
   public static func tokenize(with verify: Swift.Bool = false, card: MAFPay.Card, accountHolderId: Swift.String? = nil, completion: @escaping MAFPay.MAFPayResponse<MAFPay.Token>)
   public static func getCardList(completion: @escaping MAFPay.MAFPayResponse<[MAFPay.Token]>)
   public static func deleteCard(by cardToken: Swift.String, completion: @escaping MAFPay.MAFPayResponse<Swift.Void>)
   public static func confirmVerification(by amount: Swift.String, cardToken: Swift.String, completion: @escaping MAFPay.MAFPayResponse<Swift.Void>)
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 public enum CardBrand : Swift.String, Swift.CaseIterable {
   case visa
   case mastercard
   case none
   public typealias RawValue = Swift.String
-  public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
-    get
-  }
   public typealias AllCases = [MAFPay.CardBrand]
   public static var allCases: [MAFPay.CardBrand] {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -305,15 +305,15 @@ public protocol ScanCardViewControllerDelegate : AnyObject {
   func scanCardDidFailed(_ scanner: MAFPay.ScanCardViewController, didScanResult error: MAFPay.MAFPayError)
   func scanCardDidCancel(_ scanner: MAFPay.ScanCardViewController)
 }
-@objc final public class ScanCardViewController : UIKit.UIViewController {
+@objc @_hasMissingDesignatedInitializers final public class ScanCardViewController : UIKit.UIViewController {
   weak final public var delegate: MAFPay.ScanCardViewControllerDelegate?
   final public var guideColor: UIKit.UIColor
   final public var scanInstructions: Swift.String?
   @objc dynamic public init()
   @objc override final public func viewDidLoad()
   @objc override final public func viewWillAppear(_ animated: Swift.Bool)
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
 }
 extension ScanCardViewController : MAFPay.CardIOPaymentViewControllerDelegate {
   @objc final public func userDidCancel(_ paymentViewController: MAFPay.CardIOPaymentViewController!)
@@ -322,11 +322,16 @@ extension ScanCardViewController : MAFPay.CardIOPaymentViewControllerDelegate {
 extension MAFPay.Enviroment : Swift.Equatable {}
 extension MAFPay.Enviroment : Swift.Hashable {}
 extension MAFPay.Enviroment : Swift.RawRepresentable {}
+extension MAFPay.CardError : Swift.Equatable {}
 extension MAFPay.CardError : Swift.Hashable {}
+extension MAFPay.ItemType : Swift.Equatable {}
 extension MAFPay.ItemType : Swift.Hashable {}
 extension MAFPay.ItemType : Swift.RawRepresentable {}
+extension MAFPay.IconTextFieldPosition : Swift.Equatable {}
 extension MAFPay.IconTextFieldPosition : Swift.Hashable {}
 extension MAFPay.IconTextFieldPosition : Swift.RawRepresentable {}
+extension MAFPay.ShowErrorMessage : Swift.Equatable {}
 extension MAFPay.ShowErrorMessage : Swift.Hashable {}
+extension MAFPay.CardBrand : Swift.Equatable {}
 extension MAFPay.CardBrand : Swift.Hashable {}
 extension MAFPay.CardBrand : Swift.RawRepresentable {}
