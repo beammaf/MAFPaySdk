@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MAFPay
 import AVFoundation
 import Alamofire
@@ -179,12 +179,15 @@ public typealias MAFPayResponse<T> = (Swift.Result<T, MAFPay.MAFPayError>) -> Sw
 public enum MAFPayError : Swift.Error {
   case timeOut(Swift.Error?)
   case noInternet(Swift.Error?)
-  case serverError(Swift.Error?)
+  case serverError(Swift.Error?, _: [Swift.String : Swift.String]? = nil)
   case internalError(Swift.Error?)
   public var errorDescription: Swift.String {
     get
   }
   public var errorCode: Swift.Int {
+    get
+  }
+  public var extraParams: [Swift.String : Swift.String]? {
     get
   }
 }
