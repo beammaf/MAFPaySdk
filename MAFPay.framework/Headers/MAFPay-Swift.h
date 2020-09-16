@@ -189,6 +189,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
+@import PassKit;
 @import UIKit;
 #endif
 
@@ -221,10 +222,32 @@ SWIFT_CLASS("_TtC6MAFPay8CardView")
 
 typedef SWIFT_ENUM(NSInteger, Enviroment, open) {
   EnviromentProduction = 0,
-  EnviromentStaging = 1,
-  EnviromentSandbox = 2,
-  EnviromentUat = 3,
+  EnviromentSandbox = 1,
+  EnviromentUat = 2,
 };
+
+
+SWIFT_CLASS("_TtC6MAFPay11MAFApplePay")
+@interface MAFApplePay : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class PKPaymentAuthorizationViewController;
+@class PKPayment;
+@class PKPaymentAuthorizationResult;
+@class PKShippingMethod;
+@class PKPaymentRequestShippingMethodUpdate;
+@class PKContact;
+@class PKPaymentRequestShippingContactUpdate;
+
+@interface MAFApplePay (SWIFT_EXTENSION(MAFPay)) <PKPaymentAuthorizationViewControllerDelegate>
+- (void)paymentAuthorizationViewControllerDidFinish:(PKPaymentAuthorizationViewController * _Nonnull)controller SWIFT_AVAILABILITY(ios,introduced=8.0);
+- (void)paymentAuthorizationViewController:(PKPaymentAuthorizationViewController * _Nonnull)controller didAuthorizePayment:(PKPayment * _Nonnull)payment handler:(void (^ _Nonnull)(PKPaymentAuthorizationResult * _Nonnull))completion SWIFT_AVAILABILITY(ios,introduced=11.0);
+- (void)paymentAuthorizationViewControllerWillAuthorizePayment:(PKPaymentAuthorizationViewController * _Nonnull)controller SWIFT_AVAILABILITY(ios,introduced=8.3);
+- (void)paymentAuthorizationViewController:(PKPaymentAuthorizationViewController * _Nonnull)controller didSelectShippingMethod:(PKShippingMethod * _Nonnull)shippingMethod handler:(void (^ _Nonnull)(PKPaymentRequestShippingMethodUpdate * _Nonnull))completion SWIFT_AVAILABILITY(ios,introduced=11.0);
+- (void)paymentAuthorizationViewController:(PKPaymentAuthorizationViewController * _Nonnull)controller didSelectShippingContact:(PKContact * _Nonnull)contact handler:(void (^ _Nonnull)(PKPaymentRequestShippingContactUpdate * _Nonnull))completion SWIFT_AVAILABILITY(ios,introduced=11.0);
+@end
 
 
 SWIFT_CLASS("_TtC6MAFPay6MAFPay")

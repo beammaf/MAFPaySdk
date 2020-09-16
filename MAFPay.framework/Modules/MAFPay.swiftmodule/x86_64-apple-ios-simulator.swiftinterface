@@ -5,6 +5,7 @@ import AVFoundation
 import Alamofire
 import Foundation
 @_exported import MAFPay
+import PassKit
 import Swift
 import UIKit
 import WebKit
@@ -167,7 +168,6 @@ public struct Card : Swift.Decodable {
 public typealias MAFPayResponse<T> = (Swift.Result<T, MAFPay.MAFPayError>) -> Swift.Void
 @objc public enum Enviroment : Swift.Int {
   case production
-  case staging
   case sandbox
   case uat
   public typealias RawValue = Swift.Int
@@ -272,8 +272,22 @@ extension PMTokanizeButtonDelegate {
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TokanizeButton : UIKit.UIButton {
   weak public var delegate: MAFPay.PMTokanizeButtonDelegate?
   public var accountHolderID: Swift.String?
+  @available(*, deprecated, message: "Please use verificationType, instead")
+  public var tokanizeWithVerify: Swift.Bool {
+    get
+    set
+  }
   public var verificationType: MAFPay.VerifyType
   @objc deinit
+}
+public struct ApplePayPayment : Swift.Decodable {
+  public var walletData: Swift.String?
+  public var walletSignature: Swift.String?
+  public var walletVersion: Swift.String?
+  public var walletHeader: Swift.String? {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
 }
 public typealias JSONDictionary = [Swift.String : Any]
 public protocol PMCardDelegate : AnyObject {
@@ -326,6 +340,29 @@ public enum CardBrand : Swift.String, Swift.CaseIterable {
 public protocol ScanCardViewControllerDelegate : AnyObject {
   func scanCardDidFailed(_ scanner: MAFPay.ScanCardViewController, didScanResult error: MAFPay.MAFPayError)
   func scanCardDidCancel(_ scanner: MAFPay.ScanCardViewController)
+}
+public protocol MAFApplePayDelegate : PassKit.PKPaymentAuthorizationViewControllerDelegate {
+  func applePayDidFailed(with error: MAFPay.MAFPayError)
+  func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didAuthorizePayment payment: MAFPay.ApplePayPayment, handler completion: @escaping (PassKit.PKPaymentAuthorizationResult) -> Swift.Void)
+}
+@objc open class MAFApplePay : ObjectiveC.NSObject {
+  public init(with delegate: MAFPay.MAFApplePayDelegate)
+  public func presentApplePayViewController(with paymentRequest: PassKit.PKPaymentRequest, on viewController: UIKit.UIViewController)
+  public class func createPaymentRequest(with appleMerchantId: Swift.String, country: Swift.String, currency: Swift.String) -> PassKit.PKPaymentRequest
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension MAFApplePay : PassKit.PKPaymentAuthorizationViewControllerDelegate {
+  @available(iOS 8.0, *)
+  @objc dynamic public func paymentAuthorizationViewControllerDidFinish(_ controller: PassKit.PKPaymentAuthorizationViewController)
+  @available(iOS 11.0, *)
+  @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didAuthorizePayment payment: PassKit.PKPayment, handler completion: @escaping (PassKit.PKPaymentAuthorizationResult) -> Swift.Void)
+  @available(iOS 8.3, *)
+  @objc dynamic public func paymentAuthorizationViewControllerWillAuthorizePayment(_ controller: PassKit.PKPaymentAuthorizationViewController)
+  @available(iOS 11.0, *)
+  @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didSelect shippingMethod: PassKit.PKShippingMethod, handler completion: @escaping (PassKit.PKPaymentRequestShippingMethodUpdate) -> Swift.Void)
+  @available(iOS 11.0, *)
+  @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didSelectShippingContact contact: PassKit.PKContact, handler completion: @escaping (PassKit.PKPaymentRequestShippingContactUpdate) -> Swift.Void)
 }
 @objc @_hasMissingDesignatedInitializers final public class ScanCardViewController : UIKit.UIViewController {
   weak final public var delegate: MAFPay.ScanCardViewControllerDelegate?
