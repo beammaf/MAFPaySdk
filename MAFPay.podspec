@@ -16,5 +16,6 @@ Pod::Spec.new do |s|
     s.requires_arc = true
     s.swift_version = '5.4.0'
     s.swift_versions = ['5.1', '5.2', '5.3']
+  s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)', 'CLANG_ENABLE_MODULES' => 'YES', 'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES' => 'YES' }
 
 end
