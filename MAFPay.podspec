@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = '11.0'
     s.ios.vendored_frameworks = 'MAFPay.framework'
+    s.preserve_paths = "MAFPay.framework"
     s.requires_arc = true
     s.swift_version = '5.4.0'
     s.swift_versions = ['5.1', '5.2', '5.3']
