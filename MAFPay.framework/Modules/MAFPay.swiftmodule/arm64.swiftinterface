@@ -262,15 +262,6 @@ public enum VerifyType : Swift.String {
     get
   }
 }
-public enum TabbyProductType : Swift.String {
-  case payLater
-  case installments
-  public typealias RawValue = Swift.String
-  public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
-    get
-  }
-}
 public protocol PMTokanizeButtonDelegate : AnyObject {
   func tokenizeButtonClicked()
   func tokenizeResponseReceived(_ result: Swift.Result<MAFPay.Token, MAFPay.MAFPayError>)
@@ -330,7 +321,6 @@ extension PMCardDelegate {
   public static func getCardList(completion: @escaping MAFPay.MAFPayResponse<[MAFPay.Token]>)
   public static func deleteCard(by cardToken: Swift.String, completion: @escaping MAFPay.MAFPayResponse<Swift.Void>)
   public static func confirmVerification(by amount: Swift.String, cardToken: Swift.String, completion: @escaping MAFPay.MAFPayResponse<Swift.Void>)
-  public static func tabbyCheckout(by tabbySession: MAFPay.TabbySession, viewController: UIKit.UIViewController, completion: @escaping MAFPay.MAFPayResponse<MAFPay.Tabby>)
   @objc deinit
   @objc override dynamic public init()
 }
@@ -347,11 +337,6 @@ public enum CardBrand : Swift.String, Swift.CaseIterable {
   public var rawValue: Swift.String {
     get
   }
-}
-public struct TabbySession {
-  public init(tabbySessionId: Swift.String, tabbyProductType: MAFPay.TabbyProductType, tabbyId: Swift.String, orderReference: Swift.String, transactionReference: Swift.String)
-}
-public struct Tabby {
 }
 public protocol ScanCardViewControllerDelegate : AnyObject {
   func scanCardDidFailed(_ scanner: MAFPay.ScanCardViewController, didScanResult error: MAFPay.MAFPayError)
@@ -410,9 +395,6 @@ extension MAFPay.ShowErrorMessage : Swift.Hashable {}
 extension MAFPay.VerifyType : Swift.Equatable {}
 extension MAFPay.VerifyType : Swift.Hashable {}
 extension MAFPay.VerifyType : Swift.RawRepresentable {}
-extension MAFPay.TabbyProductType : Swift.Equatable {}
-extension MAFPay.TabbyProductType : Swift.Hashable {}
-extension MAFPay.TabbyProductType : Swift.RawRepresentable {}
 extension MAFPay.CardBrand : Swift.Equatable {}
 extension MAFPay.CardBrand : Swift.Hashable {}
 extension MAFPay.CardBrand : Swift.RawRepresentable {}

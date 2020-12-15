@@ -298,8 +298,6 @@ SWIFT_CLASS("_TtC6MAFPay14TokanizeButton")
 
 
 
-
-
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
