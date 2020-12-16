@@ -168,7 +168,7 @@ public struct Card : Swift.Decodable {
 public typealias MAFPayResponse<T> = (Swift.Result<T, MAFPay.MAFPayError>) -> Swift.Void
 @objc public enum Enviroment : Swift.Int {
   case production
-  case staging
+  case sandbox
   case uat
   public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
