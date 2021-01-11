@@ -6,19 +6,19 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		ywxE9ywvD4MWrR2JU+IXnH8sP3c=
+		f18hEjf0VI1kgLVtq+L+YRFI04c=
 		</data>
 		<key>CVCNumberView.nib</key>
 		<data>
-		eHuAyFvab/izDOCHPm8MhodUs5s=
+		9k9b9tJDISjAZFyNxCaBgxXIuxo=
 		</data>
 		<key>CardNumberView.nib</key>
 		<data>
-		i50hyWFF5+2vwSOBK20XVGpBsfU=
+		WkTi6dd96dge+6RMCUp2rdXyArk=
 		</data>
 		<key>ExpiryDateView.nib</key>
 		<data>
-		qrVMWxgapIYFqgx5Rok81MKlG20=
+		cHGJZEBdx10pydVVYP4eqxyP4/M=
 		</data>
 		<key>Headers/CardIO.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/MAFPay-Swift.h</key>
 		<data>
-		PILbc/3ekdW355K49CbKm1fSbkM=
+		xTa/JNr01AuTPyLCfJhrS77KccM=
 		</data>
 		<key>Headers/MAFPay.h</key>
 		<data>
@@ -62,39 +62,39 @@
 		</data>
 		<key>HolderNameView.nib</key>
 		<data>
-		rwSPLxTOaZjEBW0H3OljeJhHvkk=
+		MiHrDTn28Apuh5USrR1QI5wjuYw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3SEVnKkT4xo2Mi4j5KN5vNy+/QA=
+		C/+pCgAAYFogeyzof0X3+YvT8ww=
 		</data>
 		<key>KeyboardAccessoryInputView.nib</key>
 		<data>
-		iu/V4eiFgEOgCCo4vxURUJUOPRI=
+		Uscbn6HjcFGGylw7hoxx0VBvk6A=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		p3cxEONm9/cY+JykoqPudrwFcG4=
+		F7fr21SvsTRc2zAciCrYQofG3OQ=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/cThs7mQ0Pq2Ryy8SO14ddm5E2o=
+		v01jmK05BKmxDguPN4EMkpX63QU=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KeSdYJH9t335tZDw4yA4IGfTAnU=
+		wwYbH8xftgkS8SyIeEQrcFF1ljw=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		p3cxEONm9/cY+JykoqPudrwFcG4=
+		F7fr21SvsTRc2zAciCrYQofG3OQ=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		/cThs7mQ0Pq2Ryy8SO14ddm5E2o=
+		v01jmK05BKmxDguPN4EMkpX63QU=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		KeSdYJH9t335tZDw4yA4IGfTAnU=
+		wwYbH8xftgkS8SyIeEQrcFF1ljw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -115,28 +115,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B99Oanau9xsS04dD0mIHmBVWdFtLIp7NPvbZZokwUw0=
+			ueRUSuLy5tTlus7JXPK6IM95g040EaJE56kcZRLf7U8=
 			</data>
 		</dict>
 		<key>CVCNumberView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Bw+CjiJgOjHEbBQ5ep7xXzN+GhJOuNlC38wI0s+ARE=
+			5Yy/ACOVVfWLidEqTtbxRBPSg0TWBnYQBoFwO+mAKiQ=
 			</data>
 		</dict>
 		<key>CardNumberView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gy5LhGrr/566BXARe3S94KGV5Ji9o0VTkV1I+5CnzxQ=
+			V7+fnopSu27BpxHhDplpsgmS9BAnojdruZBtm6Ug6HE=
 			</data>
 		</dict>
 		<key>ExpiryDateView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t9rTRVbo6B4rDOmqRkZRMU7N9wA/AWzpsH9kWRSGtp8=
+			Usj+BkxB4tt5rgVOnJzq6OzxpX6pXYfZzS1nMBmGNq0=
 			</data>
 		</dict>
 		<key>Headers/CardIO.h</key>
@@ -199,7 +199,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V9YdXY6gPrpPdDWEj6c3bBsN35mZjaV4pwug0v5iwUg=
+			GODEXD/BnG4xpFy0Gcqcn+EzbU5/xh3L/5lnVxen7Bg=
 			</data>
 		</dict>
 		<key>Headers/MAFPay.h</key>
@@ -213,56 +213,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1d8C4lSqC4R3Z7g04KD7RqgkcrKy/H9bHY5aCTgtpus=
+			tgkFrYqzdCxnUXVecW8Bey0g+dBd79MpYGOi2E3+kcA=
 			</data>
 		</dict>
 		<key>KeyboardAccessoryInputView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5qD3U8QAJ+A8M740BK1AGyUHzSLEtRYZxQiaBJcAf8Y=
+			9Ld+KmgiESGkupmjxg6NyXPAYYc2GEwGvmQy6ykL08c=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W4UNxmQcxYK8lqE8161HZjaBbYCM0dXS6JkFF+hVcNQ=
+			5PTWAlLushDYdPrdrXCaBnAhxcO6X8qeIMtsvG3p68A=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ul4rGtOKzeN6zlfmtQ6zXp6FJDBZl373WtXCkRFStWM=
+			n3m5p6Jd0cE9wz9cM8QP5F8xecKmzXuhyHydlZP7Anw=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7cjA+HOvsGh6SQYBoWf8nphNGzUvrJlz2Hr+Xtk2KJE=
+			Fcznx2m6TRgfBvsV6jH68XcDXqmTt1TwZEa9SlWiifs=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W4UNxmQcxYK8lqE8161HZjaBbYCM0dXS6JkFF+hVcNQ=
+			5PTWAlLushDYdPrdrXCaBnAhxcO6X8qeIMtsvG3p68A=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ul4rGtOKzeN6zlfmtQ6zXp6FJDBZl373WtXCkRFStWM=
+			n3m5p6Jd0cE9wz9cM8QP5F8xecKmzXuhyHydlZP7Anw=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7cjA+HOvsGh6SQYBoWf8nphNGzUvrJlz2Hr+Xtk2KJE=
+			Fcznx2m6TRgfBvsV6jH68XcDXqmTt1TwZEa9SlWiifs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
