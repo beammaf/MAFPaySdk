@@ -10,15 +10,15 @@
 		</data>
 		<key>CVCNumberView.nib</key>
 		<data>
-		CF8cnlBZiL6V4p/VmMBfcNUeOZE=
+		+Jey0NEWH93gBmG87wqTzLSo39Y=
 		</data>
 		<key>CardNumberView.nib</key>
 		<data>
-		OZpMI8JfBEJrMVILClc11pFteqo=
+		rmzt7jYDi/60gh6ku0g1mH8Ty70=
 		</data>
 		<key>ExpiryDateView.nib</key>
 		<data>
-		RkZaMFfYSYKsFDSOUfpQ9T6ZYRo=
+		CZQUrrULa/qaFHx6ORidfvnUjuk=
 		</data>
 		<key>Headers/CardIO.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>HolderNameView.nib</key>
 		<data>
-		4eTa5oBn7Gj7omoTAsnb28ZneIM=
+		SXGRocol4CWQJvLvuoxPPDawK/I=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>KeyboardAccessoryInputView.nib</key>
 		<data>
-		AQqszoUSwuxYfLqHLPr12dyKL/Q=
+		UL3RShUePreddpUw4DzEtfnZ9gs=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -122,21 +122,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nC2hvMlhFltkZyPF7wgs4VoSNN7JPk99R8lglXTVPMs=
+			M5aeh4ZProI6fNrN0BxX60nBjaKI+V0n54k6Q4P4DD8=
 			</data>
 		</dict>
 		<key>CardNumberView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IZYp64b99Y/EirG6fYNDLPMIMwPkz31RWloDTKi+6Xc=
+			S+FIyUVlcD01JHYAc4YxsqWLVhJ3U6wfXcf2cXcs5wc=
 			</data>
 		</dict>
 		<key>ExpiryDateView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0027fey9yif+dDwNmOAXLqwOan0t/L2ZYlfH0BrBk/I=
+			MVmssHG6qdI8fYOCMQuVr6OZghyJ5YmX+GEWrbDs0k0=
 			</data>
 		</dict>
 		<key>Headers/CardIO.h</key>
@@ -213,14 +213,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DsNpL/tHajDQvillyERL+PMKoXo8kI+3vxyTawXdyBo=
+			t9OR8+2w2alZQO2uzkhTY/jScewafIF/5R9aFI7B0I8=
 			</data>
 		</dict>
 		<key>KeyboardAccessoryInputView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UUQVUg+51gACrBzcKjl3hb7wFOYASjjvjHoiVJ91RH0=
+			M7+4bxaO8RnqZ0YpSOKb7iAIPBSrJGDaAAndxGDIDCo=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
