@@ -4,3 +4,8 @@ framework module MAFPay {
   export *
   module * { export * }
 }
+
+module MAFPay.Swift {
+    header "MAFPay-Swift.h"
+    requires objc
+}
