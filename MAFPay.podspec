@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
     s.version           = '1.0.0'
     s.summary           = 'MAF pay Provided by Beam UAE'
     s.homepage          = 'http://beamuae.app/'
-    s.dependency       'Alamofire'
+    s.dependency       'Alamofire', '=4.9.1'
 
     s.author            = { 'beamuae' => 'developer@beamuae.app' }
     s.license           = { :type => 'MIT', :file => 'LICENSE.md' }
