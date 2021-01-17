@@ -9,6 +9,13 @@ import PassKit
 import Swift
 import UIKit
 import WebKit
+public typealias MAFPayResponse<T> = (Swift.Result<T, MAFPay.MAFPayError>) -> Swift.Void
+public typealias TabbyResponse<T> = (MAFPay.TabbyResult) -> Swift.Void
+public enum TabbyResult {
+  case onComplete(MAFPay.Tabby)
+  case onClose(MAFPay.Tabby)
+  case onError(MAFPay.MAFPayError)
+}
 public struct Token : Swift.Codable {
   public let cardToken: Swift.String
   public let accountHolderId: Swift.String?
@@ -165,7 +172,6 @@ public struct Card : Swift.Decodable {
   }
   public init(from decoder: Swift.Decoder) throws
 }
-public typealias MAFPayResponse<T> = (Swift.Result<T, MAFPay.MAFPayError>) -> Swift.Void
 @objc public enum Enviroment : Swift.Int {
   case production
   case staging
@@ -231,7 +237,8 @@ public enum ItemType : Swift.String {
 public struct CardBrandImages {
   public var visa: UIKit.UIImage?
   public var mastercard: UIKit.UIImage?
-  public init(visa: UIKit.UIImage? = nil, mastercard: UIKit.UIImage? = nil)
+  public var amex: UIKit.UIImage?
+  public init(visa: UIKit.UIImage? = nil, mastercard: UIKit.UIImage? = nil, amex: UIKit.UIImage? = nil)
 }
 public enum IconTextFieldPosition : Swift.Int {
   case left
@@ -256,6 +263,15 @@ public enum VerifyType : Swift.String {
   case none
   case rndAmount
   case threeDs
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TabbyProductType : Swift.String {
+  case payLater
+  case installments
   public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
   public var rawValue: Swift.String {
@@ -321,12 +337,14 @@ extension PMCardDelegate {
   public static func getCardList(completion: @escaping MAFPay.MAFPayResponse<[MAFPay.Token]>)
   public static func deleteCard(by cardToken: Swift.String, completion: @escaping MAFPay.MAFPayResponse<Swift.Void>)
   public static func confirmVerification(by amount: Swift.String, cardToken: Swift.String, completion: @escaping MAFPay.MAFPayResponse<Swift.Void>)
+  public static func tabbyCheckout(by tabbySession: MAFPay.TabbySession, viewController: UIKit.UIViewController, completion: @escaping MAFPay.TabbyResponse<MAFPay.Tabby>)
   @objc deinit
   @objc override dynamic public init()
 }
 public enum CardBrand : Swift.String, Swift.CaseIterable {
   case visa
   case mastercard
+  case amex
   case none
   public typealias RawValue = Swift.String
   public typealias AllCases = [MAFPay.CardBrand]
@@ -337,6 +355,11 @@ public enum CardBrand : Swift.String, Swift.CaseIterable {
   public var rawValue: Swift.String {
     get
   }
+}
+public struct TabbySession {
+  public init(tabbySessionId: Swift.String, tabbyProductType: MAFPay.TabbyProductType, tabbyId: Swift.String)
+}
+public struct Tabby {
 }
 public protocol ScanCardViewControllerDelegate : AnyObject {
   func scanCardDidFailed(_ scanner: MAFPay.ScanCardViewController, didScanResult error: MAFPay.MAFPayError)
@@ -395,6 +418,9 @@ extension MAFPay.ShowErrorMessage : Swift.Hashable {}
 extension MAFPay.VerifyType : Swift.Equatable {}
 extension MAFPay.VerifyType : Swift.Hashable {}
 extension MAFPay.VerifyType : Swift.RawRepresentable {}
+extension MAFPay.TabbyProductType : Swift.Equatable {}
+extension MAFPay.TabbyProductType : Swift.Hashable {}
+extension MAFPay.TabbyProductType : Swift.RawRepresentable {}
 extension MAFPay.CardBrand : Swift.Equatable {}
 extension MAFPay.CardBrand : Swift.Hashable {}
 extension MAFPay.CardBrand : Swift.RawRepresentable {}
