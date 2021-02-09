@@ -19,7 +19,7 @@ public enum TabbyResult {
 public struct Token : Swift.Codable {
   public let cardToken: Swift.String
   public let accountHolderId: Swift.String?
-  public let card: Token.Card?
+  public var card: Token.Card?
   public struct Card : Swift.Codable {
     public let cardBrand: Swift.String?
     public let cardType: Swift.String?
@@ -27,7 +27,7 @@ public struct Token : Swift.Codable {
     public let maskedCardNumber: Swift.String?
     public let expiryMonth: Swift.String?
     public let expiryYear: Swift.String?
-    public let status: Swift.String?
+    public var status: Swift.String?
     public let cardHolderName: Swift.String?
     public init(from decoder: Swift.Decoder) throws
     public func encode(to encoder: Swift.Encoder) throws
