@@ -6,19 +6,19 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		wLs0JKDSWnCAqjIz5EOaamY9Tr8=
+		i9H6lJQvxFNAW1Yxju3kf6N/19M=
 		</data>
 		<key>CVCNumberView.nib</key>
 		<data>
-		z1n1oJvmyU5GK0wdVJjxNfcYPTU=
+		88iQ4PSGTRVa4Arvqnn+OtwHVd4=
 		</data>
 		<key>CardNumberView.nib</key>
 		<data>
-		Nd6WWaoiApKwlXZQSxqFXfiosII=
+		mj5/H3k1a+nLsgJdnvH5HkaPkmE=
 		</data>
 		<key>ExpiryDateView.nib</key>
 		<data>
-		E8gr03Lmis2iSzGQPqFx7F8z3sY=
+		EFU7SuliSD37LcW+qQ4Cos8NA38=
 		</data>
 		<key>Headers/CardIO.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>HolderNameView.nib</key>
 		<data>
-		RQD3uUWzdzfOtpvll52XOoQJUlI=
+		oT7adPaw1L43e6pYIc7FxfRV/Ig=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>KeyboardAccessoryInputView.nib</key>
 		<data>
-		iTB9aT6zjSA7AyxnbCzayYv+ED8=
+		kzCM4+Q1oS9lXCMUb00qtJdxejE=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -131,28 +131,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0txIsSQjw7m/TtXZlQ8Sp+ntHwpCXKJe2NKtTUU7wdA=
+			tVyupHXpPWw0/ZZqrxgtn+Blm7Jgtpw5Tilt/GXyOdA=
 			</data>
 		</dict>
 		<key>CVCNumberView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NO7xUGo9kg+3Hmysb0yyKO0Ekl5pQGNtWkdEJUMadrY=
+			9P+tGCs3C/Ei3hMZ1JTeulE3dizQ0HfbqZLUzB1GogE=
 			</data>
 		</dict>
 		<key>CardNumberView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6lB/9NeKFYPaUFZ6yhMpc8Xa9JIgT9moKnmgA+XObjA=
+			wyR7w2kkLjx3LEcQy+su3nB/0a0f/EcW4xlONU/zCrg=
 			</data>
 		</dict>
 		<key>ExpiryDateView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kmoMJg9gR4MSo4B0RUwMuI5NO1p5tTwbxukOYBD6cYE=
+			B5dcj/7ZMCKbAwPk6NBoNxks3SJweWmM1340n9dFICc=
 			</data>
 		</dict>
 		<key>Headers/CardIO.h</key>
@@ -229,14 +229,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o5ui0eCqeXZxTjOly1+lmvGdQIj6u94/JgS5o2XqZk8=
+			CWdjnk1/vSFKgUQDWAORd57xDU36llB47f0iDehbcXo=
 			</data>
 		</dict>
 		<key>KeyboardAccessoryInputView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hD0e4sh+UODuY5nczjtNhAge18vo1m3fFT1urRcVtb0=
+			aNDCuGdwvRacYURhj9hbRXRw/0B6lMroenMPoXa9cKE=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
