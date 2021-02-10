@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
     s.version           = '1.0.5'
     s.summary           = 'MAF pay Provided by Beam UAE'
     s.homepage          = 'http://beamuae.app/'
-    s.dependency       'Alamofire', '=4.9.1'
+    s.dependency       'Alamofire', '=5.4.1'
 
     s.author            = { 'beamuae' => 'developer@beamuae.app' }
     s.license           = { :type => 'MIT', :file => 'LICENSE.md' }
@@ -12,8 +12,7 @@ Pod::Spec.new do |s|
     s.source            = { :git => 'https://github.com/beammaf/MAFPaySdk.git',:tag => s.version}
 
     s.ios.deployment_target = '11.0'
-    s.ios.vendored_frameworks = 'MAFPay.framework'
+    s.ios.vendored_frameworks = 'MAFPay.xcframework'
     s.requires_arc = true
     s.swift_version = '5.0'
-
 end
