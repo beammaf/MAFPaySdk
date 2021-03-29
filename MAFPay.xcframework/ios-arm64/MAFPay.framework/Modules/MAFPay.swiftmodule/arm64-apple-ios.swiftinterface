@@ -305,6 +305,9 @@ public struct ApplePayPayment : Swift.Decodable {
   }
   public init(from decoder: Swift.Decoder) throws
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CVCHintButton : UIKit.UIButton {
+  @objc deinit
+}
 public typealias JSONDictionary = [Swift.String : Any]
 public protocol PMCardDelegate : AnyObject {
   func allItemsValidation(_ cardError: CardError?)
