@@ -6,23 +6,23 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		PLUR49JzVgd3wsoL9rySrPnFJMc=
+		ZwYa1wWL2guHsA0jnlWvGch7DG8=
 		</data>
 		<key>CVCHintMessageView.nib</key>
 		<data>
-		C6agvKMH+0SRTdsplCwwem9Dd2Y=
+		BgTp0X7w6uGrlQGwZkTjliaL8AU=
 		</data>
 		<key>CVCNumberView.nib</key>
 		<data>
-		JhAoVRKR2hKLHphZ37k05mCwBz4=
+		l23fg00wEmFvW1Bp1GmZepO+DRY=
 		</data>
 		<key>CardNumberView.nib</key>
 		<data>
-		nh/EqEkkqXJ9GJgCiDYfOGCUIg4=
+		iCBuz/+0ME6BrVf03iGql1rTXXQ=
 		</data>
 		<key>ExpiryDateView.nib</key>
 		<data>
-		6KK3DW1yO4OYXK5Cam2wRFJV0eQ=
+		kafF+TG++aw0kC2+JlAc3MD55mw=
 		</data>
 		<key>Headers/CardIO.h</key>
 		<data>
@@ -66,15 +66,15 @@
 		</data>
 		<key>HolderNameView.nib</key>
 		<data>
-		QGnVcVBrUe+HvRT2IdKDxWxcbb4=
+		z6o4Ga1YjghYn/LZ8gAeCDEYDuE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ynj/b0qVaTSfuN0B6RmA8RxoRoo=
+		ATYYlgGmWw4bxzQaixetLY9nU3w=
 		</data>
 		<key>KeyboardAccessoryInputView.nib</key>
 		<data>
-		aLU93Hd5UsaN2/vrIBIX5n++3yA=
+		TaUaK0U3NJqsg2+bt2ZqFuT19ko=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Q5Q8y5TH0VOm54sJlTarwO0Ur/8=
+		QFQi0X5qgbvsQc/UbvZRCOS0b3k=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Q5Q8y5TH0VOm54sJlTarwO0Ur/8=
+		QFQi0X5qgbvsQc/UbvZRCOS0b3k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>PayNowPayLaterView.nib</key>
 		<data>
-		tywM0maCdJV/v48mUGZ/EqavKNs=
+		Sj9tTgqkl1zX/bqxcNXjuEECX0w=
 		</data>
 		<key>alt.payment.mafpayments.com.cer</key>
 		<data>
@@ -139,35 +139,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dGiVWxbs2/R1mDVlM/T74lmh4s/skt1aafbXySDH4Q0=
+			pBddwk8D+h/sMEdiLuTudGPX+qUoJWIJcsmNERAXhEY=
 			</data>
 		</dict>
 		<key>CVCHintMessageView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WxFoO1oOy5PPYrSxqfHDAXL39tp51VmT06KxiNmg0xw=
+			IS88BZ/OrC1P683ipfkM12YcNvNP4bQCnNbDuTyxOuE=
 			</data>
 		</dict>
 		<key>CVCNumberView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xSBBzXJtyNdh9Zx0d8VGR7gZ29rPa/1fSXbtyFGTy9c=
+			m7K99K7mYAHZ9W5hPsNJ1LaeU4gRQ5v316bUC6zaE1A=
 			</data>
 		</dict>
 		<key>CardNumberView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rSBXXGVXH220/1tS/0l93L/KGXDa9J/nm3wsRKyv+MA=
+			uk7TNcMfjftDDzXwzjnNEexh0l5hb9uaC5qAFx5vhAg=
 			</data>
 		</dict>
 		<key>ExpiryDateView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dz0+cCH3PcFlETLoZKXUWWmTWIaw8rdXs4MO543/8bo=
+			zDkTJSQZYypwDkTK9DtzTnD6qRw6oNYn/vS/NjQOLr8=
 			</data>
 		</dict>
 		<key>Headers/CardIO.h</key>
@@ -244,14 +244,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/bqdufW3HCzbjTwBlDQdUq0MvLNZ3j4pFMz3jglzT4U=
+			BD2c5CgkPfNKbgwe2vGBEAPcGScCzzGHSkg5J8v3cP4=
 			</data>
 		</dict>
 		<key>KeyboardAccessoryInputView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MugiqFa6oxgRUTV1kGujZQnCz8s15hgWvj3eqMuPZb0=
+			QcNN/OblJ3Qwjw0tkfmsLHFjm6tis6F8bOm7pn3Iq2g=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -272,7 +272,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2z5+6nFMsU2sOyl9XYLdZxfWOuxQ1LNvqZt2hLfjpSI=
+			dqe9vETVVMLXKrdS6j6x0UHi8Smo2Tvwm/HHNgaHjTQ=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64.swiftdoc</key>
@@ -293,7 +293,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2z5+6nFMsU2sOyl9XYLdZxfWOuxQ1LNvqZt2hLfjpSI=
+			dqe9vETVVMLXKrdS6j6x0UHi8Smo2Tvwm/HHNgaHjTQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -307,7 +307,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dF8cjI7+hDTdQN8WG+yxF6lecYwC1eOrJV/dufs20as=
+			1PGGNECZfYhR0uiazwBMtCaDH5YHCrmNm9vZdtBexHg=
 			</data>
 		</dict>
 		<key>alt.payment.mafpayments.com.cer</key>
