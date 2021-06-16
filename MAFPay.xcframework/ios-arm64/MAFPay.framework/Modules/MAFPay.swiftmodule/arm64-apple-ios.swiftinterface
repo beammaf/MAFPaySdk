@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MAFPay
 import AVFoundation
 import Alamofire
@@ -9,12 +9,30 @@ import PassKit
 import Swift
 import UIKit
 import WebKit
+public struct SpotiiCheckout {
+  public init(spotiiToken: Swift.String, checkoutId: Swift.String)
+}
 public typealias MAFPayResponse<T> = (Swift.Result<T, MAFPayError>) -> Swift.Void
 public typealias TabbyResponse<T> = (TabbyResult) -> Swift.Void
+public typealias SpotiiResponse<T> = (SpotiiResult) -> Swift.Void
 public enum TabbyResult {
   case onComplete(Tabby)
   case onClose(Tabby)
   case onError(MAFPayError)
+}
+@frozen public enum SpotiiResult {
+  case onComplete(SpotiiCheckout)
+  case onClose(SpotiiCheckout)
+  case onError(MAFPayError)
+}
+@frozen public enum CheckoutCallback {
+  case onComplete(BuyNowPayLater)
+  case onClose(BuyNowPayLater)
+  case onError(MAFPayError)
+}
+public struct BuyNowPayLater : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public struct Token : Swift.Codable {
   public let cardToken: Swift.String
@@ -367,6 +385,146 @@ public struct Tabby {
 public protocol ScanCardViewControllerDelegate : AnyObject {
   func scanCardDidFailed(_ scanner: ScanCardViewController, didScanResult error: MAFPayError)
   func scanCardDidCancel(_ scanner: ScanCardViewController)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BuyNowPayLaterView : UIKit.UIView {
+  public var isGrouped: Swift.Bool {
+    get
+    set
+  }
+  public var borderColor: UIKit.UIColor {
+    get
+    set
+  }
+  public var borderWidth: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  public var borderCornerRadius: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  public var mainTitle: Swift.String? {
+    get
+    set
+  }
+  public var mainTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var mainTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  public var paymentOptionTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var paymentOptionTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  public var tabbyProductsTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var tabbyProductsTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  public var tabbyDescriptionTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var tabbyDescriptionTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  public var tabbyButtonTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var tabbyButtonBackground: UIKit.UIColor? {
+    get
+    set
+  }
+  public var tabbyButtonTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  public var mainErrorTitle: Swift.String? {
+    get
+    set
+  }
+  public var mainErrorTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var mainErrorTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  public var mainErrorDescriptionText: Swift.String? {
+    get
+    set
+  }
+  public var mainErrorDescriptionTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var mainErrorDescriptioneFont: UIKit.UIFont? {
+    get
+    set
+  }
+  public var tabbyErrorTitle: Swift.String? {
+    get
+    set
+  }
+  public var tabbyErrorTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var tabbyErrorTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  public var tabbyErrorDescriptionText: Swift.String? {
+    get
+    set
+  }
+  public var tabbyErrorDescriptionTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var tabbyErrorDescriptioneFont: UIKit.UIFont? {
+    get
+    set
+  }
+  public var spotiiErrorTitle: Swift.String? {
+    get
+    set
+  }
+  public var spotiiErrorTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var spotiiErrorTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  public var spotiiErrorDescriptionText: Swift.String? {
+    get
+    set
+  }
+  public var spotiiErrorDescriptionTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var spotiiErrorDescriptioneFont: UIKit.UIFont? {
+    get
+    set
+  }
+  public func setup(_ checkoutToken: Swift.String, viewController: UIKit.UIViewController, completion: @escaping (CheckoutCallback) -> Swift.Void)
+  @objc deinit
 }
 public protocol MAFApplePayDelegate : PassKit.PKPaymentAuthorizationViewControllerDelegate {
   func applePayDidFailed(with error: MAFPayError)
