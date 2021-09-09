@@ -14,12 +14,9 @@ Pod::Spec.new do |s|
     s.module_name       = 'MAFPay'
     s.swift_version = '5.0'
     s.requires_arc = true
+    s.ios.preserve_paths = 'MAFPay.xcframework'
+    s.ios.vendored_frameworks = 'MAFPay.xcframework'
 
-    s.default_subspec     = 'Core'
-
-    s.subspec 'Core' do |core|
-        core.preserve_paths      = 'MAFPay.xcframework'
-        core.vendored_frameworks = 'MAFPay.xcframework'
-    end
+ 
     s.ios.deployment_target = '11.0'
 end
