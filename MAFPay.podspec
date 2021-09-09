@@ -4,7 +4,8 @@ Pod::Spec.new do |s|
     s.summary           = 'MAF pay Provided by Beam UAE'
     s.homepage          = 'http://beamuae.app/'
     s.dependency       'Alamofire', '=5.4.1'
-    s.xcconfig         = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/MAFPay/**"' }
+    s.xcconfig         = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/MAFPay/**"' ,
+                            'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
 
     s.author            = { 'beamuae' => 'developer@beamuae.app' }
     s.license           = { :type => 'MIT', :file => 'LICENSE.md' }
