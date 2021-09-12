@@ -204,7 +204,7 @@ public struct Card : Swift.Decodable {
 public enum MAFPayError : Swift.Error {
   case timeOut(Swift.Error?)
   case noInternet(Swift.Error?)
-  case serverError(Swift.Error?, _: [Swift.String : Swift.String]? = nil)
+  case serverError(Swift.Error?, _: [Swift.String : Any]? = nil)
   case internalError(Swift.Error?)
   public var errorDescription: Swift.String {
     get
@@ -212,7 +212,7 @@ public enum MAFPayError : Swift.Error {
   public var errorCode: Swift.Int {
     get
   }
-  public var extraParams: [Swift.String : Swift.String]? {
+  public var extraParams: [Swift.String : Any]? {
     get
   }
 }
