@@ -15,6 +15,7 @@ public struct SpotiiCheckout {
 public typealias MAFPayResponse<T> = (Swift.Result<T, MAFPayError>) -> Swift.Void
 public typealias TabbyResponse<T> = (TabbyResult) -> Swift.Void
 public typealias SpotiiResponse<T> = (SpotiiResult) -> Swift.Void
+public typealias TamaraResponse<T> = (TamaraResult) -> Swift.Void
 public enum TabbyResult {
   case onComplete(Tabby)
   case onClose(Tabby)
@@ -28,6 +29,11 @@ public enum TabbyResult {
 @frozen public enum CheckoutCallback {
   case onComplete(BuyNowPayLater)
   case onClose(BuyNowPayLater)
+  case onError(MAFPayError)
+}
+@frozen public enum TamaraResult {
+  case onComplete(TamaraCheckout)
+  case onClose(TamaraCheckout)
   case onError(MAFPayError)
 }
 public struct BuyNowPayLater : Swift.Codable {
@@ -296,6 +302,18 @@ public enum TabbyProductType : Swift.String {
     get
   }
 }
+public enum TamaraProductType : Swift.String {
+  case payLater
+  case installments
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct TamaraCheckout {
+  public init(url: Swift.String, orderId: Swift.String)
+}
 public protocol PMTokanizeButtonDelegate : AnyObject {
   func tokenizeButtonClicked()
   func tokenizeResponseReceived(_ result: Swift.Result<Token, MAFPayError>)
@@ -362,30 +380,6 @@ extension PMCardDelegate {
   @objc deinit
   @objc override dynamic public init()
 }
-public enum CardBrand : Swift.String, Swift.CaseIterable {
-  case visa
-  case mastercard
-  case amex
-  case none
-  public typealias RawValue = Swift.String
-  public typealias AllCases = [CardBrand]
-  public static var allCases: [CardBrand] {
-    get
-  }
-  public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct TabbySession {
-  public init(tabbySessionId: Swift.String, tabbyProductType: TabbyProductType, tabbyId: Swift.String)
-}
-public struct Tabby {
-}
-public protocol ScanCardViewControllerDelegate : AnyObject {
-  func scanCardDidFailed(_ scanner: ScanCardViewController, didScanResult error: MAFPayError)
-  func scanCardDidCancel(_ scanner: ScanCardViewController)
-}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BuyNowPayLaterView : UIKit.UIView {
   public var isGrouped: Swift.Bool {
     get
@@ -431,6 +425,14 @@ public protocol ScanCardViewControllerDelegate : AnyObject {
     get
     set
   }
+  public var tamaraProductsTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var tamaraProductsTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
   public var tabbyDescriptionTitleTextColor: UIKit.UIColor? {
     get
     set
@@ -448,6 +450,26 @@ public protocol ScanCardViewControllerDelegate : AnyObject {
     set
   }
   public var tabbyButtonTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  public var tamaraDescriptionTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var tamaraDescriptionTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  public var tamaraButtonTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var tamaraButtonBackground: UIKit.UIColor? {
+    get
+    set
+  }
+  public var tamaraButtonTitleFont: UIKit.UIFont? {
     get
     set
   }
@@ -523,8 +545,56 @@ public protocol ScanCardViewControllerDelegate : AnyObject {
     get
     set
   }
+  public var tamaraErrorTitle: Swift.String? {
+    get
+    set
+  }
+  public var tamaraErrorTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var tamaraErrorTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  public var tamaraErrorDescriptionText: Swift.String? {
+    get
+    set
+  }
+  public var tamaraErrorDescriptionTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  public var tamaraErrorDescriptioneFont: UIKit.UIFont? {
+    get
+    set
+  }
   public func setup(_ checkoutToken: Swift.String, viewController: UIKit.UIViewController, completion: @escaping (CheckoutCallback) -> Swift.Void)
   @objc deinit
+}
+public enum CardBrand : Swift.String, Swift.CaseIterable {
+  case visa
+  case mastercard
+  case amex
+  case none
+  public typealias RawValue = Swift.String
+  public typealias AllCases = [CardBrand]
+  public static var allCases: [CardBrand] {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct TabbySession {
+  public init(tabbySessionId: Swift.String, tabbyProductType: TabbyProductType, tabbyId: Swift.String)
+}
+public struct Tabby {
+}
+public protocol ScanCardViewControllerDelegate : AnyObject {
+  func scanCardDidFailed(_ scanner: ScanCardViewController, didScanResult error: MAFPayError)
+  func scanCardDidCancel(_ scanner: ScanCardViewController)
 }
 public protocol MAFApplePayDelegate : PassKit.PKPaymentAuthorizationViewControllerDelegate {
   func applePayDidFailed(with error: MAFPayError)
@@ -582,6 +652,9 @@ extension VerifyType : Swift.RawRepresentable {}
 extension TabbyProductType : Swift.Equatable {}
 extension TabbyProductType : Swift.Hashable {}
 extension TabbyProductType : Swift.RawRepresentable {}
+extension TamaraProductType : Swift.Equatable {}
+extension TamaraProductType : Swift.Hashable {}
+extension TamaraProductType : Swift.RawRepresentable {}
 extension CardBrand : Swift.Equatable {}
 extension CardBrand : Swift.Hashable {}
 extension CardBrand : Swift.RawRepresentable {}
