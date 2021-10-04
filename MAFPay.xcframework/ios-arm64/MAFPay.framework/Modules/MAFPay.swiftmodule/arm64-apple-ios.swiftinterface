@@ -565,6 +565,10 @@ extension PMCardDelegate {
     get
     set
   }
+  public var setContentViewBackgroundColor: UIKit.UIColor? {
+    get
+    set
+  }
   public var tamaraErrorDescriptioneFont: UIKit.UIFont? {
     get
     set
