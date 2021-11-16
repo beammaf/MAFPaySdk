@@ -387,6 +387,10 @@ extension PMCardDelegate {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) public var hideTileView: Swift.Bool {
+    get
+    set
+  }
   @_Concurrency.MainActor(unsafe) public var borderColor: UIKit.UIColor {
     get
     set
