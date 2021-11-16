@@ -200,7 +200,6 @@ public struct Card : Swift.Decodable {
 }
 @objc public enum Enviroment : Swift.Int {
   case production
-  case staging
   case sandbox
   case uat
   public init?(rawValue: Swift.Int)

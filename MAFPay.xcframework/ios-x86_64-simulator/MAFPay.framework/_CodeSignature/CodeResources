@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/MAFPay-Swift.h</key>
 		<data>
-		eE6l4n9DxLIVXF0xg6TrGuL8sGg=
+		IZYApRCf7aN1lNOLYT5OaNCYfHM=
 		</data>
 		<key>Headers/MAFPay.h</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		rTFHebl1utTnUqzAtdqk1W+DzQ8=
+		BKDVVEpa+u5k2gwlwMiPG7nK0BE=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		M4I2nx6L9ZqY/Dm6qhZ5J3W9XmI=
+		JjCLDniVP784rS4SvYUBXgbKeNs=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -94,11 +94,11 @@
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		rTFHebl1utTnUqzAtdqk1W+DzQ8=
+		BKDVVEpa+u5k2gwlwMiPG7nK0BE=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		M4I2nx6L9ZqY/Dm6qhZ5J3W9XmI=
+		JjCLDniVP784rS4SvYUBXgbKeNs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -234,7 +234,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			leq9XRyia9Hf+nfG3/pr3onBgE4IK0EjV3M6QCDYiOU=
+			qxU4f/DUc6GYI2XYk/+St42fBunlN+QSSPykBKzCbe0=
 			</data>
 		</dict>
 		<key>Headers/MAFPay.h</key>
@@ -269,14 +269,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yDNJoioytjGUcQqu5nZ6Tr13lJpKWukqNiaNHWWZnIs=
+			M+KkwcP3HI4OHa5F1SsvYCNVIi8mgDbd348SmV1EDPI=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			51srNXSUyhnllcsp1QMQwzW0TUIuQIsnsfo72JKdzYo=
+			PhUR6gF3uStGDpOsT40GHRiCPCFodsFYR/5+ZH7V9Hc=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64.swiftdoc</key>
@@ -290,14 +290,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yDNJoioytjGUcQqu5nZ6Tr13lJpKWukqNiaNHWWZnIs=
+			M+KkwcP3HI4OHa5F1SsvYCNVIi8mgDbd348SmV1EDPI=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			51srNXSUyhnllcsp1QMQwzW0TUIuQIsnsfo72JKdzYo=
+			PhUR6gF3uStGDpOsT40GHRiCPCFodsFYR/5+ZH7V9Hc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
