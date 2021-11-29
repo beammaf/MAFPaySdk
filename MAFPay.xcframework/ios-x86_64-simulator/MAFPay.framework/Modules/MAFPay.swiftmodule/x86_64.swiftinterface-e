@@ -212,7 +212,7 @@ public enum MAFPayError : Swift.Error {
   case timeOut(Swift.Error?)
   case noInternet(Swift.Error?)
   case serverError(Swift.Error?, _: [Swift.String : Any]? = nil)
-  case internalError(Swift.Error?)
+  case internalError(Swift.Error?, _: [Swift.String : Any]? = nil)
   public var errorDescription: Swift.String {
     get
   }
@@ -378,6 +378,7 @@ extension MAFPay.PMCardDelegate {
   public static func deleteCard(by cardToken: Swift.String, completion: @escaping MAFPay.MAFPayResponse<Swift.Void>)
   public static func confirmVerification(by amount: Swift.String, cardToken: Swift.String, completion: @escaping MAFPay.MAFPayResponse<Swift.Void>)
   public static func tabbyCheckout(by tabbySession: MAFPay.TabbySession, viewController: UIKit.UIViewController, completion: @escaping MAFPay.TabbyResponse<MAFPay.Tabby>)
+  public static func processThreeDSAuth(with threeDsAuthId: Swift.String, viewController: UIKit.UIViewController, completion: @escaping MAFPay.MAFPayResponse<[Swift.String : Any]>)
   @objc override dynamic public init()
   @objc deinit
 }
