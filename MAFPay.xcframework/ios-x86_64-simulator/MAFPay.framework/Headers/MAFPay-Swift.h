@@ -189,6 +189,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreGraphics;
+@import Foundation;
 @import ObjectiveC;
 @import PassKit;
 @import UIKit;
@@ -212,13 +213,30 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+@class NSString;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC6MAFPay18BuyNowPayLaterView")
 @interface BuyNowPayLaterView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+- (void)awakeFromNib;
+- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+@class UITableView;
+@class NSNumber;
+@class NSIndexPath;
+@class UITableViewCell;
+
+@interface BuyNowPayLaterView (SWIFT_EXTENSION(MAFPay)) <UITableViewDataSource, UITableViewDelegate>
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
 
 
 SWIFT_CLASS("_TtC6MAFPay13CVCHintButton")
@@ -277,8 +295,6 @@ SWIFT_CLASS("_TtC6MAFPay10MirrorView")
 @end
 
 
-@class NSNumber;
-@class NSString;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC6MAFPay22ScanCardViewController")
@@ -304,6 +320,13 @@ SWIFT_CLASS("_TtC6MAFPay14TokanizeButton")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 @end
+
+
+
+
+
+
+
 
 
 
