@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MAFPay
 import AVFoundation
 import Alamofire
@@ -213,7 +213,7 @@ public enum MAFPayError : Swift.Error {
   case timeOut(Swift.Error?)
   case noInternet(Swift.Error?)
   case serverError(Swift.Error?, _: [Swift.String : Any]? = nil)
-  case internalError(Swift.Error?)
+  case internalError(Swift.Error?, _: [Swift.String : Any]? = nil)
   public var errorDescription: Swift.String {
     get
   }
@@ -344,6 +344,10 @@ public struct ApplePayPayment : Swift.Decodable {
   }
   public init(from decoder: Swift.Decoder) throws
 }
+extension BuyNowPayLaterView : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CVCHintButton : UIKit.UIButton {
   @objc deinit
 }
@@ -371,18 +375,7 @@ extension PMCardDelegate {
   public func textFieldDidEndEditing(_ itemType: ItemType)
   public func canMoveToNextItem(currentItem type: ItemType?)
 }
-@objc @_inheritsConvenienceInitializers public class MAFPay : ObjectiveC.NSObject {
-  public static var authorizedKey: Swift.String?
-  public static func setup(with enviroment: Enviroment, apiKey: Swift.String = "", merchantId: Swift.String? = nil, partnerId: Swift.String? = nil, isLoggerActive: Swift.Bool = false)
-  public static func tokenize(with verifyType: VerifyType = .none, card: Card, accountHolderId: Swift.String? = nil, viewController: UIKit.UIViewController? = nil, completion: @escaping MAFPayResponse<Token>)
-  public static func getCardList(completion: @escaping MAFPayResponse<[Token]>)
-  public static func deleteCard(by cardToken: Swift.String, completion: @escaping MAFPayResponse<Swift.Void>)
-  public static func confirmVerification(by amount: Swift.String, cardToken: Swift.String, completion: @escaping MAFPayResponse<Swift.Void>)
-  public static func tabbyCheckout(by tabbySession: TabbySession, viewController: UIKit.UIViewController, completion: @escaping TabbyResponse<Tabby>)
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BuyNowPayLaterView : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BuyNowPayLaterView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public var isGrouped: Swift.Bool {
     get
     set
@@ -579,7 +572,24 @@ extension PMCardDelegate {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc override dynamic public func awakeFromNib()
+  @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
   @_Concurrency.MainActor(unsafe) public func setup(_ checkoutToken: Swift.String, viewController: UIKit.UIViewController, completion: @escaping (CheckoutCallback) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class MAFPay : ObjectiveC.NSObject {
+  public static var authorizedKey: Swift.String?
+  public static func setup(with enviroment: Enviroment, apiKey: Swift.String = "", merchantId: Swift.String? = nil, partnerId: Swift.String? = nil, isLoggerActive: Swift.Bool = false)
+  public static func tokenize(with verifyType: VerifyType = .none, card: Card, accountHolderId: Swift.String? = nil, viewController: UIKit.UIViewController? = nil, completion: @escaping MAFPayResponse<Token>)
+  public static func getCardList(completion: @escaping MAFPayResponse<[Token]>)
+  public static func deleteCard(by cardToken: Swift.String, completion: @escaping MAFPayResponse<Swift.Void>)
+  public static func confirmVerification(by amount: Swift.String, cardToken: Swift.String, completion: @escaping MAFPayResponse<Swift.Void>)
+  public static func tabbyCheckout(by tabbySession: TabbySession, viewController: UIKit.UIViewController, completion: @escaping TabbyResponse<Tabby>)
+  public static func processThreeDSAuth(with threeDsAuthId: Swift.String, viewController: UIKit.UIViewController, completion: @escaping MAFPayResponse<[Swift.String : Any]>)
+  @objc override dynamic public init()
   @objc deinit
 }
 public enum CardBrand : Swift.String, Swift.CaseIterable {
@@ -602,9 +612,23 @@ public struct TabbySession {
 }
 public struct Tabby {
 }
-public protocol ScanCardViewControllerDelegate : AnyObject {
-  func scanCardDidFailed(_ scanner: ScanCardViewController, didScanResult error: MAFPayError)
-  func scanCardDidCancel(_ scanner: ScanCardViewController)
+extension UIKit.UITextView {
+  @_Concurrency.MainActor(unsafe) public var localizableProperty: Swift.String? {
+    get
+    set
+  }
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public var localizableProperty: Swift.String? {
+    get
+    set
+  }
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public var localizableProperty: Swift.String? {
+    get
+    set
+  }
 }
 public protocol MAFApplePayDelegate : PassKit.PKPaymentAuthorizationViewControllerDelegate {
   func applePayDidFailed(with error: MAFPayError)
@@ -627,19 +651,6 @@ extension MAFApplePay : PassKit.PKPaymentAuthorizationViewControllerDelegate {
   @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didSelect shippingMethod: PassKit.PKShippingMethod, handler completion: @escaping (PassKit.PKPaymentRequestShippingMethodUpdate) -> Swift.Void)
   @available(iOS 11.0, *)
   @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didSelectShippingContact contact: PassKit.PKContact, handler completion: @escaping (PassKit.PKPaymentRequestShippingContactUpdate) -> Swift.Void)
-}
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class ScanCardViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) weak final public var delegate: ScanCardViewControllerDelegate?
-  @_Concurrency.MainActor(unsafe) final public var guideColor: UIKit.UIColor
-  @_Concurrency.MainActor(unsafe) final public var scanInstructions: Swift.String?
-  @objc dynamic public init()
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
-  @objc deinit
-}
-extension ScanCardViewController : CardIOPaymentViewControllerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc final public func userDidCancel(_ paymentViewController: CardIOPaymentViewController!)
-  @_Concurrency.MainActor(unsafe) @objc final public func userDidProvide(_ cardInfo: CardIOCreditCardInfo!, in paymentViewController: CardIOPaymentViewController!)
 }
 extension Enviroment : Swift.Equatable {}
 extension Enviroment : Swift.Hashable {}
