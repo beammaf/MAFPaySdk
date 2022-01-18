@@ -611,10 +611,6 @@ public struct TabbySession {
 }
 public struct Tabby {
 }
-public protocol ScanCardViewControllerDelegate : AnyObject {
-  func scanCardDidFailed(_ scanner: ScanCardViewController, didScanResult error: MAFPayError)
-  func scanCardDidCancel(_ scanner: ScanCardViewController)
-}
 extension UIKit.UITextView {
   @_Concurrency.MainActor(unsafe) public var localizableProperty: Swift.String? {
     get
@@ -654,19 +650,6 @@ extension MAFApplePay : PassKit.PKPaymentAuthorizationViewControllerDelegate {
   @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didSelect shippingMethod: PassKit.PKShippingMethod, handler completion: @escaping (PassKit.PKPaymentRequestShippingMethodUpdate) -> Swift.Void)
   @available(iOS 11.0, *)
   @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didSelectShippingContact contact: PassKit.PKContact, handler completion: @escaping (PassKit.PKPaymentRequestShippingContactUpdate) -> Swift.Void)
-}
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class ScanCardViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) weak final public var delegate: ScanCardViewControllerDelegate?
-  @_Concurrency.MainActor(unsafe) final public var guideColor: UIKit.UIColor
-  @_Concurrency.MainActor(unsafe) final public var scanInstructions: Swift.String?
-  @objc dynamic public init()
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
-  @objc deinit
-}
-extension ScanCardViewController : CardIOPaymentViewControllerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc final public func userDidCancel(_ paymentViewController: CardIOPaymentViewController!)
-  @_Concurrency.MainActor(unsafe) @objc final public func userDidProvide(_ cardInfo: CardIOCreditCardInfo!, in paymentViewController: CardIOPaymentViewController!)
 }
 extension Enviroment : Swift.Equatable {}
 extension Enviroment : Swift.Hashable {}
