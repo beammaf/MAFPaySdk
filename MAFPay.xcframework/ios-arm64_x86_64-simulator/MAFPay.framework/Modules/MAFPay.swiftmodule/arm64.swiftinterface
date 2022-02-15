@@ -11,6 +11,15 @@ import Swift
 import UIKit
 import WebKit
 import _Concurrency
+public enum MAFPayLanguage : Swift.String {
+  case arabic
+  case english
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public struct SpotiiCheckout {
   public init(spotiiToken: Swift.String, checkoutId: Swift.String)
 }
@@ -580,6 +589,7 @@ extension PMCardDelegate {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class MAFPay : ObjectiveC.NSObject {
+  public static var language: MAFPayLanguage
   public static var authorizedKey: Swift.String?
   public static func setup(with enviroment: Enviroment, apiKey: Swift.String = "", merchantId: Swift.String? = nil, partnerId: Swift.String? = nil, isLoggerActive: Swift.Bool = false)
   public static func tokenize(with verifyType: VerifyType = .none, card: Card, accountHolderId: Swift.String? = nil, viewController: UIKit.UIViewController? = nil, completion: @escaping MAFPayResponse<Token>)
@@ -651,6 +661,9 @@ extension MAFApplePay : PassKit.PKPaymentAuthorizationViewControllerDelegate {
   @available(iOS 11.0, *)
   @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didSelectShippingContact contact: PassKit.PKContact, handler completion: @escaping (PassKit.PKPaymentRequestShippingContactUpdate) -> Swift.Void)
 }
+extension MAFPayLanguage : Swift.Equatable {}
+extension MAFPayLanguage : Swift.Hashable {}
+extension MAFPayLanguage : Swift.RawRepresentable {}
 extension Enviroment : Swift.Equatable {}
 extension Enviroment : Swift.Hashable {}
 extension Enviroment : Swift.RawRepresentable {}
