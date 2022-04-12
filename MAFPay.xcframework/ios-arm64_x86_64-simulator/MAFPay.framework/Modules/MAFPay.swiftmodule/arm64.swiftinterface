@@ -1,0 +1,853 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MAFPay
+import AVFoundation
+import Alamofire
+import CardinalMobile
+import Foundation
+@_exported import MAFPay
+import PassKit
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+public enum MAFPayLanguage : Swift.String {
+  case arabic
+  case english
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct SpotiiCheckout {
+  public init(spotiiToken: Swift.String, checkoutId: Swift.String)
+}
+public typealias MAFPayResponse<T> = (Swift.Result<T, MAFPayError>) -> Swift.Void
+public typealias TabbyResponse<T> = (TabbyResult) -> Swift.Void
+public typealias SpotiiResponse<T> = (SpotiiResult) -> Swift.Void
+public typealias TamaraResponse<T> = (TamaraResult) -> Swift.Void
+public enum TabbyResult {
+  case onComplete(Tabby)
+  case onClose(Tabby)
+  case onError(MAFPayError)
+}
+@frozen public enum SpotiiResult {
+  case onComplete(SpotiiCheckout)
+  case onClose(SpotiiCheckout)
+  case onError(MAFPayError)
+}
+@frozen public enum CheckoutCallback {
+  case onComplete(BuyNowPayLater)
+  case onClose(BuyNowPayLater)
+  case onError(MAFPayError)
+}
+@frozen public enum TamaraResult {
+  case onComplete(TamaraCheckout)
+  case onClose(TamaraCheckout)
+  case onError(MAFPayError)
+}
+public struct BuyNowPayLater : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Token : Swift.Codable {
+  public let cardToken: Swift.String
+  public let accountHolderId: Swift.String?
+  public var card: Token.Card?
+  public struct Card : Swift.Codable {
+    public let cardBrand: Swift.String?
+    public let cardType: Swift.String?
+    public let cardBin: Swift.String?
+    public let maskedCardNumber: Swift.String?
+    public let expiryMonth: Swift.String?
+    public let expiryYear: Swift.String?
+    public var status: Swift.String?
+    public let cardHolderName: Swift.String?
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct AccountHolder : Swift.Decodable {
+  public let accountHolderId: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+}
+@frozen public struct AnyCodable : Swift.Codable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+extension AnyCodable : _AnyEncodable, _AnyDecodable {
+}
+extension AnyCodable : Swift.Equatable {
+  public static func == (lhs: AnyCodable, rhs: AnyCodable) -> Swift.Bool
+}
+extension AnyCodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AnyCodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension AnyCodable : Swift.ExpressibleByNilLiteral {
+}
+extension AnyCodable : Swift.ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift.Bool
+}
+extension AnyCodable : Swift.ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift.Int
+}
+extension AnyCodable : Swift.ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift.Double
+}
+extension AnyCodable : Swift.ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+extension AnyCodable : Swift.ExpressibleByArrayLiteral {
+  public typealias ArrayLiteralElement = Any
+}
+extension AnyCodable : Swift.ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift.AnyHashable
+  public typealias Value = Any
+}
+extension AnyCodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class MirrorView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var text: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var placeholder: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var fontStyle: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textAlignment: UIKit.NSTextAlignment? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func setupView(as itemType: ItemType)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CardView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: PMCardDelegate?
+  @_Concurrency.MainActor(unsafe) public var itemType: ItemType? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var textFieldFontStyle: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var placeholderText: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var placeholderAttributedString: Foundation.NSAttributedString? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textFieldBorderStyle: UIKit.UITextField.BorderStyle? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textFieldBackgroundColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textFieldFontColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textFieldTintColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textFieldIsSecureTextEntry: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textFieldReturnKeyType: UIKit.UIReturnKeyType? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textFieldTextAlignment: UIKit.NSTextAlignment? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textFieldKeyboardType: UIKit.UIKeyboardType? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textFieldClearButtonMode: UIKit.UITextField.ViewMode? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var separatorCharacter: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var cardBrandImages: CardBrandImages? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var errorText: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var disableErrorMessage: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var showErrorMessageType: ShowErrorMessage {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textFieldErrorTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textFieldMarginLeft: CoreGraphics.CGFloat? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textFieldImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open func setupView(as itemType: ItemType, iconTextFieldPosition: IconTextFieldPosition? = nil)
+  @_Concurrency.MainActor(unsafe) open func setCornerRadius(_ radius: CoreGraphics.CGFloat, borderWidth: CoreGraphics.CGFloat? = nil, borderColor: UIKit.UIColor? = nil)
+  @_Concurrency.MainActor(unsafe) open func setDefaultStyle(inactive: ItemBorder? = nil, focused: ItemBorder? = nil, filled: ItemBorder? = nil, error: ItemBorder? = nil)
+  @_Concurrency.MainActor(unsafe) open func setHeaderTitle(_ text: Swift.String, fontStyle: UIKit.UIFont? = nil, fontColor: UIKit.UIColor? = nil, errorColor: UIKit.UIColor? = nil, textAlignment: UIKit.NSTextAlignment? = nil)
+  @_Concurrency.MainActor(unsafe) open func setUnderline(defaltColor: UIKit.UIColor? = nil, selectedColor: UIKit.UIColor? = nil)
+  @_Concurrency.MainActor(unsafe) open func setFooterError(_ text: Swift.String? = nil, fontStyle: UIKit.UIFont? = nil, fontColor: UIKit.UIColor? = nil, textAlignment: UIKit.NSTextAlignment? = nil)
+  @_Concurrency.MainActor(unsafe) open func setExpiryDatePicker(_ titleText: Swift.String? = nil, doneText: Swift.String? = nil, cancelText: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) open func textFieldBecomeFirstResponder()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct Card : Swift.Decodable {
+  public init(cardNumber: Swift.String, cvc: Swift.String, expiryMonth: Swift.Int, expiryYear: Swift.Int, holderName: Swift.String? = nil)
+  public var validateCard: CardError? {
+    get
+  }
+  public var validateCVC: CardError? {
+    get
+  }
+  public var validateExpiryDate: CardError? {
+    get
+  }
+  public var cardBrand: CardBrand {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc public enum Enviroment : Swift.Int {
+  case production
+  case sandbox
+  case uat
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum MAFPayError : Swift.Error {
+  case timeOut(Swift.Error?)
+  case noInternet(Swift.Error?)
+  case serverError(Swift.Error?, _: [Swift.String : Any]? = nil)
+  case internalError(Swift.Error?, _: [Swift.String : Any]? = nil)
+  public var errorDescription: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var extraParams: [Swift.String : Any]? {
+    get
+  }
+}
+public enum CardError : Swift.Error {
+  case invalidCardNumberLength
+  case invalidCardNumber
+  case invalidCVCLength
+  case invalidCVCFormat
+  case invalidExpiryMonth
+  case invalidExpiryYear
+  case invalidExpiryDate
+  case invalidCardHolderName
+  case unsupportedCard
+  case cardNumberIsEmpty
+  case cvcIsEmpty
+  case expiryDateIsEmpty
+  public var errorDescription: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public static func == (a: CardError, b: CardError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ItemType : Swift.String {
+  case cardNumber
+  case holderName
+  case cvcNumber
+  case expiryDate
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct CardBrandImages {
+  public var visa: UIKit.UIImage?
+  public var mastercard: UIKit.UIImage?
+  public var amex: UIKit.UIImage?
+  public init(visa: UIKit.UIImage? = nil, mastercard: UIKit.UIImage? = nil, amex: UIKit.UIImage? = nil)
+}
+public enum IconTextFieldPosition : Swift.Int {
+  case left
+  case right
+  case unspecified
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum ShowErrorMessage {
+  case whileTyping
+  case endTyping
+  public static func == (a: ShowErrorMessage, b: ShowErrorMessage) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum VerifyType : Swift.String {
+  case none
+  case rndAmount
+  case threeDs
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TabbyProductType : Swift.String {
+  case payLater
+  case installments
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TamaraProductType : Swift.String {
+  case payLater
+  case installments
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ItemBorder {
+  public let color: UIKit.UIColor?
+  public let width: CoreGraphics.CGFloat?
+  public let cornerRadius: CoreGraphics.CGFloat?
+  public init(color: UIKit.UIColor? = nil, width: CoreGraphics.CGFloat? = nil, cornerRadius: CoreGraphics.CGFloat? = nil)
+}
+public struct TamaraCheckout {
+  public init(url: Swift.String, orderId: Swift.String)
+}
+public protocol PMTokanizeButtonDelegate : AnyObject {
+  func tokenizeButtonClicked()
+  func tokenizeResponseReceived(_ result: Swift.Result<Token, MAFPayError>)
+  func threeDSWebViewDidOpen()
+}
+extension PMTokanizeButtonDelegate {
+  public func threeDSWebViewDidOpen()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class TokanizeButton : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: PMTokanizeButtonDelegate?
+  @_Concurrency.MainActor(unsafe) public var accountHolderID: Swift.String?
+  @available(*, deprecated, message: "Please use verificationType, instead")
+  @_Concurrency.MainActor(unsafe) public var tokanizeWithVerify: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var verificationType: VerifyType
+  @_Concurrency.MainActor(unsafe) public func setDefaultStyle()
+  @objc deinit
+}
+@frozen public struct AnyEncodable : Swift.Encodable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+@usableFromInline
+internal protocol _AnyEncodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension AnyEncodable : _AnyEncodable {
+}
+extension _AnyEncodable {
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension AnyEncodable : Swift.Equatable {
+  public static func == (lhs: AnyEncodable, rhs: AnyEncodable) -> Swift.Bool
+}
+extension AnyEncodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AnyEncodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension AnyEncodable : Swift.ExpressibleByNilLiteral {
+}
+extension AnyEncodable : Swift.ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift.Bool
+}
+extension AnyEncodable : Swift.ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift.Int
+}
+extension AnyEncodable : Swift.ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift.Double
+}
+extension AnyEncodable : Swift.ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+extension AnyEncodable : Swift.ExpressibleByStringInterpolation {
+  public typealias StringInterpolation = Swift.DefaultStringInterpolation
+}
+extension AnyEncodable : Swift.ExpressibleByArrayLiteral {
+  public typealias ArrayLiteralElement = Any
+}
+extension AnyEncodable : Swift.ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift.AnyHashable
+  public typealias Value = Any
+}
+extension _AnyEncodable {
+  public init(nilLiteral _: ())
+  public init(booleanLiteral value: Swift.Bool)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public init(extendedGraphemeClusterLiteral value: Swift.String)
+  public init(stringLiteral value: Swift.String)
+  public init(arrayLiteral elements: Any...)
+  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
+}
+extension AnyEncodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ApplePayPayment : Swift.Decodable {
+  public var walletData: Swift.String?
+  public var walletSignature: Swift.String?
+  public var walletVersion: Swift.String?
+  public var walletHeader: Swift.String? {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+@frozen public struct AnyDecodable : Swift.Decodable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+@usableFromInline
+internal protocol _AnyDecodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension AnyDecodable : _AnyDecodable {
+}
+extension _AnyDecodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension AnyDecodable : Swift.Equatable {
+  public static func == (lhs: AnyDecodable, rhs: AnyDecodable) -> Swift.Bool
+}
+extension AnyDecodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AnyDecodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension AnyDecodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension BuyNowPayLaterView : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CVCHintButton : UIKit.UIButton {
+  @objc deinit
+}
+public typealias JSONDictionary = [Swift.String : Any]
+public protocol PMCardDelegate : AnyObject {
+  func allItemsValidation(_ cardError: CardError?)
+  func cardNumberValidation(_ cardError: CardError?)
+  func cardExpiryDateValidation(_ cardError: CardError?)
+  func cardCVCNumberValidation(_ cardError: CardError?)
+  func cardHolderNameValidation(_ cardError: CardError?)
+  func cardNumberBrand(_ cardBrand: CardBrand?)
+  func textFieldDidReturnButtonTapped(_ itemType: ItemType)
+  func textFieldDidBeginEditing(_ itemType: ItemType)
+  func textFieldDidEndEditing(_ itemType: ItemType)
+  func canMoveToNextItem(currentItem type: ItemType?)
+}
+extension PMCardDelegate {
+  public func cardNumberValidation(_ cardError: CardError?)
+  public func cardExpiryDateValidation(_ cardError: CardError?)
+  public func cardCVCNumberValidation(_ cardError: CardError?)
+  public func cardHolderNameValidation(_ cardError: CardError?)
+  public func cardNumberBrand(_ cardBrand: CardBrand?)
+  public func textFieldDidReturnButtonTapped(_ itemType: ItemType)
+  public func textFieldDidBeginEditing(_ itemType: ItemType)
+  public func textFieldDidEndEditing(_ itemType: ItemType)
+  public func canMoveToNextItem(currentItem type: ItemType?)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BuyNowPayLaterView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var isGrouped: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var hideTileView: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var borderColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var borderWidth: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var borderCornerRadius: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var mainTitle: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var mainTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var mainTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var paymentOptionTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var paymentOptionTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tabbyProductsTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tabbyProductsTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tamaraProductsTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tamaraProductsTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tabbyDescriptionTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tabbyDescriptionTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tabbyButtonTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tabbyButtonBackground: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tabbyButtonTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tamaraDescriptionTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tamaraDescriptionTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tamaraButtonTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tamaraButtonBackground: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tamaraButtonTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var mainErrorTitle: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var mainErrorTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var mainErrorTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var mainErrorDescriptionText: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var mainErrorDescriptionTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var mainErrorDescriptioneFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tabbyErrorTitle: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tabbyErrorTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tabbyErrorTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tabbyErrorDescriptionText: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tabbyErrorDescriptionTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tabbyErrorDescriptioneFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var spotiiErrorTitle: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var spotiiErrorTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var spotiiErrorTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var spotiiErrorDescriptionText: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var spotiiErrorDescriptionTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var spotiiErrorDescriptioneFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tamaraErrorTitle: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tamaraErrorTitleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tamaraErrorTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tamaraErrorDescriptionText: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tamaraErrorDescriptionTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var setContentViewBackgroundColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var tamaraErrorDescriptioneFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc override dynamic public func awakeFromNib()
+  @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @_Concurrency.MainActor(unsafe) public func setup(_ checkoutToken: Swift.String, viewController: UIKit.UIViewController, completion: @escaping (CheckoutCallback) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class MAFPay : ObjectiveC.NSObject {
+  public static var language: MAFPayLanguage
+  public static var authorizedKey: Swift.String?
+  public static func setup(with enviroment: Enviroment, apiKey: Swift.String = "", merchantId: Swift.String? = nil, partnerId: Swift.String? = nil, isLoggerActive: Swift.Bool = false)
+  public static func tokenize(with verifyType: VerifyType = .none, card: Card, accountHolderId: Swift.String? = nil, viewController: UIKit.UIViewController? = nil, completion: @escaping MAFPayResponse<Token>)
+  public static func getCardList(completion: @escaping MAFPayResponse<[Token]>)
+  public static func deleteCard(by cardToken: Swift.String, completion: @escaping MAFPayResponse<Swift.Void>)
+  public static func confirmVerification(by amount: Swift.String, cardToken: Swift.String, completion: @escaping MAFPayResponse<Swift.Void>)
+  public static func tabbyCheckout(by tabbySession: TabbySession, viewController: UIKit.UIViewController, completion: @escaping TabbyResponse<Tabby>)
+  public static func processThreeDSAuth(with threeDsAuthId: Swift.String, viewController: UIKit.UIViewController, completion: @escaping MAFPayResponse<[Swift.String : Any]>)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum CardBrand : Swift.String, Swift.CaseIterable {
+  case visa
+  case mastercard
+  case amex
+  case none
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [CardBrand]
+  public typealias RawValue = Swift.String
+  public static var allCases: [CardBrand] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct TabbySession {
+  public init(tabbySessionId: Swift.String, tabbyProductType: TabbyProductType, tabbyId: Swift.String)
+}
+public struct Tabby {
+}
+extension UIKit.UITextView {
+  @_Concurrency.MainActor(unsafe) public var localizableProperty: Swift.String? {
+    get
+    set
+  }
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public var localizableProperty: Swift.String? {
+    get
+    set
+  }
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public var localizableProperty: Swift.String? {
+    get
+    set
+  }
+}
+public protocol MAFApplePayDelegate : PassKit.PKPaymentAuthorizationViewControllerDelegate {
+  func applePayDidFailed(with error: MAFPayError)
+  func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didAuthorizePayment payment: ApplePayPayment, handler completion: @escaping (PassKit.PKPaymentAuthorizationResult) -> Swift.Void)
+}
+@objc open class MAFApplePay : ObjectiveC.NSObject {
+  public init(with delegate: MAFApplePayDelegate)
+  public func presentApplePayViewController(with paymentRequest: PassKit.PKPaymentRequest, on viewController: UIKit.UIViewController)
+  public class func createPaymentRequest(with appleMerchantId: Swift.String, country: Swift.String, currency: Swift.String) -> PassKit.PKPaymentRequest
+  @objc deinit
+}
+extension MAFApplePay : PassKit.PKPaymentAuthorizationViewControllerDelegate {
+  @available(iOS 8.0, *)
+  @objc dynamic public func paymentAuthorizationViewControllerDidFinish(_ controller: PassKit.PKPaymentAuthorizationViewController)
+  @available(iOS 11.0, *)
+  @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didAuthorizePayment payment: PassKit.PKPayment, handler completion: @escaping (PassKit.PKPaymentAuthorizationResult) -> Swift.Void)
+  @available(iOS 8.3, *)
+  @objc dynamic public func paymentAuthorizationViewControllerWillAuthorizePayment(_ controller: PassKit.PKPaymentAuthorizationViewController)
+  @available(iOS 11.0, *)
+  @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didSelect shippingMethod: PassKit.PKShippingMethod, handler completion: @escaping (PassKit.PKPaymentRequestShippingMethodUpdate) -> Swift.Void)
+  @available(iOS 11.0, *)
+  @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didSelectShippingContact contact: PassKit.PKContact, handler completion: @escaping (PassKit.PKPaymentRequestShippingContactUpdate) -> Swift.Void)
+}
+extension MAFPayLanguage : Swift.Equatable {}
+extension MAFPayLanguage : Swift.Hashable {}
+extension MAFPayLanguage : Swift.RawRepresentable {}
+extension Enviroment : Swift.Equatable {}
+extension Enviroment : Swift.Hashable {}
+extension Enviroment : Swift.RawRepresentable {}
+extension CardError : Swift.Equatable {}
+extension CardError : Swift.Hashable {}
+extension ItemType : Swift.Equatable {}
+extension ItemType : Swift.Hashable {}
+extension ItemType : Swift.RawRepresentable {}
+extension IconTextFieldPosition : Swift.Equatable {}
+extension IconTextFieldPosition : Swift.Hashable {}
+extension IconTextFieldPosition : Swift.RawRepresentable {}
+extension ShowErrorMessage : Swift.Equatable {}
+extension ShowErrorMessage : Swift.Hashable {}
+extension VerifyType : Swift.Equatable {}
+extension VerifyType : Swift.Hashable {}
+extension VerifyType : Swift.RawRepresentable {}
+extension TabbyProductType : Swift.Equatable {}
+extension TabbyProductType : Swift.Hashable {}
+extension TabbyProductType : Swift.RawRepresentable {}
+extension TamaraProductType : Swift.Equatable {}
+extension TamaraProductType : Swift.Hashable {}
+extension TamaraProductType : Swift.RawRepresentable {}
+extension CardBrand : Swift.Equatable {}
+extension CardBrand : Swift.Hashable {}
+extension CardBrand : Swift.RawRepresentable {}
