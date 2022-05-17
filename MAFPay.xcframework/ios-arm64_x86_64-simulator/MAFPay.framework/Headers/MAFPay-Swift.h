@@ -260,8 +260,9 @@ SWIFT_CLASS("_TtC6MAFPay8CardView")
 
 typedef SWIFT_ENUM(NSInteger, Enviroment, open) {
   EnviromentProduction = 0,
-  EnviromentSandbox = 1,
-  EnviromentUat = 2,
+  EnviromentStaging = 1,
+  EnviromentSandbox = 2,
+  EnviromentUat = 3,
 };
 
 
@@ -589,8 +590,9 @@ SWIFT_CLASS("_TtC6MAFPay8CardView")
 
 typedef SWIFT_ENUM(NSInteger, Enviroment, open) {
   EnviromentProduction = 0,
-  EnviromentSandbox = 1,
-  EnviromentUat = 2,
+  EnviromentStaging = 1,
+  EnviromentSandbox = 2,
+  EnviromentUat = 3,
 };
 
 

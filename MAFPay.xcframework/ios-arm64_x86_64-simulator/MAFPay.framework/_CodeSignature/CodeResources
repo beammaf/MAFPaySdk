@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/MAFPay-Swift.h</key>
 		<data>
-		l0VrV8hWT6P5/TsimgaW9UsYunE=
+		iUIjCbWfNwBANGjgj1GpOsj2dUg=
 		</data>
 		<key>Headers/MAFPay.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+c1Rsi97+3vuQVlcDLgWQldNmqo=
+		uSMNgvO6IbWlcPSXE90bf5/Qttg=
 		</data>
 		<key>KeyboardAccessoryInputView.nib</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Bl/qyKksrtgDFLuxZZXCP6p3MxA=
+		XGyfaMjsHBZW67TpW24H+iToaBI=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qDEMFBbzHPLqwwbf0ufkU5ecuo4=
+		ny6Z6GwaPuR3A4XUmSqKukOqFyA=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -86,11 +86,11 @@
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/1uBMmwBbNVJ8EeC/BfWT5MgIxQ=
+		pGRBtP7ja/bNMpbk5ju4zhR05Eg=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ErZv0fL/Qi52uNotkmWLSbBhJCg=
+		vE4AcE6P1yMjsUgZ0JrGYYWtxtY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -220,7 +220,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S7qp8FLYaciL+I3Rd2AnQsftCW6vrHwuhe2UNDfd46I=
+			P520i+/LkONvCWX6ccRQBMMhWzz92B/1kt3NbkLil2Y=
 			</data>
 		</dict>
 		<key>Headers/MAFPay.h</key>
@@ -255,14 +255,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AhbY+hwUEf3GBc2cN0in5nKHzetpe6ZEyjf1Yp2Mhhw=
+			4AznOmYKQhN9ck+0RaANj2Sqxg6WGqJm3kmS1oJdru0=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E/Uy/ErZWU5EekbNuBEXHUcvZEISS1n2lAobjWX7ce4=
+			TdwLzXupeJL0aCXqAiH4RaVPGbm0/Zu+tLygPZ9m4O8=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -276,14 +276,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C7QRNYnxnJo0m3TF5Y22gpox4HKAwV7R19u8WNzRyj4=
+			Qq9w29ZkaQkoFFDwICD9U+GbRv3kZpKVQZ0WzQgfS1k=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			avvStwH4cpddsi4yf6+BovRkalXOuWjvPk/+vFD/+MM=
+			R9hUUl5apFDgtnq1frCDx/DJ80KiFQImNchCYIa1nxA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
