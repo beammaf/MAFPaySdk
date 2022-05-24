@@ -47,6 +47,11 @@ public enum TabbyResult {
   case onClose(TamaraCheckout)
   case onError(MAFPayError)
 }
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class RememberCardSwitch : UIKit.UISwitch {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
 public struct BuyNowPayLater : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
@@ -754,7 +759,7 @@ extension PMCardDelegate {
   public static var language: MAFPayLanguage
   public static var authorizedKey: Swift.String?
   public static func setup(with enviroment: Enviroment, apiKey: Swift.String = "", merchantId: Swift.String? = nil, partnerId: Swift.String? = nil, isLoggerActive: Swift.Bool = false)
-  public static func tokenize(with verifyType: VerifyType = .none, card: Card, accountHolderId: Swift.String? = nil, viewController: UIKit.UIViewController? = nil, completion: @escaping MAFPayResponse<Token>)
+  public static func tokenize(with verifyType: VerifyType = .none, card: Card, accountHolderId: Swift.String? = nil, rememberCard: Swift.Bool? = true, viewController: UIKit.UIViewController? = nil, completion: @escaping MAFPayResponse<Token>)
   public static func getCardList(completion: @escaping MAFPayResponse<[Token]>)
   public static func deleteCard(by cardToken: Swift.String, completion: @escaping MAFPayResponse<Swift.Void>)
   public static func confirmVerification(by amount: Swift.String, cardToken: Swift.String, completion: @escaping MAFPayResponse<Swift.Void>)
@@ -777,6 +782,41 @@ public enum CardBrand : Swift.String, Swift.CaseIterable {
   public var rawValue: Swift.String {
     get
   }
+}
+public enum RememberCardType {
+  case switchType
+  case checkboxType
+  public static func == (a: RememberCardType, b: RememberCardType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class RememberCardView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var text: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var fontStyle: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textAlignment: UIKit.NSTextAlignment? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var labelSpaceLeft: CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) public var rememberCardSwitch: RememberCardSwitch {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func setupAsCheckbox(_ isActive: Swift.Bool? = nil, selectedIcon: UIKit.UIImage? = nil, unselectedIcon: UIKit.UIImage? = nil)
+  @objc deinit
 }
 public struct TabbySession {
   public init(tabbySessionId: Swift.String, tabbyProductType: TabbyProductType, tabbyId: Swift.String)
@@ -851,3 +891,5 @@ extension TamaraProductType : Swift.RawRepresentable {}
 extension CardBrand : Swift.Equatable {}
 extension CardBrand : Swift.Hashable {}
 extension CardBrand : Swift.RawRepresentable {}
+extension RememberCardType : Swift.Equatable {}
+extension RememberCardType : Swift.Hashable {}
