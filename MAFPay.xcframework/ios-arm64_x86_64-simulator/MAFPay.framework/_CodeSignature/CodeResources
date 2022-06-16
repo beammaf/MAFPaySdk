@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		plCZJzaFdA7+3H/4zuTT1fdJX70=
+		MCI1rmvIzwA7vsvkEBpHQptFgsQ=
 		</data>
 		<key>BNPLLoadingView.nib</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xoLYkgQWgxWyKH2HCY0VuxxnML0=
+		asYrpG4fBPlYRMnVEci9ZcB8KJo=
 		</data>
 		<key>KeyboardAccessoryInputView.nib</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WoSLr/p80DZRY1hWqferBCZUSmA=
+		T/xHBxS1myHd6fqZYAkBsGvwgAE=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		G3hS7M6lmMlBkK+dtZO0dCVxuh4=
+		NfLIImf/QklB8VwdnBibRpeCKRk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -126,11 +126,11 @@
 		</data>
 		<key>payment.mafpayments.com.cer</key>
 		<data>
-		qQrgVuPkf0bkY7xc4Fg0RACzHQI=
+		WypXTkkQOYCQV1yzP7d0IRWCvyQ=
 		</data>
 		<key>payment.sandbox.mafpayments.com.cer</key>
 		<data>
-		hlR8HE7QV1N7fIZk7NO4j1IY1bI=
+		8iHBugSLTFL1f7qm4BSZTI6a0O0=
 		</data>
 		<key>payment.stg.mafpayments.com.cer</key>
 		<data>
@@ -143,7 +143,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			U89O6po1M7Sd+g8h0VBocv7H0Yv1A2HpYzDaV4IlYJs=
+			zo4HiniIY3Owm1rN0Li5mtZra0yvhRqD0PlOuDsGuQ8=
 			</data>
 		</dict>
 		<key>BNPLLoadingView.nib</key>
@@ -262,7 +262,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L1G17F7CyrdTY/9mDrdbZcvi8+EaxTHudHJp/g9ywHg=
+			4dg0I2ddYwW3GKsFhaB8clTpXsEy6QO74AL72X1Dfmw=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -283,7 +283,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CJF/83XbyFXhv10T+Z4K1rJMZyxPNGKV9ajRbrxqFKU=
+			gR89suj5PFY/HorOFilMfesV+kId2VoLu3MVwSfB4pw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -346,14 +346,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hUWhgRnGglJFw3U1boHmWwbRuDtdLCdoVR9y3jKvdLI=
+			GQoV6i+2OpSPUUmQBi5nupFLHePeVQWcjqWrRMOthYw=
 			</data>
 		</dict>
 		<key>payment.sandbox.mafpayments.com.cer</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/3YVk+vrltI0dGpCNq7zSaJMgXVjQMKG2Lkr3AC7HUg=
+			gFDLf8TXm9K+R1AtVtCFdnt9ujSv6ddJGjmsruDI2Fc=
 			</data>
 		</dict>
 		<key>payment.stg.mafpayments.com.cer</key>
