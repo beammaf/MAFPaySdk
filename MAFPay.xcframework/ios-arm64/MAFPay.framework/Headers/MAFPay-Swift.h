@@ -256,6 +256,22 @@ SWIFT_CLASS("_TtC6MAFPay8CardView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class TokanizeButton;
+@class RememberCardView;
+
+SWIFT_CLASS("_TtC6MAFPay12CheckoutView")
+@interface CheckoutView : UIView
+@property (nonatomic, weak) IBOutlet CardView * _Null_unspecified cardNumberView;
+@property (nonatomic, weak) IBOutlet CardView * _Null_unspecified holderNameView;
+@property (nonatomic, weak) IBOutlet CardView * _Null_unspecified cvcNumberView;
+@property (nonatomic, weak) IBOutlet CardView * _Null_unspecified expiryDateView;
+@property (nonatomic, weak) IBOutlet TokanizeButton * _Null_unspecified submitPaymentButton;
+@property (nonatomic, weak) IBOutlet RememberCardView * _Null_unspecified rememberCardView;
+@property (nonatomic, weak) IBOutlet CVCHintButton * _Null_unspecified whatsCVVButton;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 typedef SWIFT_ENUM(NSInteger, Enviroment, open) {
   EnviromentProduction = 0,
   EnviromentStaging = 1,

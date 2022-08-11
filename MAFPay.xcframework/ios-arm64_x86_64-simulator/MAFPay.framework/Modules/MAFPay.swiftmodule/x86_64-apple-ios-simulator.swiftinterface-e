@@ -5,6 +5,7 @@ import AVFoundation
 import Alamofire
 import CardinalMobile
 import Foundation
+import LeanSDK
 @_exported import MAFPay
 import PassKit
 import Swift
@@ -27,6 +28,8 @@ public typealias MAFPayResponse<T> = (Swift.Result<T, MAFPay.MAFPayError>) -> Sw
 public typealias TabbyResponse<T> = (MAFPay.TabbyResult) -> Swift.Void
 public typealias SpotiiResponse<T> = (MAFPay.SpotiiResult) -> Swift.Void
 public typealias TamaraResponse<T> = (MAFPay.TamaraResult) -> Swift.Void
+public typealias LinkBankResponse<T> = (MAFPay.LinkBankResult) -> Swift.Void
+public typealias PayBankingResponse = (MAFPay.PayBankingResult) -> Swift.Void
 public enum TabbyResult {
   case onComplete(MAFPay.Tabby)
   case onClose(MAFPay.Tabby)
@@ -45,6 +48,16 @@ public enum TabbyResult {
 @frozen public enum TamaraResult {
   case onComplete(MAFPay.TamaraCheckout)
   case onClose(MAFPay.TamaraCheckout)
+  case onError(MAFPay.MAFPayError)
+}
+@frozen public enum LinkBankResult {
+  case onComplete(_: Swift.String? = nil)
+  case onClose
+  case onError(MAFPay.MAFPayError)
+}
+@frozen public enum PayBankingResult {
+  case onComplete
+  case onClose
   case onError(MAFPay.MAFPayError)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class RememberCardSwitch : UIKit.UISwitch {
@@ -69,6 +82,7 @@ public struct Token : Swift.Codable {
     public let expiryYear: Swift.String?
     public var status: Swift.String?
     public let cardHolderName: Swift.String?
+    public let defaultCard: Swift.String?
     public func encode(to encoder: Swift.Encoder) throws
     public init(from decoder: Swift.Decoder) throws
   }
@@ -249,6 +263,15 @@ extension MAFPay.AnyCodable : Swift.Hashable {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+public struct Bank : Swift.Codable {
+  public let bankToken: Swift.String?
+  public let status: Swift.String?
+  public let bankName: Swift.String?
+  public let bankCountry: Swift.String?
+  public let bankLogo: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
 public struct Card : Swift.Decodable {
   public init(cardNumber: Swift.String, cvc: Swift.String, expiryMonth: Swift.Int, expiryYear: Swift.Int, holderName: Swift.String? = nil)
   public var validateCard: MAFPay.CardError? {
@@ -406,6 +429,7 @@ extension MAFPay.PMTokanizeButtonDelegate {
     set
   }
   @_Concurrency.MainActor(unsafe) public var verificationType: MAFPay.VerifyType
+  @_Concurrency.MainActor(unsafe) public var isDefaultCard: Swift.Bool
   @_Concurrency.MainActor(unsafe) public func setDefaultStyle()
   @objc deinit
 }
@@ -760,12 +784,16 @@ extension MAFPay.PMCardDelegate {
   public static var language: MAFPay.MAFPayLanguage
   public static var authorizedKey: Swift.String?
   public static func setup(with enviroment: MAFPay.Enviroment, apiKey: Swift.String = "", merchantId: Swift.String? = nil, partnerId: Swift.String? = nil, isLoggerActive: Swift.Bool = false)
-  public static func tokenize(with verifyType: MAFPay.VerifyType = .none, card: MAFPay.Card, accountHolderId: Swift.String? = nil, rememberCard: Swift.Bool? = true, viewController: UIKit.UIViewController? = nil, completion: @escaping MAFPay.MAFPayResponse<MAFPay.Token>)
+  public static func tokenize(with verifyType: MAFPay.VerifyType = .none, card: MAFPay.Card, accountHolderId: Swift.String? = nil, rememberCard: Swift.Bool? = true, isDefaultCard: Swift.Bool = false, viewController: UIKit.UIViewController? = nil, completion: @escaping MAFPay.MAFPayResponse<MAFPay.Token>)
+  public static func setCardAsDefault(by cardToken: Swift.String, accountHolderId: Swift.String? = nil, completion: @escaping MAFPay.MAFPayResponse<Swift.Void>)
   public static func getCardList(completion: @escaping MAFPay.MAFPayResponse<[MAFPay.Token]>)
   public static func deleteCard(by cardToken: Swift.String, completion: @escaping MAFPay.MAFPayResponse<Swift.Void>)
   public static func confirmVerification(by amount: Swift.String, cardToken: Swift.String, completion: @escaping MAFPay.MAFPayResponse<Swift.Void>)
   public static func tabbyCheckout(by tabbySession: MAFPay.TabbySession, viewController: UIKit.UIViewController, completion: @escaping MAFPay.TabbyResponse<MAFPay.Tabby>)
   public static func processThreeDSAuth(with threeDsAuthId: Swift.String, viewController: UIKit.UIViewController, completion: @escaping MAFPay.MAFPayResponse<[Swift.String : Any]>)
+  public static func linkBank(with accountHolderId: Swift.String?, bankToken: Swift.String? = nil, viewController: UIKit.UIViewController, completion: @escaping MAFPay.LinkBankResponse<Swift.String>)
+  public static func bankTransfer(with checkoutToken: Swift.String, bankToken: Swift.String, viewController: UIKit.UIViewController, completion: @escaping MAFPay.PayBankingResponse)
+  public static func getAccountHolderBanks(_ completion: @escaping MAFPay.MAFPayResponse<[MAFPay.Bank]>)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -824,6 +852,17 @@ public struct TabbySession {
 }
 public struct Tabby {
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class CheckoutView : UIKit.UIView {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var cardNumberView: MAFPay.CardView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var holderNameView: MAFPay.CardView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var cvcNumberView: MAFPay.CardView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var expiryDateView: MAFPay.CardView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var submitPaymentButton: MAFPay.TokanizeButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var rememberCardView: MAFPay.RememberCardView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var whatsCVVButton: MAFPay.CVCHintButton!
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
 extension UIKit.UITextView {
   @_Concurrency.MainActor(unsafe) public var localizableProperty: Swift.String? {
     get
@@ -867,6 +906,8 @@ extension MAFPay.MAFApplePay : PassKit.PKPaymentAuthorizationViewControllerDeleg
 extension MAFPay.MAFPayLanguage : Swift.Equatable {}
 extension MAFPay.MAFPayLanguage : Swift.Hashable {}
 extension MAFPay.MAFPayLanguage : Swift.RawRepresentable {}
+extension MAFPay.LinkBankResult : Swift.Sendable {}
+extension MAFPay.PayBankingResult : Swift.Sendable {}
 extension MAFPay.Enviroment : Swift.Equatable {}
 extension MAFPay.Enviroment : Swift.Hashable {}
 extension MAFPay.Enviroment : Swift.RawRepresentable {}
