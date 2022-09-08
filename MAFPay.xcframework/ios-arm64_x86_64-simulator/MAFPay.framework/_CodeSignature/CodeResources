@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		MCI1rmvIzwA7vsvkEBpHQptFgsQ=
+		KUA5Hlk156tORIppacSCnqtlfno=
 		</data>
 		<key>BNPLLoadingView.nib</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uaFADSr6arHEDyNIztlnjeO0VWs=
+		vJ5G7ESnjxGqkD9gSJvPsiziKnQ=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vueqYqiGoOFi7gBUBDR62oZUI/w=
+		cElg7ci19GLHKkpJsnDle37kXCA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -147,7 +147,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zo4HiniIY3Owm1rN0Li5mtZra0yvhRqD0PlOuDsGuQ8=
+			XjgGW1PwMo5hNaHfCihIlXrHwRXVNBlRDX9GOxMQ3O4=
 			</data>
 		</dict>
 		<key>BNPLLoadingView.nib</key>
@@ -273,7 +273,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1XI54m5ChKPpzIlDMm8OdI26npl1l89pnzwRaBvfIzQ=
+			AWTk/NVzcUCo6TiSYbm1qO6ECsm2uDd4M9quBleCxFA=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -294,7 +294,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2MnYna2z4LBu2cLuLgyfyKl/3/0/ezaDcImr9IdPqus=
+			jqeiuHU3/sCQQA6GMEl4ICPjZTBju3SJM3Cl1f7w4H8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
