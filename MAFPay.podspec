@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = '11.0'
     s.ios.vendored_frameworks = 'MAFPay.xcframework'
-    s.vendored_frameworks = 'ExternalFrameworks/CardinalMobile.xcframework', 'ExternalFrameworks/LeanSDK.xcframework'
+    s.vendored_frameworks = 'ExternalFrameworks/CardinalMobile.xcframework', 'ExternalFrameworks/LeanSDK.xcframework', 'ExternalFrameworks/BinancePaySDK.xcframework'
     s.requires_arc = true
     s.swift_version = '5.0'
 end
