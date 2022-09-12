@@ -219,9 +219,16 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class NSCoder;
+
+SWIFT_CLASS("_TtC6MAFPay16BinancePayButton")
+@interface BinancePayButton : UIButton
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 @class NSString;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC6MAFPay18BuyNowPayLaterView")
 @interface BuyNowPayLaterView : UIView
@@ -579,9 +586,16 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class NSCoder;
+
+SWIFT_CLASS("_TtC6MAFPay16BinancePayButton")
+@interface BinancePayButton : UIButton
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 @class NSString;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC6MAFPay18BuyNowPayLaterView")
 @interface BuyNowPayLaterView : UIView
