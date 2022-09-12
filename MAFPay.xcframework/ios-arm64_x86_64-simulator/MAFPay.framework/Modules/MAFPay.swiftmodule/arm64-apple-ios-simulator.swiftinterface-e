@@ -3,6 +3,7 @@
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MAFPay
 import AVFoundation
 import Alamofire
+import BinancePaySDK
 import CardinalMobile
 import Foundation
 import LeanSDK
@@ -30,6 +31,7 @@ public typealias SpotiiResponse<T> = (MAFPay.SpotiiResult) -> Swift.Void
 public typealias TamaraResponse<T> = (MAFPay.TamaraResult) -> Swift.Void
 public typealias LinkBankResponse<T> = (MAFPay.LinkBankResult) -> Swift.Void
 public typealias PayBankingResponse = (MAFPay.PayBankingResult) -> Swift.Void
+public typealias BinanceResponse = (MAFPay.BinanceResult) -> Swift.Void
 public enum TabbyResult {
   case onComplete(MAFPay.Tabby)
   case onClose(MAFPay.Tabby)
@@ -56,6 +58,11 @@ public enum TabbyResult {
   case onError(MAFPay.MAFPayError)
 }
 @frozen public enum PayBankingResult {
+  case onComplete
+  case onClose
+  case onError(MAFPay.MAFPayError)
+}
+@frozen public enum BinanceResult {
   case onComplete
   case onClose
   case onError(MAFPay.MAFPayError)
@@ -510,6 +517,25 @@ public struct ApplePayPayment : Swift.Decodable {
   }
   public init(from decoder: Swift.Decoder) throws
 }
+public protocol BinanceButtonDelegate : AnyObject {
+  func binanceButtonClicked()
+  func binanceButtonActivated()
+  func payWithBinanceResponse(_ result: MAFPay.BinanceResult)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class BinancePayButton : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public var checkoutToken: Swift.String {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var redirectScheme: Swift.String?
+  @_Concurrency.MainActor(unsafe) weak public var delegate: MAFPay.BinanceButtonDelegate? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func setDefaultStyle()
+  @objc deinit
+}
 @frozen public struct AnyDecodable : Swift.Decodable {
   public let value: Any
   public init<T>(_ value: T?)
@@ -793,6 +819,8 @@ extension MAFPay.PMCardDelegate {
   public static func linkBank(with accountHolderId: Swift.String?, bankToken: Swift.String? = nil, viewController: UIKit.UIViewController, completion: @escaping MAFPay.LinkBankResponse<Swift.String>)
   public static func bankTransfer(with checkoutToken: Swift.String, bankToken: Swift.String, viewController: UIKit.UIViewController, completion: @escaping MAFPay.PayBankingResponse)
   public static func getAccountHolderBanks(_ completion: @escaping MAFPay.MAFPayResponse<[MAFPay.Bank]>)
+  public static func payWithBinanceWallet(with checkoutToken: Swift.String, redirectScheme: Swift.String, containerView: UIKit.UIView, completion: @escaping MAFPay.BinanceResponse)
+  public static func handleBinance(openURL url: Foundation.URL) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
@@ -907,6 +935,7 @@ extension MAFPay.MAFPayLanguage : Swift.Hashable {}
 extension MAFPay.MAFPayLanguage : Swift.RawRepresentable {}
 extension MAFPay.LinkBankResult : Swift.Sendable {}
 extension MAFPay.PayBankingResult : Swift.Sendable {}
+extension MAFPay.BinanceResult : Swift.Sendable {}
 extension MAFPay.Enviroment : Swift.Equatable {}
 extension MAFPay.Enviroment : Swift.Hashable {}
 extension MAFPay.Enviroment : Swift.RawRepresentable {}
