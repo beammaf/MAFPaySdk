@@ -2,7 +2,6 @@
 // swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MAFPay
 import AVFoundation
-import Alamofire
 import BinancePaySDK
 import CardinalMobile
 import Foundation
@@ -931,6 +930,21 @@ extension MAFApplePay : PassKit.PKPaymentAuthorizationViewControllerDelegate {
   @available(iOS 11.0, *)
   @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didSelectShippingContact contact: PassKit.PKContact, handler completion: @escaping (PassKit.PKPaymentRequestShippingContactUpdate) -> Swift.Void)
 }
+public struct HTTPMethod : Swift.RawRepresentable, Swift.Equatable, Swift.Hashable {
+  public static let connect: HTTPMethod
+  public static let delete: HTTPMethod
+  public static let get: HTTPMethod
+  public static let head: HTTPMethod
+  public static let options: HTTPMethod
+  public static let patch: HTTPMethod
+  public static let post: HTTPMethod
+  public static let put: HTTPMethod
+  public static let trace: HTTPMethod
+  public let rawValue: Swift.String
+  public init(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+}
+public typealias Parameters = [Swift.String : Any]
 extension MAFPayLanguage : Swift.Equatable {}
 extension MAFPayLanguage : Swift.Hashable {}
 extension MAFPayLanguage : Swift.RawRepresentable {}
