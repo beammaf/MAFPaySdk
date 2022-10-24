@@ -436,6 +436,7 @@ extension MAFPay.PMTokanizeButtonDelegate {
   }
   @_Concurrency.MainActor(unsafe) public var verificationType: MAFPay.VerifyType
   @_Concurrency.MainActor(unsafe) public var isDefaultCard: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var isRecurring: Swift.Bool
   @_Concurrency.MainActor(unsafe) public func setDefaultStyle()
   @objc deinit
 }
@@ -809,7 +810,7 @@ extension MAFPay.PMCardDelegate {
   public static var language: MAFPay.MAFPayLanguage
   public static var authorizedKey: Swift.String?
   public static func setup(with enviroment: MAFPay.Enviroment, apiKey: Swift.String = "", merchantId: Swift.String? = nil, partnerId: Swift.String? = nil, isLoggerActive: Swift.Bool = false)
-  public static func tokenize(with verifyType: MAFPay.VerifyType = .none, card: MAFPay.Card, accountHolderId: Swift.String? = nil, rememberCard: Swift.Bool? = true, isDefaultCard: Swift.Bool = false, viewController: UIKit.UIViewController? = nil, completion: @escaping MAFPay.MAFPayResponse<MAFPay.Token>)
+  public static func tokenize(with verifyType: MAFPay.VerifyType = .none, card: MAFPay.Card, accountHolderId: Swift.String? = nil, rememberCard: Swift.Bool? = true, isDefaultCard: Swift.Bool = false, isRecurring: Swift.Bool = false, viewController: UIKit.UIViewController? = nil, completion: @escaping MAFPay.MAFPayResponse<MAFPay.Token>)
   public static func setCardAsDefault(by cardToken: Swift.String, accountHolderId: Swift.String? = nil, completion: @escaping MAFPay.MAFPayResponse<Swift.Void>)
   public static func getCardList(completion: @escaping MAFPay.MAFPayResponse<[MAFPay.Token]>)
   public static func deleteCard(by cardToken: Swift.String, completion: @escaping MAFPay.MAFPayResponse<Swift.Void>)
