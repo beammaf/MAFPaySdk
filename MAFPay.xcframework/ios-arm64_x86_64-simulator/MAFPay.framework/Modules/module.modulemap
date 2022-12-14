@@ -6,6 +6,6 @@ framework module MAFPay {
 }
 
 module MAFPay.Swift {
-    header "MAFPay-Swift.h"
-    requires objc
+  header "MAFPay-Swift.h"
+  requires objc
 }

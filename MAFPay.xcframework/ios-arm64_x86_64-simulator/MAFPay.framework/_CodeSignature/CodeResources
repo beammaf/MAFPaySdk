@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		/zkNeQkpbe7f2Od8eqImRKBCrXs=
+		iKRn24Qt9yL3xJelqyJpoVM9tgQ=
 		</data>
 		<key>BNPLLoadingView.nib</key>
 		<data>
-		u2X6p+dCzXHeneqhIT00C6HyD/Q=
+		MhCEAagd9QSBp5LM/E6u+AiYi74=
 		</data>
 		<key>BNPLMainErrorView.nib</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>BNPLPaymentOptionCell.nib</key>
 		<data>
-		UryKdywxXbbP6aVsi2/5rx4B3pk=
+		yMRyEatblEKHC4rDKfCffFbIYGI=
 		</data>
 		<key>BNPLTabbyPayView.nib</key>
 		<data>
@@ -30,31 +30,31 @@
 		</data>
 		<key>BuyNowPayLaterHeaderView.nib</key>
 		<data>
-		1YIZqR43zvkkfYAwIrrrufvnirY=
+		+XaL28y7P4uyIRE5pTXOuqsmp5g=
 		</data>
 		<key>CVCHintMessageView.nib</key>
 		<data>
-		zAW/599aEqn43Auh/UwgEOPrYKM=
+		h8FytBPI4tHJ3nQ/OJ4TQW6acgQ=
 		</data>
 		<key>CVCNumberView.nib</key>
 		<data>
-		f5tsgwd+F3FTijRUrw06aFybfEs=
+		oPdx3rHULe6X1itvGdtLLeOesOY=
 		</data>
 		<key>CardNumberView.nib</key>
 		<data>
-		yj3KGaRkIEFm8lBIMJJBYz8Kg9Q=
+		5g6DrQOOSdYqLLZsLhYh1JRCpdk=
 		</data>
 		<key>CheckoutView.nib</key>
 		<data>
-		LjanJAaQQGvbVmWzdRkRGaMVXes=
+		Ule/w2kHIOmxlr/JYu+KvzLMKS8=
 		</data>
 		<key>ExpiryDateView.nib</key>
 		<data>
-		wz8fl1Qn6bssA1P3b+OhIkJs0A8=
+		jBkQxyamGI9/1h3o8aFDUjdtd60=
 		</data>
 		<key>Headers/MAFPay-Swift.h</key>
 		<data>
-		YPtv+zTsMb4aSKc81Lo1IilxJMs=
+		9v+Ga+UQSMYG/3OS5umynKeiulE=
 		</data>
 		<key>Headers/MAFPay.h</key>
 		<data>
@@ -62,59 +62,75 @@
 		</data>
 		<key>HolderNameView.nib</key>
 		<data>
-		LngOyuar+u4+miw8e3V3jUWZ++s=
+		1wUvlTmUI17uMuwNavDuEMnTvSs=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		j9v/v6ZCdacsET00k0qq2p9pPvs=
+		/sM87pLbl0MYwJdczT8qu0OJuyc=
 		</data>
 		<key>KeyboardAccessoryInputView.nib</key>
 		<data>
-		41wKG5MKcg7ERBU7A4l50rOAjLw=
+		HyybBsRVrvSPBnRYA9L2bClLOaQ=
+		</data>
+		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		5wndB4c23SjGINjPbdyQoajur1k=
+		</data>
+		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		NsNPSbhmdeeVqxdavFP8DPE4ON0=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vKVx3Ar0/Kz1mpwWFjKJeglWAUU=
+		1H+ibM03mVMtNQoImpZfmAWGyQk=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3/UX3ygWBSuxhcmuftl2IRAFqkg=
+		NsNPSbhmdeeVqxdavFP8DPE4ON0=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		g4fHe8i4c8YAJMxrHGCKY0FcAJU=
+		XckbSGrc5nltiaJExjqAbLEEOLs=
+		</data>
+		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		5wndB4c23SjGINjPbdyQoajur1k=
+		</data>
+		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		WdMLcyd8tl9ENb7ePxm4z4cIMuI=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		QAWnsg2G9MwtocOtGABTGS1bUm4=
+		bhLXPcxl5SruY96bcGgBetaVql4=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qfRs8Olxq59nczV0HK2ikptS29E=
+		WdMLcyd8tl9ENb7ePxm4z4cIMuI=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nXSdU6g7l4wVpx95Dgag5uB0/es=
+		x3KCdpayRF4xlCyponiP4mSpKFw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		+R8tcz9rfQe1jko3ZTD4+b5HoUM=
+		Q0qtESZSz5slwTQBB/oD7gVU1CQ=
 		</data>
 		<key>SpotiiView.nib</key>
 		<data>
-		VjbsTUt433z4JBx3NCkc/75VhW8=
+		80X5bAy8OtPaaNgDTxTTHw5BlLU=
 		</data>
 		<key>TabbyView.nib</key>
 		<data>
-		WLqpwiQzuO01hHY9/b/IO/ww39E=
+		GJwB7khrEf8LiPFrSLh/iW6dB4c=
 		</data>
 		<key>TabbyWebInformationViewController.nib</key>
 		<data>
-		xRUZp0mih8eueNzG4QRQQ7nvqkY=
+		1Zb5pkY28x3ReOY0/Bnut3QQi3o=
 		</data>
 		<key>TamaraView.nib</key>
 		<data>
-		CewaD//ltqDRusL9RWSfznf0nbE=
+		amYo65UOzeu+6eTgqpf8IDiFT2w=
 		</data>
 		<key>alt.payment.mafpayments.com.cer</key>
 		<data>
@@ -147,14 +163,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LLR/6KnCOInZ3DIiTur46wexp/M+ZVT1xEVkEq6zuCw=
+			zc22U/nczkLyyiKQ+0PV/WwRLvKbGCfYO4hXypz2Fzw=
 			</data>
 		</dict>
 		<key>BNPLLoadingView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JPH4WFcFPcZEsDCxrRnuSjDWtiR/dqcB7q9rC6JABC8=
+			jRFdxnBfsD7nYJrFvhXvO/Pg80mYHcuZz7t4mDHOqAI=
 			</data>
 		</dict>
 		<key>BNPLMainErrorView.nib</key>
@@ -168,7 +184,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			asYleqwjt9S7xfmnWqrMgK0ZWbpOafRDf3CROhq7FTw=
+			TJ4eVsgEgKzFqk8Nqd+5htmWiL5HHmUti/3jO7ThL8w=
 			</data>
 		</dict>
 		<key>BNPLTabbyPayView.nib</key>
@@ -189,49 +205,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i4Hu7bXWbrgnmaa6bm2ZZEtqj8IPT38nitG8cEmb7QM=
+			9aY7bPt5VvhddlN/Al3FJpy9qYq1YuOhvRgw6pcfndM=
 			</data>
 		</dict>
 		<key>CVCHintMessageView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UTN20WPD/Qv19QkwjwUFY6jQrZHIuoIwlhQaeeGn7nA=
+			CJakU+9EEuDe4Yko6Ogx2Srs02GV9KVXky1y8ku/BSo=
 			</data>
 		</dict>
 		<key>CVCNumberView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1PVdlcTPKBrBLNBWA3CuPf39IG1YkYuKdVKiBBkBRlQ=
+			NcghGj8pyhcQuV66LlnoVUDYCsHXVR/llQtSJ9zdr8Y=
 			</data>
 		</dict>
 		<key>CardNumberView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aejBp+QHdlNOujMyf05rG5ybynTF2o8YCk+jg2C9U5s=
+			lp1tIHIXgep/4V4fHcczBGxkZGKY0Ce+BJFkb6Nh+Jg=
 			</data>
 		</dict>
 		<key>CheckoutView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m/AHcSaUKZN26rFw8vAIqR5f+OdHVKsuTtZS/9G7LxM=
+			g0juVrvYp2OwOH7x9uj1zlL4+g/UkF5kB9ODag40mZU=
 			</data>
 		</dict>
 		<key>ExpiryDateView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JIkbW5UN7EUrhUnZhBg7cx2M8YHPmmMSrqBu/Ut62dQ=
+			n86ZXHlCOzs7NwwHY4QrY/MWbQimIqsFzHqgxjMAbnA=
 			</data>
 		</dict>
 		<key>Headers/MAFPay-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HkKok92E+rnY5mxC4IwendzKHoNIJT+iWn/dLDmGniQ=
+			mrV76Tm51iLGLWGIehz1U/GSU7Io2MK1XM6GmpX3Cbs=
 			</data>
 		</dict>
 		<key>Headers/MAFPay.h</key>
@@ -245,91 +261,119 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kq5ROWe5StfBpfBGRS8rP0eSxc0p302EnegcKXqfwSA=
+			ws/hysyEVonsrb9VkfXn+Nyk2IOlPMtY5c0+gbmTaO8=
 			</data>
 		</dict>
 		<key>KeyboardAccessoryInputView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ta5c6DYefv8a56fXRiV32KOmf6lmaV+G/5BskT4qayw=
+			OgNSJWrr+Ah+ZJKJB51ZK+zLHnOJTPui37TS1c44+OE=
+			</data>
+		</dict>
+		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HafrpUAVhl49VPTLm692cYt5ncj6DwLvXGzjvZJ0AIk=
+			</data>
+		</dict>
+		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			H3ywfFIMcfGnWWB+28NqEk2mb+H1yPk8LQYXXRPPCVk=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			knekL3wR+q2j6saHgadrI+XZw6ihv3xJ8gAyKDJLGgA=
+			tmw5w5ATHN+RmlWeUZahlXi2BUTZqoCRs4cLTvcKmTU=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mOHvtmG1iHPfhHmRk18bWi6ZMmJnTjkgKZ27Zno1Y/M=
+			H3ywfFIMcfGnWWB+28NqEk2mb+H1yPk8LQYXXRPPCVk=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wl6VlxjUVKfbpqLchfdYDZB7jSsALrYQlsyp6AtTSVo=
+			IPV5vt41cyz4zzOJyr/cQ9lnulQ0z3sWqN+Vx0Jdoxc=
+			</data>
+		</dict>
+		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HafrpUAVhl49VPTLm692cYt5ncj6DwLvXGzjvZJ0AIk=
+			</data>
+		</dict>
+		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			t+zpHsR0HSJ2pn/Ya03l1SzKMG6kuxlFqC656mYLU2Y=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RayhNXkDszmCo9r9lgThl8VHqoFks4kwzietbkt4Dug=
+			8Xjn4FA/SYgVMHf+UYYOrIUd7wXwFs3zuKJ/SXwB+bo=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ifaDqAV+uHic9Bv1cquHrpCHjNIyQyJJ1NTtaL3Hd4k=
+			t+zpHsR0HSJ2pn/Ya03l1SzKMG6kuxlFqC656mYLU2Y=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kuEC9fqo9ATEndHpIeaTv0C1jWvlB3+HIA4Nz9CSr9M=
+			ymgNKDtsTeefx+Ic9LxvyVGoTTiTRWAawsf0RZ6ug6Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Svo4Bs5sIkBylA7C7IB2RElyJdCVjfHBxgEnZE/NCSQ=
+			DxynZHFXefzmyDbcgGbAMu0fYy6yKLFtJfnUlYo8QCU=
 			</data>
 		</dict>
 		<key>SpotiiView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uaSVsrJ9/X0DnAd2GkcAYkXhKg3Q8gDuLbUVbrb0Q3I=
+			vYel2XqwSZfkovV4EiXc+kjOGD0bLK78WDKihsokRMM=
 			</data>
 		</dict>
 		<key>TabbyView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LlSQltaB9CWsw6gLMoc58f6kD640syyuGVCKJ41AqLg=
+			gpT3RT1QrarXwNUQzuajUGwk45f9W+D6Ls6w5IrPNnM=
 			</data>
 		</dict>
 		<key>TabbyWebInformationViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LzkMuFpnwUHh7doDxIT/I6Bb1obRZ7UBk/lrMf/ZSgQ=
+			6sKPryWujhHTAS76SE8+UW+d3QlbSNae6eHyPF/2qW0=
 			</data>
 		</dict>
 		<key>TamaraView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ytP4MQ5FKyNkIhsLLyoCABrO79RXRkshOdAUL+IsHqg=
+			5o5NkREkncZFlYxpK3L9Gs791HI1aasmPKIXHGfdiNI=
 			</data>
 		</dict>
 		<key>alt.payment.mafpayments.com.cer</key>

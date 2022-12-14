@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MAFPay
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import Alamofire
 import BinancePaySDK
@@ -13,6 +14,7 @@ import Swift
 import UIKit
 import WebKit
 import _Concurrency
+import _StringProcessing
 public enum MAFPayLanguage : Swift.String {
   case arabic
   case english
@@ -68,7 +70,7 @@ public enum TabbyResult {
   case onError(MAFPay.MAFPayError)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class RememberCardSwitch : UIKit.UISwitch {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
@@ -250,7 +252,7 @@ extension MAFPay.AnyCodable : Swift.Hashable {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) public var textFieldMarginLeft: CoreGraphics.CGFloat? {
+  @_Concurrency.MainActor(unsafe) public var textFieldMarginLeft: CoreFoundation.CGFloat? {
     get
     set
   }
@@ -259,14 +261,14 @@ extension MAFPay.AnyCodable : Swift.Hashable {
     set
   }
   @_Concurrency.MainActor(unsafe) open func setupView(as itemType: MAFPay.ItemType, iconTextFieldPosition: MAFPay.IconTextFieldPosition? = nil)
-  @_Concurrency.MainActor(unsafe) open func setCornerRadius(_ radius: CoreGraphics.CGFloat, borderWidth: CoreGraphics.CGFloat? = nil, borderColor: UIKit.UIColor? = nil)
+  @_Concurrency.MainActor(unsafe) open func setCornerRadius(_ radius: CoreFoundation.CGFloat, borderWidth: CoreFoundation.CGFloat? = nil, borderColor: UIKit.UIColor? = nil)
   @_Concurrency.MainActor(unsafe) open func setDefaultStyle(inactive: MAFPay.ItemBorder? = nil, focused: MAFPay.ItemBorder? = nil, filled: MAFPay.ItemBorder? = nil, error: MAFPay.ItemBorder? = nil)
   @_Concurrency.MainActor(unsafe) open func setHeaderTitle(_ text: Swift.String, fontStyle: UIKit.UIFont? = nil, fontColor: UIKit.UIColor? = nil, errorColor: UIKit.UIColor? = nil, textAlignment: UIKit.NSTextAlignment? = nil)
   @_Concurrency.MainActor(unsafe) open func setUnderline(defaltColor: UIKit.UIColor? = nil, selectedColor: UIKit.UIColor? = nil)
   @_Concurrency.MainActor(unsafe) open func setFooterError(_ text: Swift.String? = nil, fontStyle: UIKit.UIFont? = nil, fontColor: UIKit.UIColor? = nil, textAlignment: UIKit.NSTextAlignment? = nil)
   @_Concurrency.MainActor(unsafe) open func setExpiryDatePicker(_ titleText: Swift.String? = nil, doneText: Swift.String? = nil, cancelText: Swift.String? = nil)
   @_Concurrency.MainActor(unsafe) open func textFieldBecomeFirstResponder()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
@@ -411,9 +413,9 @@ public enum TamaraProductType : Swift.String {
 }
 public struct ItemBorder {
   public let color: UIKit.UIColor?
-  public let width: CoreGraphics.CGFloat?
-  public let cornerRadius: CoreGraphics.CGFloat?
-  public init(color: UIKit.UIColor? = nil, width: CoreGraphics.CGFloat? = nil, cornerRadius: CoreGraphics.CGFloat? = nil)
+  public let width: CoreFoundation.CGFloat?
+  public let cornerRadius: CoreFoundation.CGFloat?
+  public init(color: UIKit.UIColor? = nil, width: CoreFoundation.CGFloat? = nil, cornerRadius: CoreFoundation.CGFloat? = nil)
 }
 public struct TamaraCheckout {
   public init(url: Swift.String, orderId: Swift.String)
@@ -614,11 +616,11 @@ extension MAFPay.PMCardDelegate {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) public var borderWidth: CoreGraphics.CGFloat {
+  @_Concurrency.MainActor(unsafe) public var borderWidth: CoreFoundation.CGFloat {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) public var borderCornerRadius: CoreGraphics.CGFloat {
+  @_Concurrency.MainActor(unsafe) public var borderCornerRadius: CoreFoundation.CGFloat {
     get
     set
   }
@@ -799,10 +801,10 @@ extension MAFPay.PMCardDelegate {
     set
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
-  @objc override dynamic public func awakeFromNib()
-  @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
   @_Concurrency.MainActor(unsafe) public func setup(_ checkoutToken: Swift.String, viewController: UIKit.UIViewController, completion: @escaping (MAFPay.CheckoutCallback) -> Swift.Void)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
@@ -866,7 +868,7 @@ public enum RememberCardType {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) public var labelSpaceLeft: CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) public var labelSpaceLeft: CoreFoundation.CGFloat
   @_Concurrency.MainActor(unsafe) public var rememberCardSwitch: MAFPay.RememberCardSwitch {
     get
     set
