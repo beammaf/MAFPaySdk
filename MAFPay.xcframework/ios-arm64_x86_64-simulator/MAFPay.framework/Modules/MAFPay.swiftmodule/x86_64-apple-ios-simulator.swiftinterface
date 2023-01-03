@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MAFPay
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -299,6 +299,7 @@ public struct Card : Swift.Decodable {
 }
 @objc public enum Enviroment : Swift.Int {
   case production
+  case staging
   case sandbox
   case uat
   public init?(rawValue: Swift.Int)
@@ -418,7 +419,7 @@ public struct ItemBorder {
   public init(color: UIKit.UIColor? = nil, width: CoreFoundation.CGFloat? = nil, cornerRadius: CoreFoundation.CGFloat? = nil)
 }
 public struct TamaraCheckout {
-  public init(url: Swift.String, orderId: Swift.String)
+  public init(url: Swift.String, orderId: Swift.String?)
 }
 public protocol PMTokanizeButtonDelegate : AnyObject {
   func tokenizeButtonClicked()
@@ -800,12 +801,12 @@ extension PMCardDelegate {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
   @_Concurrency.MainActor(unsafe) public func setup(_ checkoutToken: Swift.String, viewController: UIKit.UIViewController, completion: @escaping (CheckoutCallback) -> Swift.Void)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class MAFPay : ObjectiveC.NSObject {
