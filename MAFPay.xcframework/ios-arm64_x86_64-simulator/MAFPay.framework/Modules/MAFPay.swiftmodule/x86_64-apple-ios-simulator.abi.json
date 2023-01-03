@@ -8184,47 +8184,6 @@
           },
           {
             "kind": "Var",
-            "name": "staging",
-            "printedName": "staging",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MAFPay.Enviroment.Type) -> MAFPay.Enviroment",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Enviroment",
-                    "printedName": "MAFPay.Enviroment",
-                    "usr": "c:@M@MAFPay@E@Enviroment"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MAFPay.Enviroment.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Enviroment",
-                        "printedName": "MAFPay.Enviroment",
-                        "usr": "c:@M@MAFPay@E@Enviroment"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@MAFPay@E@Enviroment@EnviromentStaging",
-            "mangledName": "$s6MAFPay10EnviromentO7stagingyA2CmF",
-            "moduleName": "MAFPay",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Var",
             "name": "sandbox",
             "printedName": "sandbox",
             "children": [
@@ -8262,7 +8221,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 1
           },
           {
             "kind": "Var",
@@ -8303,7 +8262,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 2
           },
           {
             "kind": "Constructor",
@@ -27135,1813 +27094,1799 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Header.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Header.swift",
       "kind": "StringLiteral",
       "offset": 526,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Header.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Header.swift",
       "kind": "StringLiteral",
       "offset": 571,
       "length": 13,
       "value": "\"Merchant-Id\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Header.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Header.swift",
       "kind": "StringLiteral",
       "offset": 613,
       "length": 12,
       "value": "\"Partner-Id\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Header.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Header.swift",
       "kind": "StringLiteral",
       "offset": 526,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Header.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Header.swift",
       "kind": "StringLiteral",
       "offset": 571,
       "length": 13,
       "value": "\"Merchant-Id\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Header.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Header.swift",
       "kind": "StringLiteral",
       "offset": 613,
       "length": 12,
       "value": "\"Partner-Id\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 223,
       "length": 6,
       "value": "\"Visa\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 258,
       "length": 12,
       "value": "\"MasterCard\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 293,
       "length": 6,
       "value": "\"Amex\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 334,
       "length": 13,
       "value": "\"CardDefault\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 375,
       "length": 14,
       "value": "\"^4[0-9]{1,}$\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 423,
       "length": 146,
       "value": "\"^(2221|2222|2223|2224|2225|2226|2227|2228|2229|222|223|224|225|226|227|228|229|23|24|25|26|270|271|2720|50|51|52|53|54|55|56|57|58|59|67)[0-9]*$\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 597,
       "length": 18,
       "value": "\"^3[47][0-9]{0,}$\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 663,
       "length": 13,
       "value": "\"beam.MAFPay\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 736,
       "length": 18,
       "value": "\"[a-zA-Z' ]{2,50}\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 813,
       "length": 10,
       "value": "\"tokenize\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 855,
       "length": 13,
       "value": "\"deleteToken\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 903,
       "length": 24,
       "value": "\"getAccountHolderTokens\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 968,
       "length": 10,
       "value": "\"linkBank\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1016,
       "length": 21,
       "value": "\"confirmVerification\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1077,
       "length": 23,
       "value": "\"getAccountHolderBanks\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1141,
       "length": 17,
       "value": "\"setDefaultToken\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1215,
       "length": 37,
       "value": "\"https:\/\/payment.stg.mafpayments.com\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1284,
       "length": 33,
       "value": "\"https:\/\/payment.mafpayments.com\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1346,
       "length": 41,
       "value": "\"https:\/\/payment.sandbox.mafpayments.com\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1412,
       "length": 37,
       "value": "\"https:\/\/payment.uat.mafpayments.com\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1486,
       "length": 41,
       "value": "\"https:\/\/alt.payment.stg.mafpayments.com\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1559,
       "length": 45,
       "value": "\"https:\/\/alt.payment.sandbox.mafpayments.com\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1639,
       "length": 37,
       "value": "\"https:\/\/alt.payment.mafpayments.com\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1727,
       "length": 28,
       "value": "\"https:\/\/checkout.tabby.ai\/\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1796,
       "length": 65,
       "value": "\"https:\/\/checkout.tabby.ai\/promos\/checkout-page\/installments\/en\/\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1900,
       "length": 62,
       "value": "\"https:\/\/checkout.tabby.ai\/promos\/checkout-page\/pay-later\/en\/\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2005,
       "length": 65,
       "value": "\"https:\/\/checkout.tabby.ai\/promos\/checkout-page\/installments\/ar\/\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2111,
       "length": 62,
       "value": "\"https:\/\/checkout.tabby.ai\/promos\/checkout-page\/pay-later\/ar\/\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2230,
       "length": 44,
       "value": "\"https:\/\/sandbox.spotii.me\/checkout\/?token=\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2306,
       "length": 36,
       "value": "\"https:\/\/spotii.me\/checkout\/?token=\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2384,
       "length": 7,
       "value": "\"Error\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2417,
       "length": 4,
       "value": "\"OK\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2481,
       "length": 4,
       "value": "\"ar\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2505,
       "length": 4,
       "value": "\"en\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2481,
       "length": 4,
       "value": "\"ar\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Constants.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2505,
       "length": 4,
       "value": "\"en\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/UI Components\/HTMLWebView.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/UI Components\/HTMLWebView.swift",
       "kind": "StringLiteral",
       "offset": 183,
       "length": 11,
       "value": "\"MAFPay.HTMLWebView\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainer.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 310,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainer.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainer.swift",
       "kind": "BooleanLiteral",
       "offset": 701,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainer.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainer.swift",
       "kind": "FloatLiteral",
       "offset": 916,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainer.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainer.swift",
       "kind": "BooleanLiteral",
       "offset": 932,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainer.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainer.swift",
       "kind": "BooleanLiteral",
       "offset": 4267,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Views\/TabbyWebView\/TabbyWebInformationViewController.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Views\/TabbyWebView\/TabbyWebInformationViewController.swift",
       "kind": "StringLiteral",
       "offset": 195,
       "length": 33,
       "value": "\"MAFPay.TabbyWebInformationViewController\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Models\/ThreeDSTwoResume.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Models\/ThreeDSTwoResume.swift",
       "kind": "StringLiteral",
       "offset": 688,
       "length": 5,
       "value": "\"3ds\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Models\/ThreeDSTwoResume.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Models\/ThreeDSTwoResume.swift",
       "kind": "StringLiteral",
       "offset": 688,
       "length": 5,
       "value": "\"3ds\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 240,
       "length": 13,
       "value": "\"CYBERSOURCE\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 270,
       "length": 6,
       "value": "\"MPGS\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 298,
       "length": 11,
       "value": "\"SIMULATOR\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 240,
       "length": 13,
       "value": "\"CYBERSOURCE\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 270,
       "length": 6,
       "value": "\"MPGS\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 298,
       "length": 11,
       "value": "\"SIMULATOR\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 366,
       "length": 5,
       "value": "\"3ds\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 391,
       "length": 9,
       "value": "\"payment\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 420,
       "length": 14,
       "value": "\"cardTokenize\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 366,
       "length": 5,
       "value": "\"3ds\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 391,
       "length": 9,
       "value": "\"payment\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 420,
       "length": 14,
       "value": "\"cardTokenize\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 688,
       "length": 14,
       "value": "\"verification\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 722,
       "length": 9,
       "value": "\"payment\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 688,
       "length": 14,
       "value": "\"verification\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSCommon.swift",
       "kind": "StringLiteral",
       "offset": 722,
       "length": 9,
       "value": "\"payment\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Card Number\/CardNumberPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Card Number\/CardNumberPresenter.swift",
       "kind": "StringLiteral",
       "offset": 176,
       "length": 13,
       "value": "\"0123456789 \""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Card Number\/CardNumberPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Card Number\/CardNumberPresenter.swift",
       "kind": "BooleanLiteral",
       "offset": 269,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateView+Picker.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateView+Picker.swift",
       "kind": "IntegerLiteral",
       "offset": 186,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateView+Picker.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateView+Picker.swift",
       "kind": "IntegerLiteral",
       "offset": 213,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateView+Picker.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateView+Picker.swift",
       "kind": "IntegerLiteral",
       "offset": 217,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateView+Picker.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateView+Picker.swift",
       "kind": "IntegerLiteral",
       "offset": 364,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateView+Picker.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateView+Picker.swift",
       "kind": "IntegerLiteral",
       "offset": 364,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateView+Picker.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateView+Picker.swift",
       "kind": "IntegerLiteral",
       "offset": 364,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
       "kind": "StringLiteral",
       "offset": 194,
       "length": 7,
       "value": "\"TABBY\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
       "kind": "StringLiteral",
       "offset": 220,
       "length": 8,
       "value": "\"SPOTII\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
       "kind": "StringLiteral",
       "offset": 247,
       "length": 8,
       "value": "\"TAMARA\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
       "kind": "StringLiteral",
       "offset": 273,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
       "kind": "StringLiteral",
       "offset": 194,
       "length": 7,
       "value": "\"TABBY\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
       "kind": "StringLiteral",
       "offset": 220,
       "length": 8,
       "value": "\"SPOTII\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
       "kind": "StringLiteral",
       "offset": 247,
       "length": 8,
       "value": "\"TAMARA\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
       "kind": "StringLiteral",
       "offset": 273,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
       "kind": "BooleanLiteral",
       "offset": 536,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
       "kind": "BooleanLiteral",
       "offset": 566,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
       "kind": "BooleanLiteral",
       "offset": 598,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BuyNowPayLater.swift",
       "kind": "BooleanLiteral",
       "offset": 629,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Processor\/Tokan.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Processor\/Tokan.swift",
       "kind": "StringLiteral",
       "offset": 1157,
       "length": 18,
       "value": "\"cardMaskedNumber\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Processor\/Tokan.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Processor\/Tokan.swift",
       "kind": "StringLiteral",
       "offset": 1157,
       "length": 18,
       "value": "\"cardMaskedNumber\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BNPLProprties.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BNPLProprties.swift",
       "kind": "BooleanLiteral",
       "offset": 208,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BNPLProprties.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BNPLProprties.swift",
       "kind": "IntegerLiteral",
       "offset": 282,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BNPLProprties.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BNPLProprties.swift",
       "kind": "IntegerLiteral",
       "offset": 322,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/BNPLProprties.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/BNPLProprties.swift",
       "kind": "BooleanLiteral",
       "offset": 5555,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tamara\/TamaraViewController.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tamara\/TamaraViewController.swift",
       "kind": "StringLiteral",
       "offset": 205,
       "length": 13,
       "value": "\"mafpayments\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tamara\/TamaraViewController.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tamara\/TamaraViewController.swift",
       "kind": "StringLiteral",
       "offset": 249,
       "length": 17,
       "value": "\"completePayment\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tamara\/TamaraViewController.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tamara\/TamaraViewController.swift",
       "kind": "StringLiteral",
       "offset": 296,
       "length": 8,
       "value": "\"cancel\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tamara\/TamaraViewController.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tamara\/TamaraViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 479,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tamara\/TamaraViewController.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tamara\/TamaraViewController.swift",
       "kind": "StringLiteral",
       "offset": 316,
       "length": 20,
       "value": "\"MAFPay.TamaraViewController\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Card\/CardRequest.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Card\/CardRequest.swift",
       "kind": "StringLiteral",
       "offset": 386,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Card\/CardRequest.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Card\/CardRequest.swift",
       "kind": "StringLiteral",
       "offset": 1610,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Card\/CardRequest.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Card\/CardRequest.swift",
       "kind": "StringLiteral",
       "offset": 1909,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Card\/CardRequest.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Card\/CardRequest.swift",
       "kind": "StringLiteral",
       "offset": 2292,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Card\/CardRequest.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Card\/CardRequest.swift",
       "kind": "StringLiteral",
       "offset": 2802,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/Tamara.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/Tamara.swift",
       "kind": "StringLiteral",
       "offset": 422,
       "length": 15,
       "value": "\"tamaraOrderId\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/Tamara.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/Tamara.swift",
       "kind": "StringLiteral",
       "offset": 470,
       "length": 18,
       "value": "\"tamaraCheckoutId\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/Tamara.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/Tamara.swift",
       "kind": "StringLiteral",
       "offset": 560,
       "length": 13,
       "value": "\"checkoutUrl\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/Tamara.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/Tamara.swift",
       "kind": "StringLiteral",
       "offset": 422,
       "length": 15,
       "value": "\"tamaraOrderId\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/Tamara.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/Tamara.swift",
       "kind": "StringLiteral",
       "offset": 470,
       "length": 18,
       "value": "\"tamaraCheckoutId\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Models\/Tamara.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Models\/Tamara.swift",
       "kind": "StringLiteral",
       "offset": 560,
       "length": 13,
       "value": "\"checkoutUrl\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Card\/SetCardAsDefaultRequest.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Card\/SetCardAsDefaultRequest.swift",
       "kind": "StringLiteral",
       "offset": 357,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Card Number\/CardNumberView.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Card Number\/CardNumberView.swift",
       "kind": "StringLiteral",
       "offset": 283,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Remember Card\/RememberCardCheckbox.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Remember Card\/RememberCardCheckbox.swift",
       "kind": "BooleanLiteral",
       "offset": 224,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Remember Card\/RememberCardCheckbox.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Remember Card\/RememberCardCheckbox.swift",
       "kind": "StringLiteral",
       "offset": 281,
       "length": 21,
       "value": "\"check-mark-selected\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Remember Card\/RememberCardCheckbox.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Remember Card\/RememberCardCheckbox.swift",
       "kind": "StringLiteral",
       "offset": 358,
       "length": 21,
       "value": "\"check-mark-unselect\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/CardView.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/CardView.swift",
       "kind": "BooleanLiteral",
       "offset": 4502,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/CardView.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/CardView.swift",
       "kind": "BooleanLiteral",
       "offset": 7939,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Link Bank\/BankAccount.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Link Bank\/BankAccount.swift",
       "kind": "StringLiteral",
       "offset": 757,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSTwoManager.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/Common\/ThreeDSTwoManager.swift",
       "kind": "BooleanLiteral",
       "offset": 3902,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainerExtensions.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainerExtensions.swift",
       "kind": "FloatLiteral",
       "offset": 220,
       "length": 4,
       "value": "60.0"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainerExtensions.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainerExtensions.swift",
       "kind": "FloatLiteral",
       "offset": 268,
       "length": 4,
       "value": "0.18"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainerExtensions.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainerExtensions.swift",
       "kind": "FloatLiteral",
       "offset": 317,
       "length": 3,
       "value": "0.7"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainerExtensions.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Container\/CardContainerExtensions.swift",
       "kind": "FloatLiteral",
       "offset": 364,
       "length": 4,
       "value": "14.0"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Resources\/Localize.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Resources\/Localize.swift",
       "kind": "Dictionary",
       "offset": 221,
       "length": 4141,
       "value": "[(\"cvv_hint_title\", \"CVV or CVC\"), (\"cvv_hint_descreption\", \"The CVV\/CVC code on a credit card is a 3-4 digit numbers, please copy your card code from the back of your Visa\/ Master card or from front side of American Express and continue with your payment.\"), (\"card_number_holder\", \"Card Number\"), (\"holder_name_placeholder\", \"Holder Name\"), (\"cvc_number_placeholder\", \"CVC Number\"), (\"expiry_date\", \"Expiry Date\"), (\"wrong_card_number_length\", \"Wrong card number length\"), (\"invalid_card_number\", \"Invalid card number\"), (\"invalid_cvc_length\", \"Invalid CVC length\"), (\"invalid_cvc_format\", \"Invalid CVC format\"), (\"invalid_expiry_month\", \"Invalid expiry month\"), (\"invalid_expiry_year\", \"Invalid expiry year\"), (\"invalid_expiry_date\", \"Invalid expiry date\"), (\"invalid_card_holder_name\", \"Invalid card holder name\"), (\"unsupported_card\", \"Unsupported card\"), (\"card_number_is_empty\", \"Card Number is empty\"), (\"cvc_is_empty\", \"CVC is empty\"), (\"expiry_date_is_empty\", \"Expiry Date is empty\"), (\"missing_card_number_view\", \"Missing card number view\"), (\"missing_cvc_number_view\", \"Missing CVC number view\"), (\"missing_expiry_date_view\", \"Missing expiry date view\"), (\"missing_authantication_setup_credentials\", \"Missing credentials : api key or authorization one of them must be filled\"), (\"missing_identifier_data\", \"Missing keys : merchant-id or partner-id one of them must be filled\"), (\"missing_authentication_key\", \"Missing authentication key\"), (\"missing_setup_credentials\", \"One of the merchant-id or partner-id must be field not both\"), (\"missing_link_bank_identifier_data\", \"Missing keys : merchant-id and api key must be filled\"), (\"camera_permission\", \"The camera permission is needed to scan the Card.\"), (\"tabby_session_id_is_empty\", \"Tabby session ID is empty\"), (\"tabby_id_is_empty\", \"Tabby ID is empty\"), (\"apple_pay_authorization\", \"Unable to present Apple Pay authorization\"), (\"unable_to_parse_PKPayment_object\", \"Can't Parse PKPayment Object\"), (\"an_error_has_been_occurred\", \"An error has been occurred\"), (\"threeDS_secure_page_canceled\", \"ThreeDS secure page canceled\"), (\"pinning_certificate_issue\", \"Certificate does not match, please contact your support team\"), (\"spotii_Token_is_empty\", \"Spotii Token is empty\"), (\"spotii_checkout_is_empty\", \"Spotii checkout is empty\"), (\"tamara_url_is_empty\", \"Tamara url is empty\"), (\"Secure Checkout\", \"Secure Checkout\"), (\"bnpl_title\", \"Buy now pay later\"), (\"error_title\", \"Oops, something went wrong.\"), (\"error_desc\", \"Buy now pay later is not available right now. Please try again later.\"), (\"tabby_title\", \"Pay with tabby\"), (\"tamara_title\", \"Pay with tamara\"), (\"spotii_title\", \"Pay with Spotii\"), (\"tabby_payNow_title\", \"Pay in 14 days\"), (\"tabby_installments_title\", \"4 interest-free payments\"), (\"tabby_installments_supTitle\", \"Buy now, spread the cost monthly. No interest. Pay with any card.\"), (\"tamara_payNow_title\", \"Buy now and pay in 30 days\"), (\"tamara_payNow_supTitle\", \"Pay within 30 days, without additional fees.\"), (\"tamara_payNow_payButton\", \"Pay in 30 days\"), (\"tamara_installments_title\", \"Tamara: split your payments, interest-free\"), (\"tamara_installments_supTitle\", \"Pay a fraction of your total now, and the rest over time. No hidden fees, no interest!\"), (\"tamara_installments_payButton\", \"Pay with\"), (\"loading\", \"Loading…\"), (\"addYourCard\", \"Add your card\"), (\"CVV\", \"CVV\"), (\"remember_card\", \"Remember card information for next use.\"), (\"missing_checkout_token\", \"Checkout token is missing\"), (\"missing_bank_token\", \"Bank token is missing\"), (\"missing_redirect_scheme\", \"Redirect Scheme is missing\"), (\"binance_not_supported\", \"Binance pay not supported\"), (\"binance_title\", \"PAY WITH BINANCE PAY\")]"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Resources\/Localize.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Resources\/Localize.swift",
       "kind": "Dictionary",
       "offset": 4406,
       "length": 5731,
       "value": "[(\"cvv_hint_title\", \"ما هو رقم التحقق\"), (\"cvv_hint_descreption\", \"يتكون رقم التحقق على بطاقة الائتمان من 3 إلى 4 أرقام ، يرجى نسخ رمز بطاقتك من الجزء الخلفي من بطاقة Visa \/ Master أو من الجانب الأمامي من American Express ومتابعة الدفع.\"), (\"card_number_holder\", \"رقم البطاقة\"), (\"holder_name_placeholder\", \"الاسم على البطاقة\"), (\"cvc_number_placeholder\", \"رقم التحقق\"), (\"expiry_date\", \"تاريخ انتهاء الصلاحية\"), (\"wrong_card_number_length\", \"عدد أرقام البطاقة المدخلة غير صحيح\"), (\"invalid_card_number\", \"رقم البطاقة غير صحيح.\"), (\"invalid_cvc_length\", \"عدد الارقام خاطئ\"), (\"invalid_cvc_format\", \"تنسيق خاطئ\"), (\"invalid_expiry_month\", \"الشهر غير صحيح\"), (\"invalid_expiry_year\", \"السنة غير صحيحة\"), (\"invalid_expiry_date\", \"تاريخ غير صحيح\"), (\"invalid_card_holder_name\", \"اسم حامل البطاقة غير صحيح\"), (\"unsupported_card\", \"بطاقة غير مقبولة\"), (\"card_number_is_empty\", \"رقم البطاقة فارغ\"), (\"cvc_is_empty\", \"رقم التحقق فارغ\"), (\"expiry_date_is_empty\", \"تاريخ الصلاحية فارغ\"), (\"missing_card_number_view\", \"واجهة رقم البطاقة غير موجودة\"), (\"missing_cvc_number_view\", \"واجهة رقم التحقق غير موجودة\"), (\"missing_expiry_date_view\", \"واجهة رقم التحقق غير موجودة\"), (\"missing_authantication_setup_credentials\", \"بيانات التفويض غير موجودة : يجب ملء مفتاح واجهة الاتصال أو حقل الصلاحية أو أحدهما\"), (\"missing_identifier_data\", \"مفاتيح  واجهة الاتصال غير موجودة : يجب ملء رقم التعريف الخاص بالتاجر أو رقم التعريف الخاص بالشريك أو أحدهما\"), (\"missing_authentication_key\", \"بيانات التفويض غير موجودة\"), (\"missing_setup_credentials\", \"يجب ادخال أي من رقم التعريف الخاص بالتاجر أو رقم التعريف الخاص بالشريك\"), (\"missing_link_bank_identifier_data\", \"يجب ادخال كل من رقم التعريف الخاص بالتاجر و مفتاح واجهة الاتصال\"), (\"camera_permission\", \"صلاحية مسح رقم البطاقة بالكاميرا مطلوب.\"), (\"tabby_session_id_is_empty\", \"رقم تعريف جلسة تابي فارغ\"), (\"tabby_id_is_empty\", \"رقم تعريف تابي فارغ\"), (\"apple_pay_authorization\", \"لا يمكن إظهار Apple Pay\"), (\"unable_to_parse_PKPayment_object\", \"Can't Parse PKPayment Object\"), (\"an_error_has_been_occurred\", \"لقد حدث خطأ\"), (\"threeDS_secure_page_canceled\", \"تم إغلاق صفحة ThreeDS الآمنة\"), (\"pinning_certificate_issue\", \"شهادة غير مطابقة, الرجاء التواصل مع فريق الدعم\"), (\"spotii_Token_is_empty\", \"Spotii Token is empty\"), (\"spotii_checkout_is_empty\", \"Spotii checkout is empty\"), (\"tamara_url_is_empty\", \"Tamara url is empty\"), (\"Secure Checkout\", \"دفع آمن\"), (\"bnpl_title\", \"اشتر الآن وادفع لاحقًا\"), (\"error_title\", \"شيء ما حدث بشكل خاطئ.\"), (\"error_desc\", \"اشتر الآن وادفع لاحقًا غير متوفر الآن. الرجاء معاودة المحاولة في وقت لاحق.\"), (\"tabby_title\", \"الدفع بواسطة تابي\"), (\"tamara_title\", \"الدفع بواسطة تمارا\"), (\"spotii_title\", \"الدفع بواسطة Spotii\"), (\"tabby_payNow_title\", \"الدفع بعد ١٤ يوم\"), (\"tabby_installments_title\", \"الدفع على أقساط\"), (\"tabby_installments_supTitle\", \"أشترِ اللآن، وزع التكلفة شهرياً. لا فوائد. ادفع بأي بطاقة\"), (\"tamara_payNow_title\", \"اطلب الآن وادفع خلال 30 یوم\"), (\"tamara_payNow_supTitle\", \"ادفع خلال 30 يوم بدون أي رسوم إضافية\"), (\"tamara_payNow_payButton\", \"الدفع خلال ٣٠ يوماً\"), (\"tamara_installments_title\", \"تمارا: قسم فاتورتك على دفعات بدون فوائد\"), (\"tamara_installments_supTitle\", \"ادفع جزء من المبلغ الآن والباقي على حسب خطة الدفع، بدون فوائد ورسوم خفية!\"), (\"tamara_installments_payButton\", \"دفع باستخدام\"), (\"loading\", \"جاري التحميل…\"), (\"addYourCard\", \"أضف بطاقتك\"), (\"CVV\", \"رقم التحقق\"), (\"remember_card\", \"تذكر معلومات البطاقة للدفع مستقبلا.\"), (\"missing_checkout_token\", \"رمز صفحة الدفع مفقود\"), (\"missing_bank_token\", \"رمز البنك مفقود\"), (\"missing_redirect_scheme\", \"مخطط إعادة التوجيه مفقود\"), (\"binance_not_supported\", \"Binance Pay غير مدعومة\"), (\"binance_title\", \"الدفع من خلال Binance Pay\")]"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Enviroment.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Enviroment.swift",
       "kind": "IntegerLiteral",
       "offset": 200,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Enviroment.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Enviroment.swift",
       "kind": "IntegerLiteral",
       "offset": 218,
-      "length": 7,
+      "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Enviroment.swift",
-      "kind": "IntegerLiteral",
-      "offset": 236,
-      "length": 3,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Enviroment.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Enviroment.swift",
       "kind": "IntegerLiteral",
       "offset": 200,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Enviroment.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/Enviroment.swift",
       "kind": "IntegerLiteral",
       "offset": 218,
-      "length": 7,
+      "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/Enviroment.swift",
-      "kind": "IntegerLiteral",
-      "offset": 236,
-      "length": 3,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/CVC Number\/CVCNumberViewPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/CVC Number\/CVCNumberViewPresenter.swift",
       "kind": "StringLiteral",
       "offset": 193,
       "length": 12,
       "value": "\"0123456789\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/CVC Number\/CVCNumberViewPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/CVC Number\/CVCNumberViewPresenter.swift",
       "kind": "IntegerLiteral",
       "offset": 266,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "IntegerLiteral",
       "offset": 673,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "IntegerLiteral",
       "offset": 688,
       "length": 11,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "IntegerLiteral",
       "offset": 673,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "IntegerLiteral",
       "offset": 688,
       "length": 11,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "IntegerLiteral",
       "offset": 673,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "IntegerLiteral",
       "offset": 688,
       "length": 11,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "StringLiteral",
       "offset": 827,
       "length": 4,
       "value": "\"NO\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "StringLiteral",
       "offset": 853,
       "length": 6,
       "value": "\"AUTH\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "StringLiteral",
       "offset": 879,
       "length": 9,
       "value": "\"THREEDS\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "StringLiteral",
       "offset": 827,
       "length": 4,
       "value": "\"NO\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "StringLiteral",
       "offset": 853,
       "length": 6,
       "value": "\"AUTH\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "StringLiteral",
       "offset": 879,
       "length": 9,
       "value": "\"THREEDS\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "StringLiteral",
       "offset": 1017,
       "length": 11,
       "value": "\"pay_later\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "StringLiteral",
       "offset": 1053,
       "length": 14,
       "value": "\"installments\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "StringLiteral",
       "offset": 1017,
       "length": 11,
       "value": "\"pay_later\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "StringLiteral",
       "offset": 1053,
       "length": 14,
       "value": "\"installments\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "StringLiteral",
       "offset": 1200,
       "length": 14,
       "value": "\"PAY_BY_LATER\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "StringLiteral",
       "offset": 1239,
       "length": 20,
       "value": "\"PAY_BY_INSTALMENTS\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "StringLiteral",
       "offset": 1200,
       "length": 14,
       "value": "\"PAY_BY_LATER\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/CardModels.swift",
       "kind": "StringLiteral",
       "offset": 1239,
       "length": 20,
       "value": "\"PAY_BY_INSTALMENTS\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/TokanizeButton.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/TokanizeButton.swift",
       "kind": "BooleanLiteral",
       "offset": 1067,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/TokanizeButton.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/TokanizeButton.swift",
       "kind": "BooleanLiteral",
       "offset": 1353,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/TokanizeButton.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/TokanizeButton.swift",
       "kind": "BooleanLiteral",
       "offset": 1589,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/TokanizeButton.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/TokanizeButton.swift",
       "kind": "BooleanLiteral",
       "offset": 1882,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
       "kind": "StringLiteral",
       "offset": 529,
       "length": 6,
       "value": "\"data\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
       "kind": "StringLiteral",
       "offset": 568,
       "length": 8,
       "value": "\"header\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
       "kind": "StringLiteral",
       "offset": 608,
       "length": 11,
       "value": "\"signature\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
       "kind": "StringLiteral",
       "offset": 649,
       "length": 9,
       "value": "\"version\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
       "kind": "StringLiteral",
       "offset": 529,
       "length": 6,
       "value": "\"data\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
       "kind": "StringLiteral",
       "offset": 568,
       "length": 8,
       "value": "\"header\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
       "kind": "StringLiteral",
       "offset": 608,
       "length": 11,
       "value": "\"signature\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Apple Pay\/ApplePayPayment.swift",
       "kind": "StringLiteral",
       "offset": 649,
       "length": 9,
       "value": "\"version\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Binance Pay\/BinancePayButton.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Binance Pay\/BinancePayButton.swift",
       "kind": "StringLiteral",
       "offset": 727,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Utility.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Utility.swift",
       "kind": "IntegerLiteral",
       "offset": 222,
       "length": 2,
       "value": "99"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Utility.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Utility.swift",
       "kind": "IntegerLiteral",
       "offset": 317,
       "length": 4,
       "value": "2000"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Loading Button\/LoadingButton.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Loading Button\/LoadingButton.swift",
       "kind": "Array",
       "offset": 427,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Loading Button\/LoadingButton.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Loading Button\/LoadingButton.swift",
       "kind": "BooleanLiteral",
       "offset": 614,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Loading Button\/LoadingButton.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Loading Button\/LoadingButton.swift",
       "kind": "BooleanLiteral",
       "offset": 808,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Loading Button\/LoadingButton.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Loading Button\/LoadingButton.swift",
       "kind": "IntegerLiteral",
       "offset": 981,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Loading Button\/LoadingButton.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Loading Button\/LoadingButton.swift",
       "kind": "IntegerLiteral",
       "offset": 994,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Loading Button\/LoadingButton.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Loading Button\/LoadingButton.swift",
       "kind": "IntegerLiteral",
       "offset": 1164,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Loading Button\/LoadingButton.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Loading Button\/LoadingButton.swift",
       "kind": "IntegerLiteral",
       "offset": 1177,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/CVCHint\/CVCHintButton.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/CVCHint\/CVCHintButton.swift",
       "kind": "IntegerLiteral",
       "offset": 185,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/CVCHint\/CVCHintButton.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/CVCHint\/CVCHintButton.swift",
       "kind": "IntegerLiteral",
       "offset": 221,
       "length": 3,
       "value": "270"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/CVCHint\/CVCHintButton.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/CVCHint\/CVCHintButton.swift",
       "kind": "IntegerLiteral",
       "offset": 259,
       "length": 3,
       "value": "348"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/ThreeDSViewController.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/ThreeDSViewController.swift",
       "kind": "StringLiteral",
       "offset": 207,
       "length": 17,
       "value": "\"Secure Checkout\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/Extensions\/Extension.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/Extensions\/Extension.swift",
       "kind": "BooleanLiteral",
       "offset": 6896,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Checkout Wrapper\/CheckoutPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Checkout Wrapper\/CheckoutPresenter.swift",
       "kind": "StringLiteral",
       "offset": 216,
       "length": 9,
       "value": "\"BINANCE\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Checkout Wrapper\/CheckoutPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Checkout Wrapper\/CheckoutPresenter.swift",
       "kind": "StringLiteral",
       "offset": 216,
       "length": 9,
       "value": "\"BINANCE\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/BuyNowPayLaterView.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/BuyNowPayLaterView.swift",
       "kind": "IntegerLiteral",
       "offset": 200,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/BuyNowPayLaterView.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/BuyNowPayLaterView.swift",
       "kind": "BooleanLiteral",
       "offset": 664,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/BuyNowPayLaterView.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/BuyNowPayLaterView.swift",
       "kind": "BooleanLiteral",
       "offset": 801,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/BuyNowPayLaterView.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/BuyNowPayLaterView.swift",
       "kind": "IntegerLiteral",
       "offset": 1098,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/BuyNowPayLaterView.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/BuyNowPayLaterView.swift",
       "kind": "IntegerLiteral",
       "offset": 1238,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/TabbyViewController.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/TabbyViewController.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 18,
       "value": "\"tabbyAppListener\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/TabbyViewController.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/TabbyViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 432,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Buy now Pay later\/Views\/Common\/Tamara Pay\/BNPLTamaraPayView.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Buy now Pay later\/Views\/Common\/Tamara Pay\/BNPLTamaraPayView.swift",
       "kind": "IntegerLiteral",
       "offset": 206,
       "length": 3,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Main\/MAFPay.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Main\/MAFPay.swift",
       "kind": "BooleanLiteral",
       "offset": 250,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Main\/MAFPay.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Main\/MAFPay.swift",
       "kind": "StringLiteral",
       "offset": 1289,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Main\/MAFPay.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Main\/MAFPay.swift",
       "kind": "BooleanLiteral",
       "offset": 1369,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Main\/MAFPay.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Main\/MAFPay.swift",
       "kind": "BooleanLiteral",
       "offset": 2610,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Main\/MAFPay.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Main\/MAFPay.swift",
       "kind": "BooleanLiteral",
       "offset": 2638,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Main\/MAFPay.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Main\/MAFPay.swift",
       "kind": "BooleanLiteral",
       "offset": 2665,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/ThreeDSPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/ThreeDSPresenter.swift",
       "kind": "StringLiteral",
       "offset": 189,
       "length": 14,
       "value": "\"responseCode\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/ThreeDSPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/ThreeDSPresenter.swift",
       "kind": "StringLiteral",
       "offset": 234,
       "length": 17,
       "value": "\"responseMessage\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/ThreeDSPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/ThreeDSPresenter.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 10,
       "value": "\"VERIFIED\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/ThreeDSPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/ThreeDSPresenter.swift",
       "kind": "StringLiteral",
       "offset": 324,
       "length": 15,
       "value": "\"threeDsAuthId\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/ThreeDSPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/ThreeDSPresenter.swift",
       "kind": "StringLiteral",
       "offset": 369,
       "length": 16,
       "value": "\"threeDsVersion\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Three DS\/ThreeDSPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Three DS\/ThreeDSPresenter.swift",
       "kind": "StringLiteral",
       "offset": 412,
       "length": 7,
       "value": "\"faild\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Processor\/Models\/CardBrand.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Processor\/Models\/CardBrand.swift",
       "kind": "StringLiteral",
       "offset": 172,
       "length": 6,
       "value": "\"Visa\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Processor\/Models\/CardBrand.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Processor\/Models\/CardBrand.swift",
       "kind": "StringLiteral",
       "offset": 201,
       "length": 12,
       "value": "\"MasterCard\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Processor\/Models\/CardBrand.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Processor\/Models\/CardBrand.swift",
       "kind": "StringLiteral",
       "offset": 230,
       "length": 6,
       "value": "\"Amex\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Processor\/Models\/CardBrand.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Processor\/Models\/CardBrand.swift",
       "kind": "StringLiteral",
       "offset": 172,
       "length": 6,
       "value": "\"Visa\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Processor\/Models\/CardBrand.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Processor\/Models\/CardBrand.swift",
       "kind": "StringLiteral",
       "offset": 201,
       "length": 12,
       "value": "\"MasterCard\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Processor\/Models\/CardBrand.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Processor\/Models\/CardBrand.swift",
       "kind": "StringLiteral",
       "offset": 230,
       "length": 6,
       "value": "\"Amex\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Remember Card\/RememberCardView.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Remember Card\/RememberCardView.swift",
       "kind": "IntegerLiteral",
       "offset": 1167,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Remember Card\/RememberCardView.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Remember Card\/RememberCardView.swift",
       "kind": "IntegerLiteral",
       "offset": 1529,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Spotii\/SpotiiViewController.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Spotii\/SpotiiViewController.swift",
       "kind": "StringLiteral",
       "offset": 198,
       "length": 13,
       "value": "\"mafpayments\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Spotii\/SpotiiViewController.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Spotii\/SpotiiViewController.swift",
       "kind": "StringLiteral",
       "offset": 242,
       "length": 19,
       "value": "\"response-callback\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Spotii\/SpotiiViewController.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Spotii\/SpotiiViewController.swift",
       "kind": "StringLiteral",
       "offset": 290,
       "length": 10,
       "value": "\"declined\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Spotii\/SpotiiViewController.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Spotii\/SpotiiViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 660,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Spotii\/SpotiiViewController.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Spotii\/SpotiiViewController.swift",
       "kind": "StringLiteral",
       "offset": 314,
       "length": 20,
       "value": "\"MAFPay.SpotiiViewController\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/ItemProperty.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/ItemProperty.swift",
       "kind": "BooleanLiteral",
       "offset": 594,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/ItemProperty.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/ItemProperty.swift",
       "kind": "BooleanLiteral",
       "offset": 1015,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/ItemProperty.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/ItemProperty.swift",
       "kind": "BooleanLiteral",
       "offset": 1423,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/ItemProperty.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/ItemProperty.swift",
       "kind": "StringLiteral",
       "offset": 1587,
       "length": 37,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/ItemProperty.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/ItemProperty.swift",
       "kind": "StringLiteral",
       "offset": 1619,
       "length": 3,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/ItemProperty.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/ItemProperty.swift",
       "kind": "StringLiteral",
       "offset": 1623,
       "length": 9,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Models\/ItemProperty.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Models\/ItemProperty.swift",
       "kind": "BooleanLiteral",
       "offset": 1666,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Common\/ExtractCardViews.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Common\/ExtractCardViews.swift",
       "kind": "StringLiteral",
       "offset": 165,
       "length": 16,
       "value": "\"MAFPay.ExtractCardViews\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateViewPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateViewPresenter.swift",
       "kind": "StringLiteral",
       "offset": 195,
       "length": 12,
       "value": "\"0123456789\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateViewPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateViewPresenter.swift",
       "kind": "IntegerLiteral",
       "offset": 242,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateViewPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateViewPresenter.swift",
       "kind": "IntegerLiteral",
       "offset": 278,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateViewPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateViewPresenter.swift",
       "kind": "StringLiteral",
       "offset": 315,
       "length": 3,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateViewPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Card Views Builder\/Expiry Date\/ExpiryDateViewPresenter.swift",
       "kind": "IntegerLiteral",
       "offset": 440,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/NetworkAdapter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkAdapter.swift",
       "kind": "StringLiteral",
       "offset": 207,
       "length": 5,
       "value": "\"000\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/NetworkAdapter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkAdapter.swift",
       "kind": "StringLiteral",
       "offset": 249,
       "length": 5,
       "value": "\"002\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/NetworkAdapter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkAdapter.swift",
       "kind": "StringLiteral",
       "offset": 291,
       "length": 5,
       "value": "\"147\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/NetworkAdapter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkAdapter.swift",
       "kind": "StringLiteral",
       "offset": 329,
       "length": 25,
       "value": "\"com.mafpay.networkLayer\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/NetworkAdapter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkAdapter.swift",
       "kind": "StringLiteral",
       "offset": 397,
       "length": 26,
       "value": "\"verificationAttemptsLeft\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Network\/NetworkAdapter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkAdapter.swift",
       "kind": "StringLiteral",
       "offset": 452,
       "length": 7,
       "value": "\"token\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Apple Pay\/MAFApplePay.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Apple Pay\/MAFApplePay.swift",
       "kind": "StringLiteral",
       "offset": 524,
       "length": 11,
       "value": "\"MAFPay.MAFApplePay\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/TabbyPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/TabbyPresenter.swift",
       "kind": "StringLiteral",
       "offset": 290,
       "length": 7,
       "value": "\"close\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/TabbyPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/TabbyPresenter.swift",
       "kind": "StringLiteral",
       "offset": 333,
       "length": 30,
       "value": "\"Transaction still processing\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/TabbyPresenter.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/TabbyPresenter.swift",
       "kind": "StringLiteral",
       "offset": 396,
       "length": 5,
       "value": "\"113\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 339,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 366,
       "length": 8,
       "value": "\"status\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 398,
       "length": 9,
       "value": "\"payment\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 339,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 366,
       "length": 8,
       "value": "\"status\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 398,
       "length": 9,
       "value": "\"payment\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 560,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 587,
       "length": 8,
       "value": "\"status\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 560,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 587,
       "length": 8,
       "value": "\"status\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 676,
       "length": 12,
       "value": "\"authorized\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 709,
       "length": 10,
       "value": "\"rejected\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 738,
       "length": 8,
       "value": "\"closed\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 766,
       "length": 9,
       "value": "\"CREATED\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 796,
       "length": 10,
       "value": "\"approved\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 833,
       "length": 16,
       "value": "\"not_authorized\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 676,
       "length": 12,
       "value": "\"authorized\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 709,
       "length": 10,
       "value": "\"rejected\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 738,
       "length": 8,
       "value": "\"closed\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 766,
       "length": 9,
       "value": "\"CREATED\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 796,
       "length": 10,
       "value": "\"approved\""
     },
     {
-      "filePath": "\/Users\/ahmadalkalouti\/Documents\/GitHub\/PaymentSDK\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
       "kind": "StringLiteral",
       "offset": 833,
       "length": 16,
