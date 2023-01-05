@@ -27747,35 +27747,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tamara\/TamaraViewController.swift",
       "kind": "StringLiteral",
-      "offset": 205,
-      "length": 13,
-      "value": "\"mafpayments\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tamara\/TamaraViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 249,
-      "length": 17,
-      "value": "\"completePayment\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tamara\/TamaraViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 296,
-      "length": 8,
-      "value": "\"cancel\""
+      "offset": 203,
+      "length": 14,
+      "value": "\"responseCode\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tamara\/TamaraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 479,
+      "offset": 388,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tamara\/TamaraViewController.swift",
       "kind": "StringLiteral",
-      "offset": 316,
+      "offset": 225,
       "length": 20,
       "value": "\"MAFPay.TamaraViewController\""
     },
