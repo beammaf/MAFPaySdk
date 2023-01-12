@@ -4,12 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "MAFPaySdk",
+    name: "MAFPay",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "MAFPaySdk",
-            targets: ["MAFPaySdk", "CardinalMobile", "LeanSDK", "BinancePaySDK"]),
+            name: "MAFPay",
+            targets: ["MAFPay", "CardinalMobile", "LeanSDK", "BinancePaySDK"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -19,7 +19,7 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "MAFPaySdk",
+            name: "MAFPay",
             dependencies: []),
  	.binaryTarget(
             name: "BinancePaySDK",
@@ -34,7 +34,7 @@ let package = Package(
             path: "Frameworks/ExternalFrameworks/CardinalMobile.xcframework"
         ),
         .testTarget(
-            name: "MAFPaySdkTests",
-            dependencies: ["MAFPaySdk"]),
+            name: "MAFPayTests",
+            dependencies: ["MAFPay"]),
     ]
 )
