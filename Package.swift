@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "MAFPay",
-            targets: ["MAFPay", "CardinalMobile", "LeanSDK", "BinancePaySDK"]),
+            targets: ["MAFPay"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,14 +21,5 @@ let package = Package(
         .binaryTarget(
             name: "MAFPay",
             path: "MAFPay.xcframework")
-	.binaryTarget(
-            name: "BinancePaySDK",
-            path: "ExternalFrameworks/BinancePaySDK.xcframework"),
-        .binaryTarget(
-            name: "LeanSDK",
-            path: "ExternalFrameworks/LeanSDK.xcframework"),
-        .binaryTarget(
-            name: "CardinalMobile",
-            path: "ExternalFrameworks/CardinalMobile.xcframework")
     ]
 )
