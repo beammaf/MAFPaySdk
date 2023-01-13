@@ -23,12 +23,12 @@ let package = Package(
             path: "MAFPay.xcframework")
 	.binaryTarget(
             name: "BinancePaySDK",
-            path: "Frameworks/ExternalFrameworks/BinancePaySDK.xcframework"),
+            path: "ExternalFrameworks/BinancePaySDK.xcframework"),
         .binaryTarget(
             name: "LeanSDK",
-            path: "Frameworks/ExternalFrameworks/LeanSDK.xcframework"),
+            path: "ExternalFrameworks/LeanSDK.xcframework"),
         .binaryTarget(
             name: "CardinalMobile",
-            path: "Frameworks/ExternalFrameworks/CardinalMobile.xcframework")
+            path: "ExternalFrameworks/CardinalMobile.xcframework")
     ]
 )
