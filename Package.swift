@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
 
-    name: "MAFPaySPMM",
+    name: "MAFPaySPMMM",
     products: [
         .library(
             name: "MAFPay",
@@ -19,7 +19,6 @@ let package = Package(
         .binaryTarget(name: "MAFPay", path: "MAFPay.xcframework"),
         .binaryTarget(name: "BinancePaySDK", path: "ExternalFrameworks/BinancePaySDK.xcframework"),
         .binaryTarget(name: "CardinalMobile", path: "ExternalFrameworks/CardinalMobile.xcframework"),
-        .binaryTarget(name: "LeanSDK", path: "ExternalFrameworks/LeanSDK.xcframework"),
-        .target(name: "Alamofire", dependencies: ["Alamofire"]),
+        .binaryTarget(name: "LeanSDK", path: "ExternalFrameworks/LeanSDK.xcframework")
     ]
 )
