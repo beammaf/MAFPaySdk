@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "MAFPay",
-            targets: ["MAFPay", "BinancePaySDK", "CardinalMobile", "LeanSDK"])
+            targets: ["MAFPay", "BinancePaySDK", "CardinalMobile", "LeanSDK", "Alamofire"])
     ],
     dependencies: [
            .package(url: "https://github.com/Alamofire/Alamofire.git",
@@ -20,5 +20,6 @@ let package = Package(
         .binaryTarget(name: "BinancePaySDK", path: "ExternalFrameworks/BinancePaySDK.xcframework"),
         .binaryTarget(name: "CardinalMobile", path: "ExternalFrameworks/CardinalMobile.xcframework"),
         .binaryTarget(name: "LeanSDK", path: "ExternalFrameworks/LeanSDK.xcframework"),
+        .target(name: "Alamofire", dependencies: ["Alamofire"]),
     ]
 )
