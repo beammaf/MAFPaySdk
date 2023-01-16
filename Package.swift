@@ -16,7 +16,7 @@ let package = Package(
                  branch: "5.6.2")
     ],
     targets: [
-        .target(name: "MAFPaySdk",dependencies: ["Alamofire"]),
+        .target(name: "MAFPay",dependencies: ["Alamofire"]),
         .binaryTarget(name: "MAFPay", path: "MAFPay.xcframework"),
         .binaryTarget(name: "BinancePaySDK", path: "ExternalFrameworks/BinancePaySDK.xcframework"),
         .binaryTarget(name: "CardinalMobile", path: "ExternalFrameworks/CardinalMobile.xcframework"),
