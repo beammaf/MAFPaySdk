@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
 
-    name: "MAFPaySPM",
+    name: "MAFPaySPMM",
     products: [
         .library(
             name: "MAFPay",
