@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "MAFPay",
-            targets: ["MAFPay", "BinancePaySDK", "CardinalMobile", "LeanSDK", "Alamofire"])
+            targets: ["MAFPay", "BinancePaySDK", "CardinalMobile", "LeanSDK"])
     ],
     dependencies: [
            .package(url: "https://github.com/Alamofire/Alamofire.git",
