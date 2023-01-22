@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		/zkNeQkpbe7f2Od8eqImRKBCrXs=
+		KkbjPq15OZZQ54fRH+d0yAswSK8=
 		</data>
 		<key>BNPLLoadingView.nib</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>BNPLTabbyPayView.nib</key>
 		<data>
-		4IC3ctK7qIoY1a81iqnFm2hRK5k=
+		zcq2vMNT4qS3SwDoN3k1d96GXm8=
 		</data>
 		<key>BNPLTamaraPayView.nib</key>
 		<data>
-		1Omwo6Y8yDblPx4uC8MNX7srJes=
+		LQHoZD3IRD7wEPQ+r0JjimlKgh4=
 		</data>
 		<key>BuyNowPayLaterHeaderView.nib</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/MAFPay-Swift.h</key>
 		<data>
-		g3EbO9AEuQ13J/Vf308JiSN0ydM=
+		csolmoGs1SK7XaFbSOcr0VoI5s4=
 		</data>
 		<key>Headers/MAFPay.h</key>
 		<data>
@@ -74,27 +74,27 @@
 		</data>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		cNNglVet2q+zKrQGN22DWK6yT9Y=
+		qAghT4UeJjk8XWO1RlpaepZTI7M=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		u6k6bc7AKVwZZbUPOx4VGZtF+x0=
+		u01gvB5hG6ysf+QbYrB1ihdhFFI=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8QxAdacr5txqbu4hLpTBHZWvdOA=
+		UWNo2JdjUkj0xrjjM80LSBRjVoQ=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Nf5VA8pM02yZOGiFIru2WeLCaJY=
+		WZ1YOYR9cxnObxw6PbFz9nOPeiM=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		l7Gv6O4P4lF2qlJ1IuW7o6BnPIo=
+		pkHCfJ9PZrOYE+RwwIy5RYnU7mk=
 		</data>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rVZteBn88QjX1eBXTOZ2bI3w3PM=
+		GobfmJbTAcPcpxkwLAKakeuPzoE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -114,19 +114,19 @@
 		</data>
 		<key>TamaraView.nib</key>
 		<data>
-		CewaD//ltqDRusL9RWSfznf0nbE=
+		89p6gnDMUiTohdNF6138kls+EYQ=
 		</data>
 		<key>alt.payment.mafpayments.com.cer</key>
 		<data>
-		G1gWnxBr1dTW+BjIsKsGk6YI/0Q=
+		9hYzkI1Mqv1hFDoW5fiSClGUfck=
 		</data>
 		<key>alt.payment.sandbox.mafpayments.com.cer</key>
 		<data>
-		G1gWnxBr1dTW+BjIsKsGk6YI/0Q=
+		9hYzkI1Mqv1hFDoW5fiSClGUfck=
 		</data>
 		<key>alt.payment.stg.mafpayments.com.cer</key>
 		<data>
-		G1gWnxBr1dTW+BjIsKsGk6YI/0Q=
+		9hYzkI1Mqv1hFDoW5fiSClGUfck=
 		</data>
 		<key>payment.mafpayments.com.cer</key>
 		<data>
@@ -147,7 +147,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LLR/6KnCOInZ3DIiTur46wexp/M+ZVT1xEVkEq6zuCw=
+			hYwoQetlzapgq8nx7oxz//h+cCXfvpje+cAvorynBIk=
 			</data>
 		</dict>
 		<key>BNPLLoadingView.nib</key>
@@ -175,14 +175,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wP0sUZLEXLKLy9kUUF2ESuj2e1+7gonMne9GBn/QKuE=
+			uWI9k8RDgoXC8BTh+Tl3VyYIHdeSc2RHN/Mevf7J3tc=
 			</data>
 		</dict>
 		<key>BNPLTamaraPayView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KTvUl9k09FX7LbEi2hZlWKotxMCL3rH8H4/NsFDS5FI=
+			i0w/yJkFgeh4jOPXAdPkeeay+Olr8fdreDZ1X+2Z3aE=
 			</data>
 		</dict>
 		<key>BuyNowPayLaterHeaderView.nib</key>
@@ -231,7 +231,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ekzd3o8AIFzv4s1YTiU62mi/R63Dh7us8pIZbidCmsM=
+			zQouAVAjvwNt4p3HThrkOQ1qsD4N2OvBwJpzKKtBREQ=
 			</data>
 		</dict>
 		<key>Headers/MAFPay.h</key>
@@ -259,42 +259,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zyN2kOeGUiW2H40Hil2lrbKSp0H3WAuYfgcyAWAKPTM=
+			UbQXTLOGXRh5piThpsaGiiSUfDiVRht02EMYjgx5Td8=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cFapL7Xu2JfXW1WhKHJN5oFQCaBw6wDT7LJU/d0Vt5g=
+			n7IUoRKhvcDVvDkrH3/+1xgctIDZPOmeze4h3ug7XRU=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sl+xDoVLDwBlZHK3WJMzgzrYKZJ7kqJB6KkTw+V5A2Y=
+			+oVGaD7vGz7iaPC+olsmNJxd3GFFEUiPu8MDdvXLpGs=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+heXqAmHlgjFBnK/HyHMYY4XBZMCiEqZ/lH0wWf0S/U=
+			c24n4POWKVEuE3R2WUezyuQ4ZOqtMoEugNsNYuzEMpI=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OFbdAOXoSGHEyu8CcMJGvZetYt/UsK6bM2bCkt6esag=
+			79NT2tu9IB9VMCpeP5vHuEWU4vpBsUuJn5PpbJBgvkI=
 			</data>
 		</dict>
 		<key>Modules/MAFPay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LiCY4qCaehk516nBw/38O+++yYWvkPQFP6UF8EQzZa0=
+			pz6NncKXOI1JCAGHNDHgtnPQ8+rNOFo1u1mW99efi6s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -329,28 +329,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ytP4MQ5FKyNkIhsLLyoCABrO79RXRkshOdAUL+IsHqg=
+			6trZaHjEuzKDhQfTQ19ZvkQyX4PmoDEbe57Wzr+XCR8=
 			</data>
 		</dict>
 		<key>alt.payment.mafpayments.com.cer</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QBwMNEk4Rrr3s55tJBpa+Q9GKyhXu8ec7Nycwp9Wr00=
+			6Kjo7vMbqcKKvMmEjYbUzq2JG+y8Fl7eCH6w1glmukQ=
 			</data>
 		</dict>
 		<key>alt.payment.sandbox.mafpayments.com.cer</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QBwMNEk4Rrr3s55tJBpa+Q9GKyhXu8ec7Nycwp9Wr00=
+			6Kjo7vMbqcKKvMmEjYbUzq2JG+y8Fl7eCH6w1glmukQ=
 			</data>
 		</dict>
 		<key>alt.payment.stg.mafpayments.com.cer</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QBwMNEk4Rrr3s55tJBpa+Q9GKyhXu8ec7Nycwp9Wr00=
+			6Kjo7vMbqcKKvMmEjYbUzq2JG+y8Fl7eCH6w1glmukQ=
 			</data>
 		</dict>
 		<key>payment.mafpayments.com.cer</key>
