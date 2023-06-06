@@ -309,16 +309,6 @@
       },
       {
         "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "MAFPay",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2991,16 +2981,6 @@
       },
       {
         "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "MAFPay",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4313,13 +4293,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "MAFPay"
       },
       {
         "kind": "Import",
@@ -8407,20 +8380,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MAFPay"
-      },
-      {
-        "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "MAFPay"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -11700,16 +11659,6 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MAFPay",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
         "declKind": "Import",
         "moduleName": "MAFPay",
         "declAttributes": [
@@ -15026,13 +14975,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "MAFPay"
       },
       {
         "kind": "Import",
@@ -24414,13 +24356,6 @@
       },
       {
         "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "MAFPay"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -25501,20 +25436,13 @@
       },
       {
         "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "MAFPay",
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MAFPay"
       },
       {
         "kind": "Import",
@@ -26130,11 +26058,559 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "MAFPay"
+        "kind": "TypeDecl",
+        "name": "HTTPMethod",
+        "printedName": "HTTPMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "connect",
+            "printedName": "connect",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "MAFPay.HTTPMethod",
+                "usr": "s:6MAFPay10HTTPMethodV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6MAFPay10HTTPMethodV7connectACvpZ",
+            "mangledName": "$s6MAFPay10HTTPMethodV7connectACvpZ",
+            "moduleName": "MAFPay",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "MAFPay.HTTPMethod",
+                    "usr": "s:6MAFPay10HTTPMethodV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6MAFPay10HTTPMethodV7connectACvgZ",
+                "mangledName": "$s6MAFPay10HTTPMethodV7connectACvgZ",
+                "moduleName": "MAFPay",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delete",
+            "printedName": "delete",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "MAFPay.HTTPMethod",
+                "usr": "s:6MAFPay10HTTPMethodV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6MAFPay10HTTPMethodV6deleteACvpZ",
+            "mangledName": "$s6MAFPay10HTTPMethodV6deleteACvpZ",
+            "moduleName": "MAFPay",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "MAFPay.HTTPMethod",
+                    "usr": "s:6MAFPay10HTTPMethodV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6MAFPay10HTTPMethodV6deleteACvgZ",
+                "mangledName": "$s6MAFPay10HTTPMethodV6deleteACvgZ",
+                "moduleName": "MAFPay",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "get",
+            "printedName": "get",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "MAFPay.HTTPMethod",
+                "usr": "s:6MAFPay10HTTPMethodV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6MAFPay10HTTPMethodV3getACvpZ",
+            "mangledName": "$s6MAFPay10HTTPMethodV3getACvpZ",
+            "moduleName": "MAFPay",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "MAFPay.HTTPMethod",
+                    "usr": "s:6MAFPay10HTTPMethodV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6MAFPay10HTTPMethodV3getACvgZ",
+                "mangledName": "$s6MAFPay10HTTPMethodV3getACvgZ",
+                "moduleName": "MAFPay",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "head",
+            "printedName": "head",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "MAFPay.HTTPMethod",
+                "usr": "s:6MAFPay10HTTPMethodV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6MAFPay10HTTPMethodV4headACvpZ",
+            "mangledName": "$s6MAFPay10HTTPMethodV4headACvpZ",
+            "moduleName": "MAFPay",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "MAFPay.HTTPMethod",
+                    "usr": "s:6MAFPay10HTTPMethodV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6MAFPay10HTTPMethodV4headACvgZ",
+                "mangledName": "$s6MAFPay10HTTPMethodV4headACvgZ",
+                "moduleName": "MAFPay",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "options",
+            "printedName": "options",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "MAFPay.HTTPMethod",
+                "usr": "s:6MAFPay10HTTPMethodV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6MAFPay10HTTPMethodV7optionsACvpZ",
+            "mangledName": "$s6MAFPay10HTTPMethodV7optionsACvpZ",
+            "moduleName": "MAFPay",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "MAFPay.HTTPMethod",
+                    "usr": "s:6MAFPay10HTTPMethodV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6MAFPay10HTTPMethodV7optionsACvgZ",
+                "mangledName": "$s6MAFPay10HTTPMethodV7optionsACvgZ",
+                "moduleName": "MAFPay",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "patch",
+            "printedName": "patch",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "MAFPay.HTTPMethod",
+                "usr": "s:6MAFPay10HTTPMethodV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6MAFPay10HTTPMethodV5patchACvpZ",
+            "mangledName": "$s6MAFPay10HTTPMethodV5patchACvpZ",
+            "moduleName": "MAFPay",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "MAFPay.HTTPMethod",
+                    "usr": "s:6MAFPay10HTTPMethodV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6MAFPay10HTTPMethodV5patchACvgZ",
+                "mangledName": "$s6MAFPay10HTTPMethodV5patchACvgZ",
+                "moduleName": "MAFPay",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "post",
+            "printedName": "post",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "MAFPay.HTTPMethod",
+                "usr": "s:6MAFPay10HTTPMethodV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6MAFPay10HTTPMethodV4postACvpZ",
+            "mangledName": "$s6MAFPay10HTTPMethodV4postACvpZ",
+            "moduleName": "MAFPay",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "MAFPay.HTTPMethod",
+                    "usr": "s:6MAFPay10HTTPMethodV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6MAFPay10HTTPMethodV4postACvgZ",
+                "mangledName": "$s6MAFPay10HTTPMethodV4postACvgZ",
+                "moduleName": "MAFPay",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "put",
+            "printedName": "put",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "MAFPay.HTTPMethod",
+                "usr": "s:6MAFPay10HTTPMethodV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6MAFPay10HTTPMethodV3putACvpZ",
+            "mangledName": "$s6MAFPay10HTTPMethodV3putACvpZ",
+            "moduleName": "MAFPay",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "MAFPay.HTTPMethod",
+                    "usr": "s:6MAFPay10HTTPMethodV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6MAFPay10HTTPMethodV3putACvgZ",
+                "mangledName": "$s6MAFPay10HTTPMethodV3putACvgZ",
+                "moduleName": "MAFPay",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "trace",
+            "printedName": "trace",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "MAFPay.HTTPMethod",
+                "usr": "s:6MAFPay10HTTPMethodV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6MAFPay10HTTPMethodV5traceACvpZ",
+            "mangledName": "$s6MAFPay10HTTPMethodV5traceACvpZ",
+            "moduleName": "MAFPay",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "MAFPay.HTTPMethod",
+                    "usr": "s:6MAFPay10HTTPMethodV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6MAFPay10HTTPMethodV5traceACvgZ",
+                "mangledName": "$s6MAFPay10HTTPMethodV5traceACvgZ",
+                "moduleName": "MAFPay",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6MAFPay10HTTPMethodV8rawValueSSvp",
+            "mangledName": "$s6MAFPay10HTTPMethodV8rawValueSSvp",
+            "moduleName": "MAFPay",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6MAFPay10HTTPMethodV8rawValueSSvg",
+                "mangledName": "$s6MAFPay10HTTPMethodV8rawValueSSvg",
+                "moduleName": "MAFPay",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "MAFPay.HTTPMethod",
+                "usr": "s:6MAFPay10HTTPMethodV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6MAFPay10HTTPMethodV8rawValueACSS_tcfc",
+            "mangledName": "$s6MAFPay10HTTPMethodV8rawValueACSS_tcfc",
+            "moduleName": "MAFPay",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6MAFPay10HTTPMethodV",
+        "mangledName": "$s6MAFPay10HTTPMethodV",
+        "moduleName": "MAFPay",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -28681,42 +29157,42 @@
     {
       "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 207,
+      "offset": 190,
       "length": 5,
       "value": "\"000\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 249,
+      "offset": 232,
       "length": 5,
       "value": "\"002\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 291,
+      "offset": 274,
       "length": 5,
       "value": "\"147\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 329,
+      "offset": 312,
       "length": 25,
       "value": "\"com.mafpay.networkLayer\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 397,
+      "offset": 380,
       "length": 26,
       "value": "\"verificationAttemptsLeft\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 452,
+      "offset": 435,
       "length": 7,
       "value": "\"token\""
     },
@@ -28747,6 +29223,69 @@
       "offset": 396,
       "length": 5,
       "value": "\"113\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkCommon.swift",
+      "kind": "StringLiteral",
+      "offset": 3113,
+      "length": 9,
+      "value": "\"CONNECT\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkCommon.swift",
+      "kind": "StringLiteral",
+      "offset": 3201,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkCommon.swift",
+      "kind": "StringLiteral",
+      "offset": 3282,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkCommon.swift",
+      "kind": "StringLiteral",
+      "offset": 3362,
+      "length": 6,
+      "value": "\"HEAD\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkCommon.swift",
+      "kind": "StringLiteral",
+      "offset": 3449,
+      "length": 9,
+      "value": "\"OPTIONS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkCommon.swift",
+      "kind": "StringLiteral",
+      "offset": 3535,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkCommon.swift",
+      "kind": "StringLiteral",
+      "offset": 3617,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkCommon.swift",
+      "kind": "StringLiteral",
+      "offset": 3696,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MAFPay\/Network\/NetworkCommon.swift",
+      "kind": "StringLiteral",
+      "offset": 3778,
+      "length": 7,
+      "value": "\"TRACE\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MAFPay\/Flows\/Tabby\/Models\/CreatedCheckoutSession.swift",
