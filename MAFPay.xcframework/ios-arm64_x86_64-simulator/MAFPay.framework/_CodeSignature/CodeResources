@@ -134,15 +134,15 @@
 		</data>
 		<key>alt.payment.mafpayments.com.cer</key>
 		<data>
-		9hYzkI1Mqv1hFDoW5fiSClGUfck=
+		W2W1YyG8Yuz1LyZoHiCoueBrk8o=
 		</data>
 		<key>alt.payment.sandbox.mafpayments.com.cer</key>
 		<data>
-		9hYzkI1Mqv1hFDoW5fiSClGUfck=
+		W2W1YyG8Yuz1LyZoHiCoueBrk8o=
 		</data>
 		<key>alt.payment.stg.mafpayments.com.cer</key>
 		<data>
-		9hYzkI1Mqv1hFDoW5fiSClGUfck=
+		W2W1YyG8Yuz1LyZoHiCoueBrk8o=
 		</data>
 		<key>payment.mafpayments.com.cer</key>
 		<data>
@@ -380,21 +380,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Kjo7vMbqcKKvMmEjYbUzq2JG+y8Fl7eCH6w1glmukQ=
+			zNnA9NqGwrul/wYAlWu5yM60vD8depxhuclyBSfGg+E=
 			</data>
 		</dict>
 		<key>alt.payment.sandbox.mafpayments.com.cer</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Kjo7vMbqcKKvMmEjYbUzq2JG+y8Fl7eCH6w1glmukQ=
+			zNnA9NqGwrul/wYAlWu5yM60vD8depxhuclyBSfGg+E=
 			</data>
 		</dict>
 		<key>alt.payment.stg.mafpayments.com.cer</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Kjo7vMbqcKKvMmEjYbUzq2JG+y8Fl7eCH6w1glmukQ=
+			zNnA9NqGwrul/wYAlWu5yM60vD8depxhuclyBSfGg+E=
 			</data>
 		</dict>
 		<key>payment.mafpayments.com.cer</key>
